@@ -1,0 +1,20 @@
+package com.example.e_covid.Controller.QuarantineCenter;
+
+import android.app.Activity;
+
+import com.example.e_covid.Model.QuarantineCenter.QuarantineCenterModel;
+
+public class QuarantineCenterController {
+
+    private Activity ui;
+    private final QuarantineCenterModel model;
+
+    public QuarantineCenterController(Activity ui) {
+        this.ui = ui;
+        this.model = new QuarantineCenterModel(ui);
+    }
+
+    public Boolean Add_QC(String qcName, String qcAddress){
+        return model.insertQC_data(qcName, qcAddress);
+    }
+}

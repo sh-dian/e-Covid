@@ -1,4 +1,4 @@
-package com.example.e_covid.Controller.QuarantineCenter;
+package com.example.e_covid.View.Login;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

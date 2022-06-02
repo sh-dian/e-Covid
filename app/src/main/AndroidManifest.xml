@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.e_covid">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +12,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ECovid">
+        <activity
+            android:name=".View.QuarantineCenter.Admin_ViewQuarantineCenter"
+            android:exported="false" />
+        <activity
+            android:name=".View.QuarantineCenter.Admin_AddQuarantineCenter"
+            android:exported="false" />
+        <activity
+            android:name=".View.QuarantineCenter.Admin_QuarantineCenterMenu"
+            android:exported="false" />
+        <activity
+            android:name=".View.QuarantineCenter.User_SearchQuarantineCenter"
+            android:exported="false" />
         <activity
             android:name=".Controller.CheckIn_CheckOut.dumpClass"
             android:exported="false" />

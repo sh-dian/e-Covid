@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/drawable/button_corner.xml" value="0.187" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1705" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_admin_add_quarantine_center.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_admin_quarantine_center_menu.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_dump_class.xml" value="0.209375" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_main.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_user_search_quarantine_center.xml" value="0.209375" />
       </map>
     </option>
   </component>
