@@ -6,11 +6,9 @@ import com.example.e_covid.Model.QuarantineCenter.QuarantineCenterModel;
 
 public class QuarantineCenterController {
 
-    private Activity ui;
     private final QuarantineCenterModel model;
 
     public QuarantineCenterController(Activity ui) {
-        this.ui = ui;
         this.model = new QuarantineCenterModel(ui);
     }
 
