@@ -39,6 +39,7 @@ public class Admin_AddQuarantineCenter extends AppCompatActivity {
 
         quarantineCenterController = new QuarantineCenterController(this);
 
+        //add button function for add new info of quarantine center
         a_insert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
