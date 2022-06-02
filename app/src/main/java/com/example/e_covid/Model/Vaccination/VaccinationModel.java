@@ -1,11 +1,11 @@
-package com.example.e_covid.Controller.Vaccination;
+package com.example.e_covid.Model.Vaccination;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.example.e_covid.R;
 
-public class dumpClass extends AppCompatActivity {
+public class VaccinationModel extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
