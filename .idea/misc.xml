@@ -3,10 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/center_quarantine_data.xml" value="0.21422101449275363" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/center_quarantine_options.xml" value="0.21422101449275363" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/home_location.xml" value="0.11302083333333333" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/quarantine_info.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/drawable/button_corner.xml" value="0.187" />
         <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1705" />
         <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_admin_add_quarantine_center.xml" value="0.18611111111111112" />
@@ -14,6 +10,9 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_dump_class.xml" value="0.209375" />
         <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_main.xml" value="0.18611111111111112" />
         <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_user_search_quarantine_center.xml" value="0.209375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/drawable/ic_baseline_apartment_24.xml" value="0.123" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/drawable/ic_baseline_call_24.xml" value="0.123" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_edit_dependent.xml" value="0.209375" />
       </map>
     </option>
   </component>
