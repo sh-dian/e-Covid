@@ -2,17 +2,15 @@
     <string name="app_name">e-Covid</string>
     <string name="back_Button" />
     <string name="new_user_register_account">New User? Register account</string>
-    <string name="manage_dependent">MANAGE DEPENDENT</string>
     <string name="edit_dependents">EDIT DEPENDENTS</string>
     <string name="full_name">Full Name</string>
-    <string name="relation">Relation</string>
-    <string name="name">Name</string>
+
     <string name="relation">Relation</string>
     <string name="save_changes">Save Changes</string>
     <string name="forgot_password">Forgot Password</string>
     <string name="welcome_to">WELCOME TO</string>
     <string name="username">Username</string>
-    <string name="password">Password</string>
+
     <string name="login">Login</string>
     <string name="manage_dependent">MANAGE DEPENDENT</string>
     <string name="my_dependents">MY DEPENDENTS</string>
