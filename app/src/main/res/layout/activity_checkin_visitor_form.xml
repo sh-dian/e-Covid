@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".view.visitorForm">
+
+    <LinearLayout
+        android:layout_width="404dp"
+        android:layout_height="736dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="-3dp">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="79dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginBottom="0dp"
+            android:text="BACK"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="3dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="147dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginBottom="0dp"
+            android:text="Visitor Form"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="normal|bold"
+            tools:layout_editor_absoluteX="151dp"
+            tools:layout_editor_absoluteY="36dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="340dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginBottom="0dp"
+            android:text="Please fill in all the information"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textStyle="normal|bold"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="106dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginBottom="0dp"
+            android:text="Full Name"
+            android:textSize="16sp"
+            android:textStyle="normal|bold"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="177dp" />
+
+        <Button
+            android:id="@+id/button19"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginBottom="0dp"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="378dp" />
+
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginBottom="0dp"
+            android:text="Passport Number"
+            android:textSize="16sp"
+            android:textStyle="normal|bold"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="260dp" />
+
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginBottom="0dp"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="200dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginBottom="0dp"
+            android:text="Origin Country"
+            android:textSize="16sp"
+            android:textStyle="normal|bold"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="347dp" />
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginBottom="0dp"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="286dp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginBottom="0dp"
+            android:text="Reason for staying"
+            android:textSize="16sp"
+            android:textStyle="normal|bold"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="437dp" />
+
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginBottom="0dp"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="459dp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginBottom="0dp"
+            android:text="Duration of stay"
+            android:textSize="16sp"
+            android:textStyle="normal|bold"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="516dp" />
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginBottom="0dp"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="546dp" />
+
+        <Button
+            android:id="@+id/button22"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="127dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginBottom="0dp"
+            android:text="SUBMIT"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="644dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
