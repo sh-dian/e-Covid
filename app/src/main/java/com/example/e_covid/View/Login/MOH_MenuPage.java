@@ -1,7 +1,9 @@
-package com.example.e_covid;
+package com.example.e_covid.View.Login;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.e_covid.R;
 
 public class MOH_MenuPage extends AppCompatActivity {
 

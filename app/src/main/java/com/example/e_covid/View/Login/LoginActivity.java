@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.e_covid.R;
-import com.example.e_covid.User_MenuPage;
 
 import java.util.Objects;
 
