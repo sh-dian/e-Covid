@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         mUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Admin_AddQuarantineCenter.class);
+                Intent intent = new Intent(MainActivity.this, User_MenuPage.class);
                 startActivity(intent);
             }
         });
