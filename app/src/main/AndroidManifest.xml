@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ECovid">
         <activity
+            android:name=".User_MenuPage"
+            android:exported="false" />
+        <activity
             android:name=".View.QuarantineCenter.Admin_ViewQuarantineCenter"
             android:exported="false" />
         <activity
