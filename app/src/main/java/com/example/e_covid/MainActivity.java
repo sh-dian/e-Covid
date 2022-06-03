@@ -19,16 +19,13 @@ public class MainActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_main);
 
-        mAdmin = findViewById(R.id.adminPage);
+        //mAdmin = findViewById(R.id.adminPage);
         mUser = findViewById(R.id.userPage);
-        mMoh = findViewById(R.id.MOHPage);
+        //mMoh = findViewById(R.id.MOHPage);
 
-        mUser.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, User_MenuPage.class);
-                startActivity(intent);
-            }
+        mUser.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, User_MenuPage.class);
+            startActivity(intent);
         });
     }
 }

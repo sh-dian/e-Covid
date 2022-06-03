@@ -22,12 +22,9 @@ public class User_MenuPage extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         qc = findViewById(R.id.quarantineCenter_button);
-        qc.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(User_MenuPage.this, Admin_QuarantineCenterMenu.class);
-                startActivity(intent);
-            }
+        qc.setOnClickListener(view -> {
+            Intent intent = new Intent(User_MenuPage.this, Admin_QuarantineCenterMenu.class);
+            startActivity(intent);
         });
     }
 }
