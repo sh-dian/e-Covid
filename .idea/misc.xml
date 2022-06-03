@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_checkin_history.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_checkin_info.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_checkin_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_checkin_visitor_form.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_checkout_info.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_qrscan.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_registration_visitor.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/drawable/button_corner.xml" value="0.187" />
         <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1705" />
         <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_admin_add_quarantine_center.xml" value="0.18611111111111112" />
