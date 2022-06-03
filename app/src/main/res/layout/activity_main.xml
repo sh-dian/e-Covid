@@ -68,7 +68,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:background="@drawable/button_corner"
-        android:text="USER PROFILE"
+        android:text="User"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
