@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.e_covid.View.QuarantineCenter.Admin_AddQuarantineCenter;
+import com.example.e_covid.View.QuarantineCenter.Admin_QuarantineCenterMenu;
+
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         mUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, User_MenuPage.class);
+                Intent intent = new Intent(MainActivity.this, Admin_AddQuarantineCenter.class);
                 startActivity(intent);
             }
         });
