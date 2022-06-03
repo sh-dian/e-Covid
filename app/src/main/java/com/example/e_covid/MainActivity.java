@@ -26,9 +26,12 @@ public class MainActivity extends AppCompatActivity {
         mUser = findViewById(R.id.userPage);
         mMoh = findViewById(R.id.MOHPage);
 
-        mUser.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, User_MenuPage.class);
-            startActivity(intent);
+        mUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, User_MenuPage.class);
+                startActivity(intent);
+            }
         });
     }
 }
