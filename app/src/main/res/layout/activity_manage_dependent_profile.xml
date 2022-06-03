@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ManageDependentProfile">
+    tools:context=".View.Login.ManageDependentProfile">
 
 
     <RelativeLayout
@@ -21,15 +21,14 @@
 
     </RelativeLayout>
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
+    <TextView
         android:layout_width="264dp"
         android:layout_height="53dp"
         android:background="@null"
         android:ems="10"
-        android:text="MANAGE DEPENDENT"
+        android:text="@string/manage_dependent"
         android:textColor="#FFFFFF"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,27 +37,27 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.036" />
 
-    <EditText
-        android:id="@+id/editText"
+    <TextView
         android:layout_width="213dp"
         android:layout_height="45dp"
         android:background="@null"
         android:ems="10"
-        android:text="MY DEPENDENTS"
-        android:textSize="25dp"
+        android:text="@string/my_dependents"
+        android:textColor="@color/black"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.119" />
+        app:layout_constraintVertical_bias="0.135" />
 
     <Button
-        android:id="@+id/SaveChanges"
+        android:id="@+id/Add_dependents"
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:background="@drawable/radius"
-        android:text="Add Dependents"
+        android:text="@string/add_dependents"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,13 +80,13 @@
         app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
 
     <EditText
-        android:id="@+id/dependentdetail1"
+        android:id="@+id/dependent_detail1"
         android:layout_width="285dp"
         android:layout_height="51dp"
         android:background="@null"
         android:ems="10"
         android:text=""
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.148"
@@ -106,10 +105,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.361"
-        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/dependentdetail2"
+        android:id="@+id/dependent_detail2"
         android:layout_width="285dp"
         android:layout_height="51dp"
         android:background="@null"
@@ -123,4 +123,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.361" />
 
+    <ImageButton
+        android:layout_width="71dp"
+        android:layout_height="88dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-5dp"
+        android:layout_marginEnd="345dp"
+        android:background="@null"
+        android:contentDescription="@string/back_Button"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
 </android.support.constraint.ConstraintLayout>
