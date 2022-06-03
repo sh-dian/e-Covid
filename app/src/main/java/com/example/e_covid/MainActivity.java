@@ -10,18 +10,21 @@ import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button mAdmin, mUser,mMoh;
+    Button mUser;
+    Button mAdmin;
+    Button mMoh;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         //author code - hide action bar
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_main);
 
-        //mAdmin = findViewById(R.id.adminPage);
+        mAdmin = findViewById(R.id.adminPage);
         mUser = findViewById(R.id.userPage);
-        //mMoh = findViewById(R.id.MOHPage);
+        mMoh = findViewById(R.id.MOHPage);
 
         mUser.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, User_MenuPage.class);
