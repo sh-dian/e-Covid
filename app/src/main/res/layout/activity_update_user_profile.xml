@@ -7,6 +7,7 @@
     tools:context=".View.Login.updateUserProfile">
 
     <RelativeLayout
+        android:id="@+id/relativeLayout2"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="@drawable/background"
@@ -16,16 +17,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageButton
+            android:layout_width="71dp"
+            android:layout_height="88dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginEnd="331dp"
+            android:background="@null"
+            android:contentDescription="@string/back_Button"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
     </RelativeLayout>
 
-    <EditText
+    <TextView
         android:id="@+id/editText5"
         android:layout_width="178dp"
         android:layout_height="39dp"
         android:background="@null"
-        android:text="USER PROFILE"
+        android:text="@string/user_profile"
         android:textColor="#FFFFFF"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,29 +45,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.039" />
 
-    <EditText
+    <TextView
         android:id="@+id/editText4"
         android:layout_width="213dp"
         android:layout_height="45dp"
         android:background="@null"
         android:ems="10"
-        android:text="UPDATE PROFILE"
-        android:textSize="25dp"
+        android:text="@string/update_profile"
+        android:textSize="25sp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.145" />
 
-    <EditText
-        android:id="@+id/editText8"
+    <TextView
         android:layout_width="203dp"
         android:layout_height="31dp"
         android:background="@null"
         android:ems="10"
-        android:text="Name"
-        android:textSize="20dp"
+        android:text="@string/name"
+        android:textSize="20sp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"
@@ -64,14 +76,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.263" />
 
-    <EditText
-        android:id="@+id/editText7"
+    <TextView
         android:layout_width="203dp"
         android:layout_height="31dp"
         android:background="@null"
         android:ems="10"
-        android:text="IC/Passport No."
-        android:textSize="20dp"
+        android:text="@string/ic_passport_no"
+        android:textSize="20sp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"
@@ -79,14 +91,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.338" />
 
-    <EditText
-        android:id="@+id/editText9"
+    <TextView
         android:layout_width="203dp"
         android:layout_height="31dp"
         android:background="@null"
         android:ems="10"
-        android:text="Email/Phone No."
-        android:textSize="20dp"
+        android:text="@string/email_phone_no"
+        android:textSize="20sp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.015"
@@ -94,14 +106,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.413" />
 
-    <EditText
-        android:id="@+id/editText6"
+    <TextView
         android:layout_width="203dp"
         android:layout_height="31dp"
         android:background="@null"
         android:ems="10"
-        android:text="State/Country"
-        android:textSize="20dp"
+        android:text="@string/update_state_country"
+        android:textSize="20sp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.015"
@@ -116,6 +128,7 @@
         android:background="@drawable/radius"
         android:inputType="text"
         android:textColorHint="#FFFFFF"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.924"
@@ -130,6 +143,7 @@
         android:background="@drawable/radius"
         android:inputType="number"
         android:textColorHint="#FFFFFF"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.924"
@@ -144,6 +158,7 @@
         android:background="@drawable/radius"
         android:inputType="textEmailAddress|number"
         android:textColorHint="#FFFFFF"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.924"
@@ -158,6 +173,7 @@
         android:background="@drawable/radius"
         android:inputType="text"
         android:textColorHint="#FFFFFF"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.924"
@@ -174,7 +190,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:background="@drawable/radius"
-        android:text="Save"
+        android:text="@string/save"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

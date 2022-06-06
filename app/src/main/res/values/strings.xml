@@ -16,11 +16,22 @@
     <string name="my_dependents">MY DEPENDENTS</string>
     <string name="add_dependents">Add Dependents</string>
     <string name="registration">REGISTRATION</string>
-    <string name="name">Name</string>
     <string name="passport_number">Passport Number</string>
     <string name="country">Country</string>
     <string name="email_or_phone_number">Email or Phone Number</string>
     <string name="password">Password</string>
     <string name="re_enter_password">Re-enter Password</string>
     <string name="register">REGISTER</string>
+    <string name="ic_passport_number">IC / passport Number</string>
+    <string name="state_country">state / Country</string>
+    <string name="update_profile">UPDATE PROFILE</string>
+    <string name="name">Name</string>
+    <string name="ic_passport_no">IC/Passport No.</string>
+    <string name="email_phone_no">Email/Phone No.</string>
+    <string name="update_state_country">State/Country</string>
+    <string name="save">Save</string>
+    <string name="user_profile">USER PROFILE</string>
+    <string name="update">Update</string>
+    <string name="profile_manage_dependent">Manage Dependent</string>
+    <string name="vaccine_certificate">VACCINE CERTIFICATE</string>
 </resources>

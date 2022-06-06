@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.Login.RegistrationActivity">
+    tools:context=".View.Login.registration">
 
     <ImageView
         android:layout_width="237dp"
@@ -16,27 +16,30 @@
         app:layout_constraintVertical_bias="0.027"
         app:srcCompat="@drawable/logo" />
 
-    <EditText
-        android:layout_width="132dp"
-        android:layout_height="45dp"
+    <TextView
+        android:layout_width="159dp"
+        android:layout_height="49dp"
         android:background="@null"
         android:ems="10"
-        android:text="REGISTRATION"
+        android:text="@string/registration"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.306" />
+        app:layout_constraintVertical_bias="0.339" />
 
     <android.support.design.widget.TextInputEditText
-        android:id="@+id/namecitizen"
+        android:id="@+id/name_visitor"
         android:layout_width="292dp"
         android:layout_height="40dp"
         android:background="@drawable/radius"
-        android:hint=" Name"
+        android:hint="@string/name"
         android:inputType="text"
+        android:textColor="@color/white"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,12 +48,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.design.widget.TextInputEditText
-        android:id="@+id/icNum"
+        android:id="@+id/passportNum"
         android:layout_width="292dp"
         android:layout_height="40dp"
         android:background="@drawable/radius"
-        android:hint=" IC Number"
+        android:hint="@string/ic_passport_number"
         android:inputType="number"
+        android:textColor="@color/white"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,12 +64,13 @@
         app:layout_constraintVertical_bias="0.564" />
 
     <android.support.design.widget.TextInputEditText
-        android:id="@+id/state"
+        android:id="@+id/country"
         android:layout_width="292dp"
         android:layout_height="40dp"
         android:background="@drawable/radius"
-        android:hint=" State"
+        android:hint="@string/state_country"
         android:textColorHint="#FFFFFF"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.594"
@@ -74,11 +79,12 @@
         app:layout_constraintVertical_bias="0.624" />
 
     <android.support.design.widget.TextInputEditText
-        android:id="@+id/emailcitizen"
+        android:id="@+id/email_visitor"
         android:layout_width="292dp"
         android:layout_height="40dp"
         android:background="@drawable/radius"
-        android:hint=" Email or Phone Number"
+        android:hint="@string/email_or_phone_number"
+        android:textColor="@color/white"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -88,13 +94,13 @@
         app:layout_constraintVertical_bias="0.688" />
 
     <android.support.design.widget.TextInputEditText
-        android:id="@+id/passwordCitizen"
+        android:id="@+id/password"
         android:layout_width="292dp"
         android:layout_height="40dp"
         android:background="@drawable/radius"
-        android:ems="10"
-        android:hint=" Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
+        android:textColor="@color/white"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -104,13 +110,13 @@
         app:layout_constraintVertical_bias="0.75" />
 
     <android.support.design.widget.TextInputEditText
-        android:id="@+id/passwordConfirmCitizen"
+        android:id="@+id/passwordConfirm"
         android:layout_width="292dp"
         android:layout_height="40dp"
         android:background="@drawable/radius"
-        android:ems="10"
-        android:hint=" Re-enter Password"
+        android:hint="@string/re_enter_password"
         android:inputType="textPassword"
+        android:textColor="@color/white"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -203,7 +209,7 @@
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:background="@drawable/radius"
-        android:text="REGISTER"
+        android:text="@string/register"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -212,20 +218,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.942" />
 
-    <EditText
+    <Button
         android:id="@+id/loginpage"
         android:layout_width="174dp"
         android:layout_height="44dp"
         android:background="@null"
-        android:ems="4"
         android:text="Already have account? Login"
+        android:textAlignment="textStart"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintHorizontal_bias="0.299"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.882"
+        app:layout_constraintVertical_bias="0.874"
         tools:ignore="Autofill,HardcodedText,MissingConstraints,TouchTargetSizeCheck" />
 
     <EditText
@@ -238,7 +244,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.357" />
+        app:layout_constraintVertical_bias="0.362" />
 
     <RadioButton
         android:id="@+id/citizen"
@@ -250,7 +256,7 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.396" />
+        app:layout_constraintVertical_bias="0.4" />
 
     <RadioButton
         android:id="@+id/visitor"
@@ -259,10 +265,10 @@
         android:text="Malaysian Visitor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
+        app:layout_constraintVertical_bias="0.442" />
 
 
 </android.support.constraint.ConstraintLayout>
