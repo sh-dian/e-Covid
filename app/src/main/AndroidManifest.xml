@@ -40,11 +40,34 @@
         <!-- View Login package -->
         <activity
             android:name=".View.Login.AdminLogin"
-            android:exported="true">
-        </activity>
+            android:exported="true"/>
+        <activity
+            android:name=".View.Login.EditDependent"
+            android:exported="false" />
         <activity
             android:name=".View.Login.LoginActivity"
-            android:exported="false" /> <!-- View User Quarantine package -->
+            android:exported="false" />
+        <activity
+            android:name=".View.Login.ManageDependentProfile"
+            android:exported="false" />
+        <activity
+            android:name=".View.Login.ManageProfile"
+            android:exported="false" />
+        <activity
+            android:name=".View.Login.MOHLogin"
+            android:exported="false" />
+        <activity
+            android:name=".View.Login.registration"
+            android:exported="false" />
+        <activity
+            android:name=".View.Login.RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.Login.updateUserProfile"
+            android:exported="false" />
+
+
+        <!-- View User Quarantine package -->
         <activity
             android:name=".View.UserQuarantine.AdminMOH.Admin_DashboardUserQ"
             android:exported="false" />
