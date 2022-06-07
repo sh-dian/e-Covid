@@ -13,9 +13,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ECovid">
         <activity
-            android:name=".View.UserQuarantine.AdminMOH.Admin_DashboardUserQ"
+            android:name=".View.UserQuarantine.AdminMOH.Admin_Edit_UserQ"
             android:exported="false" />
-        <!-- Menu Page -->
+        <activity
+            android:name=".View.UserQuarantine.AdminMOH.Admin_Manage_Records"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.AdminMOH.MOH_Confrmation_UserQ_Record"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.AdminMOH.AdminMOH_Manage_UserQ_Status"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.AdminMOH.AdminMOH_View_Record_UserQ"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.AdminMOH.MOH_DashboardUserQ"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.AdminMOH.Admin_DashboardUserQ"
+            android:exported="false" /> <!-- Menu Page -->
         <activity
             android:name=".View.Login.User_MenuPage"
             android:exported="false" />
