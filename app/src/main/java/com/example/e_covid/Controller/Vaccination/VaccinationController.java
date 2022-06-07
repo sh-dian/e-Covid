@@ -7,9 +7,9 @@ import com.example.e_covid.R;
 
 public class VaccinationController extends AppCompatActivity {
 
-    @Override
+    /*@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dump_class);
-    }
+    }*/
 }
