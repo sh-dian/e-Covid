@@ -12,6 +12,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ECovid">
+
+        <!-- Menu Page -->
+        <activity
+            android:name=".View.Login.User_MenuPage"
+            android:exported="false" />
+        <activity
+            android:name=".View.Login.MOH_MenuPage"
+            android:exported="false" />
+        <activity
+            android:name=".View.Login.Admin_MenuPage"
+            android:exported="false" />
+
+
+        <!-- Controller -->
+        <activity
+            android:name=".Controller.Vaccination.VaccinationController"
+            android:exported="false" />
+
+        <!-- View Login package -->
         <activity
             android:name=".View.Login.AdminLogin"
             android:exported="true">
@@ -22,17 +41,39 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".View.Login.User_MenuPage"
-            android:exported="false" /> <!-- Menu Page -->
+            android:name=".View.Login.LoginActivity"
+            android:exported="false" />
+
+        <!-- View User Quarantine package -->
         <activity
-            android:name=".View.Login.MOH_MenuPage"
+            android:name=".View.UserQuarantine.DailyQuestions"
             android:exported="false" />
         <activity
-            android:name=".View.Login.Admin_MenuPage"
-            android:exported="false" /> <!-- Controller -->
+            android:name=".View.UserQuarantine.CenterQuarantineData"
+            android:exported="false" />
         <activity
-            android:name=".Controller.Vaccination.VaccinationController"
-            android:exported="false" /> <!-- View -->
+            android:name=".View.UserQuarantine.HomeLocation"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.HomeQuarantineData"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.QuarantineDetails"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.QuarantineINFO"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.QuarantineType"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.UserRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.CenterQuarantineOptions"
+            android:exported="false" />
+
+        <!-- View Quarantine Center package -->
         <activity
             android:name=".View.QuarantineCenter.Admin_ViewQuarantineCenter"
             android:exported="false" />
@@ -45,12 +86,9 @@
         <activity
             android:name=".View.QuarantineCenter.User_SearchQuarantineCenter"
             android:exported="false" />
-        <activity
-            android:name=".View.Login.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Controller.CheckIn_CheckOut.dumpClass"
-            android:exported="false" />
+
+        <!-- View Vaccination package -->
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -60,6 +98,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
