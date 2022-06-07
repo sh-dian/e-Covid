@@ -10,9 +10,12 @@
         android:id="@+id/imageView7"
         android:layout_width="434dp"
         android:layout_height="747dp"
-        app:srcCompat="@drawable/minepagewhite"
-        tools:layout_editor_absoluteX="-9dp"
-        tools:layout_editor_absoluteY="1dp" />
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/minepagewhite" />
 
     <ImageView
         android:id="@+id/backtoCdata"
