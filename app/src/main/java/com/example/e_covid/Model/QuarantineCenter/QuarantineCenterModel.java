@@ -2,6 +2,7 @@ package com.example.e_covid.Model.QuarantineCenter;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -43,5 +44,11 @@ public class QuarantineCenterModel extends SQLiteOpenHelper {
         }else{
             return true;
         }
+    }
+
+    public Cursor getData(){
+        SQLiteDatabase DB = this.getWritableDatabase();
+        Cursor cursor = DB.rawQuery("SELECT * FROM QuarantineCenter", null);
+        return cursor;
     }
 }

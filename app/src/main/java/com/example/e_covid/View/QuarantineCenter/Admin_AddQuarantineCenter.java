@@ -14,7 +14,7 @@ import java.util.Objects;
 public class Admin_AddQuarantineCenter extends AppCompatActivity {
 
     //controller object
-    QuarantineCenterController quarantineCenterController;
+    QuarantineCenterController adminQuarantineCenterController;
 
     //button object
     Button a_insert;
@@ -53,7 +53,7 @@ public class Admin_AddQuarantineCenter extends AppCompatActivity {
         qcCapacity = findViewById(R.id.text_qc_capacity);
         qcVentilationCapacity = findViewById(R.id.text_ventilation_capacity);
 
-        quarantineCenterController = new QuarantineCenterController(this);
+        adminQuarantineCenterController = new QuarantineCenterController(this);
 
         //add button function for add new info of quarantine center
         a_insert.setOnClickListener(view -> {
@@ -65,10 +65,10 @@ public class Admin_AddQuarantineCenter extends AppCompatActivity {
             QC_capacity = Integer.parseInt(String.valueOf(Objects.requireNonNull(qcCapacity.getEditText()).getText()));
             QC_ventilationCapacity = Integer.parseInt(String.valueOf(Objects.requireNonNull(qcVentilationCapacity.getEditText()).getText()));
 
-            Boolean checkInsertion = quarantineCenterController.Add_QC(QC_name,QC_address,QC_funding,QC_phoneNum,
+            Boolean checkInsertion = adminQuarantineCenterController.Add_QC(QC_name,QC_address,QC_funding,QC_phoneNum,
                     QC_bedNum,QC_capacity,QC_ventilationCapacity);
 
-            if(checkInsertion){
+            if(checkInsertion == true){
                 Toast.makeText(Admin_AddQuarantineCenter.this, "Success", Toast.LENGTH_SHORT).show();
             }else{
                 Toast.makeText(Admin_AddQuarantineCenter.this, "Failed", Toast.LENGTH_SHORT).show();

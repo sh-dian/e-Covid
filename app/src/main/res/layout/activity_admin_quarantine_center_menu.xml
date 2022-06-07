@@ -43,24 +43,23 @@
             android:textColor="@color/white"
             tools:ignore="TouchTargetSizeCheck" />
 
-        <ScrollView
-            android:layout_width="389dp"
-            android:layout_height="620dp"
+        <Button
+            android:id="@+id/a_buttonView"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="2dp"
-            android:layout_marginTop="161dp"
-            android:layout_marginEnd="0dp"
-            android:layout_marginBottom="0dp"
-            tools:ignore="SpeakableTextPresentCheck">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" />
-        </ScrollView>
+            android:layout_marginStart="209dp"
+            android:layout_marginTop="191dp"
+            android:layout_marginEnd="73dp"
+            android:layout_marginBottom="545dp"
+            android:background="@drawable/button_corner"
+            android:minHeight="48dp"
+            android:text="View Center"
+            android:textColor="@color/white"
+            tools:ignore="TouchTargetSizeCheck" />
 
     </RelativeLayout>
 
