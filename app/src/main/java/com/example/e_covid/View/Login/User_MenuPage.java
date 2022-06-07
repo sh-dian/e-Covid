@@ -7,8 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.e_covid.R;
-import com.example.e_covid.View.UserQuarantine.QuarantineType;
-import com.example.e_covid.View.UserQuarantine.UserRegistration;
+import com.example.e_covid.View.UserQuarantine.User.UserRegistration;
 
 import java.util.Objects;
 

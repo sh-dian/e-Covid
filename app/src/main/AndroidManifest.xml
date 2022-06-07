@@ -58,31 +58,31 @@
             android:name=".View.Login.LoginActivity"
             android:exported="false" /> <!-- View User Quarantine package -->
         <activity
-            android:name=".View.UserQuarantine.DailyQuestions"
+            android:name=".View.UserQuarantine.User.DailyQuestions"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.CenterQuarantineData"
+            android:name=".View.UserQuarantine.User.CenterQuarantineData"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.HomeLocation"
+            android:name=".View.UserQuarantine.User.HomeLocation"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.HomeQuarantineData"
+            android:name=".View.UserQuarantine.User.HomeQuarantineData"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.QuarantineDetails"
+            android:name=".View.UserQuarantine.User.QuarantineDetails"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.QuarantineINFO"
+            android:name=".View.UserQuarantine.User.QuarantineINFO"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.QuarantineType"
+            android:name=".View.UserQuarantine.User.QuarantineType"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.UserRegistration"
+            android:name=".View.UserQuarantine.User.UserRegistration"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.CenterQuarantineOptions"
+            android:name=".View.UserQuarantine.User.CenterQuarantineOptions"
             android:exported="false" /> <!-- View Quarantine Center package -->
         <activity
             android:name=".View.QuarantineCenter.Admin_ViewQuarantineCenter"

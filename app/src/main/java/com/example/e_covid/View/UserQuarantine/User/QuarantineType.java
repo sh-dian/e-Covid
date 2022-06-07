@@ -1,4 +1,4 @@
-package com.example.e_covid.View.UserQuarantine;
+package com.example.e_covid.View.UserQuarantine.User;
 
 import android.content.Intent;
 import android.os.Bundle;

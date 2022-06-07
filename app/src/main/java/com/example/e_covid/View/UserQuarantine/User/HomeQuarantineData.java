@@ -1,16 +1,19 @@
-package com.example.e_covid.View.UserQuarantine;
+package com.example.e_covid.View.UserQuarantine.User;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 //import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.e_covid.R;
 
-public class CenterQuarantineOptions extends AppCompatActivity {
+public class HomeQuarantineData extends AppCompatActivity {
+
+    public Button button;
 
     public ImageView Image1;
     public ImageView Image2;
@@ -18,13 +21,22 @@ public class CenterQuarantineOptions extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.center_quarantine_options);
+        setContentView(R.layout.home_quarantine_data);
 
-        Image1 = findViewById (R.id.backtoCdata);
+        button = (Button) findViewById (R.id.Save1);
+        button.setOnClickListener (new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeQuarantineData.this, HomeLocation.class);
+                startActivity(intent);
+            }
+        });
+
+        Image1 = findViewById (R.id.backto2);
         Image1.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CenterQuarantineOptions.this, CenterQuarantineData.class);
+                Intent intent = new Intent(HomeQuarantineData.this, QuarantineType.class);
                 startActivity(intent);
             }
         });
@@ -32,7 +44,7 @@ public class CenterQuarantineOptions extends AppCompatActivity {
         Image2.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CenterQuarantineOptions.this, UserRegistration.class);
+                Intent intent = new Intent(HomeQuarantineData.this, UserRegistration.class);
                 startActivity(intent);
             }
         });

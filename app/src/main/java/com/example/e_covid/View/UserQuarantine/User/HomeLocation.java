@@ -1,4 +1,4 @@
-package com.example.e_covid.View.UserQuarantine;
+package com.example.e_covid.View.UserQuarantine.User;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,8 +10,7 @@ import android.widget.ImageView;
 
 import com.example.e_covid.R;
 
-public class QuarantineINFO extends AppCompatActivity {
-
+public class HomeLocation extends AppCompatActivity {
 
     public ImageView Image1;
     public ImageView Image2;
@@ -19,15 +18,13 @@ public class QuarantineINFO extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.quarantine_info);
+        setContentView(R.layout.home_location);
 
-
-
-        Image1 = findViewById (R.id.backto3);
+        Image1 = findViewById (R.id.backtoHdata);
         Image1.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(QuarantineINFO.this, QuarantineDetails.class);
+                Intent intent = new Intent(HomeLocation.this,HomeQuarantineData.class);
                 startActivity(intent);
             }
         });
@@ -35,7 +32,7 @@ public class QuarantineINFO extends AppCompatActivity {
         Image2.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(QuarantineINFO.this, UserRegistration.class);
+                Intent intent = new Intent(HomeLocation.this, UserRegistration.class);
                 startActivity(intent);
             }
         });
