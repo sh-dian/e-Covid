@@ -46,40 +46,63 @@
             android:name=".View.Login.LoginActivity"
             android:exported="false" /> <!-- View User Quarantine package -->
         <activity
-            android:name=".View.UserQuarantine.DailyQuestions"
+            android:name=".View.UserQuarantine.AdminMOH.Admin_DashboardUserQ"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.CenterQuarantineData"
+            android:name=".View.UserQuarantine.AdminMOH.Admin_Edit_UserQ"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.HomeLocation"
+            android:name=".View.UserQuarantine.AdminMOH.Admin_Manage_Records"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.HomeQuarantineData"
+            android:name=".View.UserQuarantine.AdminMOH.AdminMOH_Manage_UserQ_Status"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.QuarantineDetails"
+            android:name=".View.UserQuarantine.AdminMOH.AdminMOH_View_Record_UserQ"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.QuarantineINFO"
+            android:name=".View.UserQuarantine.AdminMOH.MOH_Confrmation_UserQ_Record"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.QuarantineType"
+            android:name=".View.UserQuarantine.AdminMOH.MOH_DashboardUserQ"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.UserRegistration"
+            android:name=".View.UserQuarantine.User.CenterQuarantineData"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.CenterQuarantineOptions"
-            android:exported="false" /> <!-- View Quarantine Center package -->
+            android:name=".View.UserQuarantine.User.CenterQuarantineOptions"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.User.DailyQuestions"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.User.HomeLocation"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.User.HomeQuarantineData"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.User.QuarantineDetails"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.User.QuarantineINFO"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.User.QuarantineType"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.User.UserRegistration"
+            android:exported="false" />
+
+        <!-- View Quarantine Center package -->
+        <activity
+            android:name=".View.QuarantineCenter.Admin_QuarantineCenterMenu"
+            android:exported="false" />
         <activity
             android:name=".View.QuarantineCenter.Admin_ViewQuarantineCenter"
             android:exported="false" />
         <activity
             android:name=".View.QuarantineCenter.Admin_AddQuarantineCenter"
-            android:exported="false" />
-        <activity
-            android:name=".View.QuarantineCenter.Admin_QuarantineCenterMenu"
             android:exported="false" />
         <activity
             android:name=".View.QuarantineCenter.User_SearchQuarantineCenter"

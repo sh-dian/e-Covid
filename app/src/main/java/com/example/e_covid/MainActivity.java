@@ -6,9 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.e_covid.View.Login.AdminLogin;
 import com.example.e_covid.View.Login.LoginActivity;
-import com.example.e_covid.View.QuarantineCenter.Admin_AddQuarantineCenter;
-import com.example.e_covid.View.QuarantineCenter.Admin_QuarantineCenterMenu;
+import com.example.e_covid.View.Login.MOHLogin;
 
 import java.util.Objects;
 
@@ -30,12 +30,19 @@ public class MainActivity extends AppCompatActivity {
         mUser = findViewById(R.id.userPage);
         mMoh = findViewById(R.id.MOHPage);
 
-        mUser.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(intent);
-            }
+        mUser.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
+        });
+
+        mAdmin.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, AdminLogin.class);
+            startActivity(intent);
+        });
+
+        mMoh.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, MOHLogin.class);
+            startActivity(intent);
         });
     }
 }
