@@ -13,6 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ECovid">
 
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".View.QuarantineCenter.User_ViewQuarantineCenter"
+            android:exported="false" />
         <!-- Menu Page -->
         <activity
             android:name=".View.Login.User_MenuPage"
@@ -24,27 +37,14 @@
             android:name=".View.Login.Admin_MenuPage"
             android:exported="false" />
 
-
-        <!-- Controller -->
-        <activity
-            android:name=".Controller.Vaccination.VaccinationController"
-            android:exported="false" />
-
         <!-- View Login package -->
         <activity
             android:name=".View.Login.AdminLogin"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".View.Login.LoginActivity"
-            android:exported="false" />
-
-        <!-- View User Quarantine package -->
+            android:exported="false" /> <!-- View User Quarantine package -->
         <activity
             android:name=".View.UserQuarantine.DailyQuestions"
             android:exported="false" />
@@ -71,9 +71,7 @@
             android:exported="false" />
         <activity
             android:name=".View.UserQuarantine.CenterQuarantineOptions"
-            android:exported="false" />
-
-        <!-- View Quarantine Center package -->
+            android:exported="false" /> <!-- View Quarantine Center package -->
         <activity
             android:name=".View.QuarantineCenter.Admin_ViewQuarantineCenter"
             android:exported="false" />
@@ -85,20 +83,7 @@
             android:exported="false" />
         <activity
             android:name=".View.QuarantineCenter.User_SearchQuarantineCenter"
-            android:exported="false" />
-
-        <!-- View Vaccination package -->
-
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
+            android:exported="false" /> <!-- View Vaccination package -->
     </application>
 
 </manifest>

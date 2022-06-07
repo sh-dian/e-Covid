@@ -22,6 +22,7 @@ public class LoginActivity extends AppCompatActivity {
 
         mLogin = findViewById(R.id.Login);
         mLogin.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LoginActivity.this, User_MenuPage.class);

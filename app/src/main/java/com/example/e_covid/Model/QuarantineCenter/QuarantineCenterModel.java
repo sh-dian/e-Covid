@@ -12,7 +12,8 @@ public class QuarantineCenterModel extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase DB) {
-        DB.execSQL("CREATE Table QuarantineCenter(qcName TEXT primary key, address TEXT)");
+        DB.execSQL("CREATE Table QuarantineCenter(qcID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, qcName TEXT, qcAddress TEXT, qcFunding TEXT, qcPhoneNum TEXT," +
+                "qcNumOfBeds INTEGER, qcCapacity INTEGER, qcVentilationCapacity INTEGER)");
     }
 
     @Override
@@ -21,12 +22,19 @@ public class QuarantineCenterModel extends SQLiteOpenHelper {
     }
 
     //insert function
-    public Boolean insertQC_data(String qcName, String address){
+    public Boolean insertQC_data(String qcName, String qcAddress, String qcFunding, String qcPhoneNum, int qcNumOfBeds, int qcCapacity,
+                                 int qcVentilationCapacity){
+
         SQLiteDatabase DB = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
         contentValues.put("qcName", qcName);
-        contentValues.put("address", address);
+        contentValues.put("qcAddress", qcAddress);
+        contentValues.put("qcFunding", qcFunding);
+        contentValues.put("qcPhoneNum", qcPhoneNum);
+        contentValues.put("qcNumOfBeds", qcNumOfBeds);
+        contentValues.put("qcCapacity", qcCapacity);
+        contentValues.put("qcVentilationCapacity", qcVentilationCapacity);
 
         long result = DB.insert("QuarantineCenter", null, contentValues);
 
