@@ -6,4 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".View.UserQuarantine.AdminMOH.Admin_DashboardUserQ">
 
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="417dp"
+        android:layout_height="739dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/minepagewhite" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="53dp"
+        android:layout_height="55dp"
+        app:srcCompat="@drawable/ic_baseline_format_list_bulleted_24"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="103dp" />
+
 </android.support.constraint.ConstraintLayout>
