@@ -7,54 +7,32 @@
     tools:context=".View.QuarantineCenter.Admin_ViewQuarantineCenter"
     >
 
-    <EditText
+    <TextView
         android:id="@+id/qcName_input2"
-        android:layout_width="357dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="150dp"
+        android:layout_width="301dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="136dp"
         android:ems="10"
         android:hint="Quarantine Center Name"
-        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
+    <TextView
         android:id="@+id/qcAddress_input2"
-        android:layout_width="350dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="293dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Quarantine Center Address"
-        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/qcName_input2" />
-
-    <Button
-        android:id="@+id/update_button"
-        android:layout_width="315dp"
-        android:layout_height="64dp"
-        android:text="Update"
-        android:textAllCaps="false"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/qcAddress_input2"
-        app:layout_constraintVertical_bias="0.134" />
-
-    <Button
-        android:id="@+id/delete_button"
-        android:layout_width="315dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="52dp"
-        android:text="Delete"
-        android:textAllCaps="false"
-        android:textColor="@color/red"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/update_button" />
 
 </android.support.constraint.ConstraintLayout>

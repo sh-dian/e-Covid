@@ -1,6 +1,5 @@
 package com.example.e_covid.Adapter;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -13,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.e_covid.R;
-import com.example.e_covid.View.QuarantineCenter.Admin_QuarantineCenterMenu;
+import com.example.e_covid.View.QuarantineCenter.Admin_ViewQuarantineCenter;
 
 import java.util.ArrayList;
 
@@ -40,16 +39,16 @@ public class QuarantineCenterAdapter extends RecyclerView.Adapter<QuarantineCent
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final MyViewHolder holder, @SuppressLint("RecyclerView") int position ) {
+    public void onBindViewHolder(@NonNull final MyViewHolder holder, int position ) {
         holder.qcName_txt.setText(String.valueOf(qcName.get(position)));
         holder.qcAddress_txt.setText(String.valueOf(qcAddress.get(position)));
 
         //Recyclerview onClickListener
         holder.mainLayout.setOnClickListener(view -> {
-            Intent intent = new Intent(context, Admin_QuarantineCenterMenu.class);
-            intent.putExtra("qcName", String.valueOf(qcName.get(position)));
-            intent.putExtra("qcAddress", String.valueOf(qcAddress.get(position)));
-            activity.startActivityForResult(intent, 1);
+            Intent intent = new Intent(context, Admin_ViewQuarantineCenter.class);
+            intent.putExtra("name", String.valueOf(qcName.get(position)));
+            intent.putExtra("address", String.valueOf(qcAddress.get(position)));
+            context.startActivity(intent);
         });
     }
 
