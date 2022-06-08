@@ -6,61 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".View.QuarantineCenter.Admin_QuarantineCenterMenu">
 
-    <RelativeLayout
-        android:layout_width="391dp"
-        android:layout_height="781dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+    <Button
+        android:id="@+id/a_buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_corner"
+        android:text="Add"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146" />
 
-        <TextView
-            android:layout_width="342dp"
-            android:layout_height="55dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="27dp"
-            android:layout_marginTop="37dp"
-            android:layout_marginEnd="22dp"
-            android:text="Quarantine Center Record"
-            android:textSize="28sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quarantine Center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
 
-        <Button
-            android:id="@+id/a_buttonAdd"
-            android:layout_width="109dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="211dp"
-            android:layout_marginTop="111dp"
-            android:layout_marginEnd="71dp"
-            android:layout_marginBottom="625dp"
-            android:background="@drawable/button_corner"
-            android:minHeight="48dp"
-            android:text="Add Center"
-            android:textColor="@color/white"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <Button
-            android:id="@+id/a_buttonView"
-            android:layout_width="109dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="209dp"
-            android:layout_marginTop="191dp"
-            android:layout_marginEnd="73dp"
-            android:layout_marginBottom="545dp"
-            android:background="@drawable/button_corner"
-            android:minHeight="48dp"
-            android:text="View Center"
-            android:textColor="@color/white"
-            tools:ignore="TouchTargetSizeCheck" />
-
-    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

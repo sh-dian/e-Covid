@@ -8,9 +8,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class QuarantineCenterModel extends SQLiteOpenHelper {
     public QuarantineCenterModel(Context context) {
-        super(context, "e-Covid.db", null, 1);
+        super(context, "Database/e-Covid.db", null, 1);
     }
-
     @Override
     public void onCreate(SQLiteDatabase DB) {
         DB.execSQL("CREATE Table QuarantineCenter(qcID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, qcName TEXT, qcAddress TEXT, qcFunding TEXT, qcPhoneNum TEXT," +
@@ -39,7 +38,7 @@ public class QuarantineCenterModel extends SQLiteOpenHelper {
 
         long result = DB.insert("QuarantineCenter", null, contentValues);
 
-        if(result == 1){
+        if(result == -1){
             return false;
         }else{
             return true;
