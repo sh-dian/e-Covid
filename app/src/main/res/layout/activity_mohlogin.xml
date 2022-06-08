@@ -24,7 +24,7 @@
 
     <android.support.design.widget.TextInputEditText
 
-        android:id="@+id/username"
+        android:id="@+id/moh_username"
         android:layout_width="292dp"
         android:layout_height="48dp"
         android:background="@drawable/radius"
@@ -40,7 +40,7 @@
         tools:ignore="HardcodedText" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/moh_password"
         android:layout_width="292dp"
         android:layout_height="48dp"
         android:autofillHints="password"
@@ -59,7 +59,7 @@
         tools:ignore="HardcodedText" />
 
     <Button
-        android:id="@+id/Login"
+        android:id="@+id/moh_Login"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:background="@drawable/radius"
@@ -98,7 +98,6 @@
         tools:ignore="ContentDescription" />
 
     <ImageView
-        android:id="@+id/imageView5"
         android:layout_width="237dp"
         android:layout_height="241dp"
         app:layout_constraintBottom_toBottomOf="parent"
