@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
 import com.example.e_covid.View.Login.AdminLogin;
-import com.example.e_covid.View.Login.Admin_MenuPage;
 import com.example.e_covid.View.Login.LoginActivity;
 import com.example.e_covid.View.Login.MOHLogin;
 
@@ -41,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openAdminLogin() {
-        Intent intent = new Intent(MainActivity.this, Admin_MenuPage.class);
+        Intent intent = new Intent(MainActivity.this, AdminLogin.class);
         startActivity(intent);
     }
 
