@@ -65,14 +65,15 @@
         <Button
             android:id="@+id/Add_dependents"
             android:layout_width="150dp"
-            android:layout_height="40dp"
+            android:layout_height="48dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="139dp"
             android:layout_marginBottom="127dp"
             android:background="@drawable/radius"
             android:text="@string/add_dependents"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/name_dependent"
@@ -127,7 +128,7 @@
             android:inputType="number"
             android:textColor="@color/white"
             android:textColorHint="#FFFFFF"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/age"
