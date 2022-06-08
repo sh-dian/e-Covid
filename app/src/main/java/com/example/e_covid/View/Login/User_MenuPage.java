@@ -7,14 +7,16 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.e_covid.R;
+import com.example.e_covid.View.QuarantineCenter.User_SearchQuarantineCenter;
+import com.example.e_covid.View.QuarantineCenter.User_ViewQuarantineCenter;
 import com.example.e_covid.View.UserQuarantine.User.UserRegistration;
 
 import java.util.Objects;
 
 public class User_MenuPage extends AppCompatActivity {
 
-    public Button button4;
-
+    Button mUserProfile;
+    Button mQuarantineCenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +26,29 @@ public class User_MenuPage extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_user_menu_page);
 
+        mUserProfile = findViewById (R.id.userProfile);
+        mQuarantineCenter = findViewById (R.id.qcBtn);
 
-
-    button4 = (Button) findViewById (R.id.button4);
-        button4.setOnClickListener (new View.OnClickListener() {
+        mUserProfile.setOnClickListener (new View.OnClickListener() {
         public void onClick(View v) {
-            Intent intent = new Intent(User_MenuPage.this, UserRegistration.class);
-            startActivity(intent);
+            userProfile();
         }
     });
+
+        mQuarantineCenter.setOnClickListener (new View.OnClickListener() {
+            public void onClick(View v) {
+                quarantineCenter();
+            }
+        });
 }
+
+    private void quarantineCenter() {
+        Intent intent = new Intent(User_MenuPage.this, User_SearchQuarantineCenter.class);
+        startActivity(intent);
+    }
+
+    private void userProfile() {
+        Intent intent = new Intent(User_MenuPage.this, ManageProfile.class);
+        startActivity(intent);
+    }
 }
