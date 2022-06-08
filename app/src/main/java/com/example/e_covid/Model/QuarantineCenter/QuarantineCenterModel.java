@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class QuarantineCenterModel extends SQLiteOpenHelper {
     public QuarantineCenterModel(Context context) {
-        super(context, "Database/e-Covid.db", null, 1);
+        super(context, "e-Covid.db", null, 1);
     }
     @Override
     public void onCreate(SQLiteDatabase DB) {
@@ -38,16 +38,11 @@ public class QuarantineCenterModel extends SQLiteOpenHelper {
 
         long result = DB.insert("QuarantineCenter", null, contentValues);
 
-        if(result == -1){
-            return false;
-        }else{
-            return true;
-        }
+        return result != 1;
     }
 
     public Cursor getData(){
         SQLiteDatabase DB = this.getWritableDatabase();
-        Cursor cursor = DB.rawQuery("SELECT * FROM QuarantineCenter", null);
-        return cursor;
+        return DB.rawQuery("SELECT * FROM QuarantineCenter", null);
     }
 }
