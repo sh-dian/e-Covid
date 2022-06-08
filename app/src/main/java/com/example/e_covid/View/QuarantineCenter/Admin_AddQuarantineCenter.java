@@ -1,5 +1,6 @@
 package com.example.e_covid.View.QuarantineCenter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -73,6 +74,9 @@ public class Admin_AddQuarantineCenter extends AppCompatActivity {
             }else{
                 Toast.makeText(Admin_AddQuarantineCenter.this, "Failed", Toast.LENGTH_SHORT).show();
             }
+
+            Intent intent = new Intent(Admin_AddQuarantineCenter.this, Admin_QuarantineCenterMenu.class);
+            startActivity(intent);
         });
 
     }

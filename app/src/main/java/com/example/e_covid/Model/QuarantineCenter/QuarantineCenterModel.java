@@ -41,8 +41,14 @@ public class QuarantineCenterModel extends SQLiteOpenHelper {
         return result != 1;
     }
 
-    public Cursor getData(){
-        SQLiteDatabase DB = this.getWritableDatabase();
-        return DB.rawQuery("SELECT * FROM QuarantineCenter", null);
+    public Cursor readAllData(){
+        String query = "SELECT * FROM QuarantineCenter";
+        SQLiteDatabase DB = this.getReadableDatabase();
+
+        Cursor cursor = null;
+        if(DB != null){
+            cursor = DB.rawQuery(query, null);
+        }
+        return cursor;
     }
 }

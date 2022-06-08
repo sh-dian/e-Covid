@@ -1,12 +1,20 @@
 package com.example.e_covid.View.QuarantineCenter;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.widget.Button;
+import android.widget.Toast;
 
+import com.example.e_covid.Adapter.CustomAdapter;
 import com.example.e_covid.Controller.QuarantineCenter.QuarantineCenterController;
+import com.example.e_covid.Model.QuarantineCenter.QuarantineCenterModel;
 import com.example.e_covid.R;
+
+import java.util.ArrayList;
 
 public class Admin_QuarantineCenterMenu extends AppCompatActivity {
 
@@ -15,6 +23,12 @@ public class Admin_QuarantineCenterMenu extends AppCompatActivity {
 
     //Button object
     Button a_Add;
+
+
+    QuarantineCenterModel quarantineCenterModel;
+    ArrayList<String> qcName;
+    CustomAdapter customAdapter;
+    RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,10 +40,31 @@ public class Admin_QuarantineCenterMenu extends AppCompatActivity {
         a_Add.setOnClickListener(view -> {
             addPage();
         });
+
+        recyclerView = findViewById(R.id.recyclerView);
+        quarantineCenterModel = new QuarantineCenterModel(this);
+        qcName = new ArrayList<>();
+
+        storeDataInArrays();
+
+        customAdapter = new CustomAdapter(Admin_QuarantineCenterMenu.this, qcName);
+        recyclerView.setAdapter(customAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(Admin_QuarantineCenterMenu.this));
     }
 
     private void addPage() {
         Intent intent = new Intent(Admin_QuarantineCenterMenu.this, Admin_AddQuarantineCenter.class);
         startActivity(intent);
+    }
+
+    void storeDataInArrays(){
+        Cursor cursor = quarantineCenterModel.readAllData();
+        if(cursor.getCount() == 0){
+            Toast.makeText(this,"No data", Toast.LENGTH_SHORT).show();
+        }else{
+            while(cursor.moveToNext()){
+                qcName.add(cursor.getString(1));
+            }
+        }
     }
 }
