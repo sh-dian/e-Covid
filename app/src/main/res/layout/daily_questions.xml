@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.UserQuarantine.DailyQuestions">
+    tools:context=".View.UserQuarantine.User.DailyQuestions">
 
     <ImageView
         android:id="@+id/imageView10"

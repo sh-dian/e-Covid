@@ -1,4 +1,4 @@
-package com.example.e_covid.View.UserQuarantine;
+package com.example.e_covid.View.UserQuarantine.User;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,9 +11,10 @@ import android.widget.ImageView;
 
 import com.example.e_covid.R;
 
-public class HomeQuarantineData extends AppCompatActivity {
+public class QuarantineDetails extends AppCompatActivity {
 
     public Button button;
+    public Button button1;
 
     public ImageView Image1;
     public ImageView Image2;
@@ -21,22 +22,31 @@ public class HomeQuarantineData extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_quarantine_data);
+        setContentView(R.layout.quarantine_details);
 
-        button = (Button) findViewById (R.id.Save1);
+
+        button = (Button) findViewById (R.id.viewQ);
         button.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeQuarantineData.this, HomeLocation.class);
+                Intent intent = new Intent(QuarantineDetails.this, QuarantineINFO.class);
+                startActivity(intent);
+            }
+        });
+        button1 = (Button) findViewById (R.id.dailyQ);
+        button1.setOnClickListener (new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(QuarantineDetails.this, DailyQuestions.class);
                 startActivity(intent);
             }
         });
 
-        Image1 = findViewById (R.id.backto2);
+        Image1 = findViewById (R.id.backto1);
         Image1.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeQuarantineData.this, QuarantineType.class);
+                Intent intent = new Intent(QuarantineDetails.this, QuarantineType.class);
                 startActivity(intent);
             }
         });
@@ -44,7 +54,7 @@ public class HomeQuarantineData extends AppCompatActivity {
         Image2.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeQuarantineData.this, UserRegistration.class);
+                Intent intent = new Intent(QuarantineDetails.this, UserRegistration.class);
                 startActivity(intent);
             }
         });

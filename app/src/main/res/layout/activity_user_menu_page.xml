@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".View.Login.User_MenuPage">
 
     <RelativeLayout
@@ -125,7 +125,7 @@
             tools:ignore="HardcodedText,DuplicateSpeakableTextCheck" />
 
         <Button
-            android:id="@+id/quarantineCenter_button"
+            android:id="@+id/qcBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"

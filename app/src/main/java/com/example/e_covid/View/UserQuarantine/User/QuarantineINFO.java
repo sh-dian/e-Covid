@@ -1,19 +1,17 @@
-package com.example.e_covid.View.UserQuarantine;
+package com.example.e_covid.View.UserQuarantine.User;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
 //import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.e_covid.R;
 
-public class CenterQuarantineData extends AppCompatActivity {
+public class QuarantineINFO extends AppCompatActivity {
 
-    public Button button;
 
     public ImageView Image1;
     public ImageView Image2;
@@ -21,24 +19,15 @@ public class CenterQuarantineData extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.center_quarantine_data);
+        setContentView(R.layout.quarantine_info);
 
 
-/*
-        button = (Button) findViewById (R.id.save2);
-        button.setOnClickListener (new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(CenterQuarantineData.this, CenterQuarantineOptions.class);
-                startActivity(intent);
-            }
-        });
 
-        Image1 = findViewById (R.id.backto2);
+        Image1 = findViewById (R.id.backto3);
         Image1.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CenterQuarantineData.this, QuarantineType.class);
+                Intent intent = new Intent(QuarantineINFO.this, QuarantineDetails.class);
                 startActivity(intent);
             }
         });
@@ -46,9 +35,9 @@ public class CenterQuarantineData extends AppCompatActivity {
         Image2.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CenterQuarantineData.this, UserRegistration.class);
+                Intent intent = new Intent(QuarantineINFO.this, UserRegistration.class);
                 startActivity(intent);
             }
-        });*/
+        });
     }
 }

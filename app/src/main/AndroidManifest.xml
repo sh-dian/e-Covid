@@ -12,45 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ECovid">
-        <activity
-            android:name=".View.Login.AdminLogin"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".View.Login.User_MenuPage"
-            android:exported="false" /> <!-- Menu Page -->
-        <activity
-            android:name=".View.Login.MOH_MenuPage"
-            android:exported="false" />
-        <activity
-            android:name=".View.Login.Admin_MenuPage"
-            android:exported="false" /> <!-- Controller -->
-        <activity
-            android:name=".Controller.Vaccination.VaccinationController"
-            android:exported="false" /> <!-- View -->
-        <activity
-            android:name=".View.QuarantineCenter.Admin_ViewQuarantineCenter"
-            android:exported="false" />
-        <activity
-            android:name=".View.QuarantineCenter.Admin_AddQuarantineCenter"
-            android:exported="false" />
-        <activity
-            android:name=".View.QuarantineCenter.Admin_QuarantineCenterMenu"
-            android:exported="false" />
-        <activity
-            android:name=".View.QuarantineCenter.User_SearchQuarantineCenter"
-            android:exported="false" />
-        <activity
-            android:name=".View.Login.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Controller.CheckIn_CheckOut.dumpClass"
-            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -60,6 +22,114 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".View.QuarantineCenter.User_ViewQuarantineCenter"
+            android:exported="false" />
+        <!-- Menu Page -->
+        <activity
+            android:name=".View.Login.User_MenuPage"
+            android:exported="false" />
+        <activity
+            android:name=".View.Login.MOH_MenuPage"
+            android:exported="false" />
+        <activity
+            android:name=".View.Login.Admin_MenuPage"
+            android:exported="false" />
+
+        <!-- View Login package -->
+        <activity
+            android:name=".View.Login.AdminLogin"
+            android:exported="true"/>
+        <activity
+            android:name=".View.Login.EditDependent"
+            android:exported="false" />
+        <activity
+            android:name=".View.Login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.Login.ManageDependentProfile"
+            android:exported="false" />
+        <activity
+            android:name=".View.Login.ManageProfile"
+            android:exported="false" />
+        <activity
+            android:name=".View.Login.MOHLogin"
+            android:exported="false" />
+        <activity
+            android:name=".View.Login.registration"
+            android:exported="false" />
+        <activity
+            android:name=".View.Login.RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.Login.updateUserProfile"
+            android:exported="false" />
+
+
+        <!-- View User Quarantine package -->
+        <activity
+            android:name=".View.UserQuarantine.AdminMOH.Admin_DashboardUserQ"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.AdminMOH.Admin_Edit_UserQ"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.AdminMOH.Admin_Manage_Records"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.AdminMOH.AdminMOH_Manage_UserQ_Status"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.AdminMOH.AdminMOH_View_Record_UserQ"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.AdminMOH.MOH_Confrmation_UserQ_Record"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.AdminMOH.MOH_DashboardUserQ"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.User.CenterQuarantineData"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.User.CenterQuarantineOptions"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.User.DailyQuestions"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.User.HomeLocation"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.User.HomeQuarantineData"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.User.QuarantineDetails"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.User.QuarantineINFO"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.User.QuarantineType"
+            android:exported="false" />
+        <activity
+            android:name=".View.UserQuarantine.User.UserRegistration"
+            android:exported="false" />
+
+        <!-- View Quarantine Center package -->
+        <activity
+            android:name=".View.QuarantineCenter.Admin_QuarantineCenterMenu"
+            android:exported="false" />
+        <activity
+            android:name=".View.QuarantineCenter.Admin_ViewQuarantineCenter"
+            android:exported="false" />
+        <activity
+            android:name=".View.QuarantineCenter.Admin_AddQuarantineCenter"
+            android:exported="false" />
+        <activity
+            android:name=".View.QuarantineCenter.User_SearchQuarantineCenter"
+            android:exported="false" /> <!-- View Vaccination package -->
     </application>
 
 </manifest>
