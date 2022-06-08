@@ -1,4 +1,4 @@
-package com.example.e_covid.View.CheckIn_CheckOut;
+package com.example.e_covid.View.CheckIn_CheckOut.user;
 
 import android.os.Bundle;
 
