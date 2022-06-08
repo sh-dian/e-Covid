@@ -13,6 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ECovid">
         <activity
+            android:name=".View.Vaccination.RegisterVaccinationCertificate"
+            android:exported="false" />
+        <activity
+            android:name=".View.Vaccination.DependentVaccineDetails"
+            android:exported="false" />
+        <activity
+            android:name=".View.Vaccination.DependentVaccineStatus"
+            android:exported="false" />
+        <activity
+            android:name=".View.Vaccination.RegisterAppointment"
+            android:exported="false" />
+        <activity
             android:name=".View.Vaccination.ViewAppointment"
             android:exported="false" />
         <activity
