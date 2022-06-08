@@ -22,7 +22,7 @@ public class QuarantineType extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.quarantine_type);
+        setContentView(R.layout.activity_quarantine_type);
 
         button1 = (Button) findViewById (R.id.HomeQ);
 

@@ -10,6 +10,6 @@ public class Admin_DashboardUserQ extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.admin_dashboard_user_q);
+        setContentView(R.layout.activity_admin_dashboard_user_q);
     }
 }

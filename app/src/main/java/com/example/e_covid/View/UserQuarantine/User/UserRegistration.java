@@ -17,7 +17,7 @@ public class UserRegistration extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.user_registration);
+        setContentView(R.layout.activity_user_registration);
 
         button = (Button) findViewById (R.id.Registration);
         button.setOnClickListener (new View.OnClickListener() {

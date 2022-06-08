@@ -10,6 +10,6 @@ public class MOH_Confrmation_UserQ_Record extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.moh_confrmation_user_qrecord);
+        setContentView(R.layout.activity_moh_confrmation_user_qrecord);
     }
 }

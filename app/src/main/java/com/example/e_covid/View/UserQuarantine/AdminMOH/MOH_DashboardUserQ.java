@@ -10,6 +10,6 @@ public class MOH_DashboardUserQ extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.moh_dashboard_user_q);
+        setContentView(R.layout.activity_moh_dashboard_user_q);
     }
 }

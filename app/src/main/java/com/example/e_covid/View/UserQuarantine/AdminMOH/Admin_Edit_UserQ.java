@@ -10,6 +10,6 @@ public class Admin_Edit_UserQ extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.admin_edit_user_q);
+        setContentView(R.layout.activity_admin_edit_user_q);
     }
 }

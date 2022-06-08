@@ -21,7 +21,7 @@ public class HomeQuarantineData extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_quarantine_data);
+        setContentView(R.layout.activity_home_quarantine_data);
 
         button = (Button) findViewById (R.id.Save1);
         button.setOnClickListener (new View.OnClickListener() {
