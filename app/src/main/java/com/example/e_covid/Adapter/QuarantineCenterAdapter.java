@@ -17,15 +17,18 @@ import com.example.e_covid.View.QuarantineCenter.Admin_QuarantineCenterMenu;
 
 import java.util.ArrayList;
 
-public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
+public class QuarantineCenterAdapter extends RecyclerView.Adapter<QuarantineCenterAdapter.MyViewHolder> {
 
     private final Context context;
     private Activity activity;
     private final ArrayList qcName;
+    private final ArrayList qcAddress;
+    private int position;
 
-    public CustomAdapter(Context context, ArrayList qcName){
+    public QuarantineCenterAdapter(Context context, ArrayList qcName , ArrayList qcAddress){
         this.context = context;
         this.qcName = qcName;
+        this.qcAddress = qcAddress;
     }
 
     @NonNull
@@ -38,13 +41,14 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     @Override
     public void onBindViewHolder(@NonNull final MyViewHolder holder, @SuppressLint("RecyclerView") int position ) {
-
         holder.qcName_txt.setText(String.valueOf(qcName.get(position)));
+        holder.qcAddress_txt.setText(String.valueOf(qcAddress.get(position)));
 
         //Recyclerview onClickListener
         holder.mainLayout.setOnClickListener(view -> {
             Intent intent = new Intent(context, Admin_QuarantineCenterMenu.class);
-            intent.putExtra("id", String.valueOf(qcName.get(position)));
+            intent.putExtra("qcName", String.valueOf(qcName.get(position)));
+            intent.putExtra("qcAddress", String.valueOf(qcAddress.get(position)));
             activity.startActivityForResult(intent, 1);
         });
     }
@@ -57,11 +61,14 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     static class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView qcName_txt;
+        TextView qcAddress_txt;
+
         LinearLayout mainLayout;
 
         MyViewHolder(@NonNull View itemView) {
             super(itemView);
             qcName_txt = itemView.findViewById(R.id.qcName_txt);
+            qcAddress_txt = itemView.findViewById(R.id.qcAddress_txt);
             mainLayout = itemView.findViewById(R.id.mainLayout);
         }
 

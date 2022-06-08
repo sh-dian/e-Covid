@@ -4,6 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.QuarantineCenter.Admin_ViewQuarantineCenter">
+    tools:context=".View.QuarantineCenter.Admin_ViewQuarantineCenter"
+    >
+
+    <EditText
+        android:id="@+id/qcName_input2"
+        android:layout_width="357dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:hint="Quarantine Center Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/qcAddress_input2"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Quarantine Center Address"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qcName_input2" />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="315dp"
+        android:layout_height="64dp"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qcAddress_input2"
+        app:layout_constraintVertical_bias="0.134" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="315dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="52dp"
+        android:text="Delete"
+        android:textAllCaps="false"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_button" />
 
 </android.support.constraint.ConstraintLayout>

@@ -8,7 +8,7 @@ import android.widget.Button;
 
 import com.example.e_covid.R;
 import com.example.e_covid.View.CheckIn_CheckOut.MovementMain;
-import com.example.e_covid.View.QuarantineCenter.Admin_QuarantineCenterMenu;
+import com.example.e_covid.View.QuarantineCenter.User_SearchQuarantineCenter;
 
 import java.util.Objects;
 
@@ -53,7 +53,7 @@ public class User_MenuPage extends AppCompatActivity {
     }
 
     private void quarantineCenter() {
-        Intent intent = new Intent(User_MenuPage.this, Admin_QuarantineCenterMenu.class);
+        Intent intent = new Intent(User_MenuPage.this, User_SearchQuarantineCenter.class);
         startActivity(intent);
     }
 
