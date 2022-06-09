@@ -61,7 +61,7 @@
     <Button
         android:id="@+id/moh_Login"
         android:layout_width="wrap_content"
-        android:layout_height="35dp"
+        android:layout_height="48dp"
         android:background="@drawable/radius"
         android:text="login"
         android:textColor="#FFFFFF"

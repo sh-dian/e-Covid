@@ -18,7 +18,7 @@ public class CenterQuarantineOptions extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.center_quarantine_options);
+        setContentView(R.layout.activity_center_quarantine_options);
 
         Image1 = findViewById (R.id.backtoCdata);
         Image1.setOnClickListener (new View.OnClickListener() {

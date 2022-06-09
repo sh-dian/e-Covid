@@ -18,7 +18,7 @@ public class HomeLocation extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_location);
+        setContentView(R.layout.activity_home_location);
 
         Image1 = findViewById (R.id.backtoHdata);
         Image1.setOnClickListener (new View.OnClickListener() {

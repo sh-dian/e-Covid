@@ -12,34 +12,6 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="2dp">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="152dp"
-            android:layout_height="45dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="115dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="124dp"
-            android:text="Hi, I'm e-Covid"
-            android:textColor="#FFFFFF"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
-
-        <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="62dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="11dp"
-            android:layout_marginEnd="345dp"
-            android:background="@null"
-            android:contentDescription="@string/back_Button"
-            android:src="@drawable/ic_baseline_arrow_back_24"
-            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
         <ImageView
             android:layout_width="217dp"
             android:layout_height="211dp"
@@ -48,15 +20,83 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="71dp"
-            android:layout_marginTop="109dp"
+            android:layout_marginTop="68dp"
             android:layout_marginEnd="103dp"
-            android:layout_marginBottom="461dp"
+            android:layout_marginBottom="502dp"
             android:contentDescription="@string/back_Button"
             android:src="@drawable/logo"
             tools:ignore="ImageContrastCheck" />
 
         <Button
-            android:id="@+id/qcMenu_button"
+            android:id="@+id/aManageUserBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="288dp"
+            android:layout_marginEnd="96dp"
+            android:layout_marginBottom="436dp"
+            android:background="@drawable/button_corner"
+            android:text="MANAGE USER"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/aCheckIn_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="354dp"
+            android:layout_marginEnd="98dp"
+            android:layout_marginBottom="370dp"
+            android:background="@drawable/button_corner"
+            android:text="MANAGE MOVEMENT"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/aUserQuarantine_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="492dp"
+            android:layout_marginEnd="98dp"
+            android:layout_marginBottom="232dp"
+            android:background="@drawable/button_corner"
+            android:text="MANAGE USER QUARANTINE"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/aVaccinationBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="422dp"
+            android:layout_marginEnd="98dp"
+            android:layout_marginBottom="302dp"
+            android:background="@drawable/button_corner"
+            android:text="MANAGE VACCINATION"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/aQC_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -64,9 +104,9 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="69dp"
-            android:layout_marginTop="378dp"
+            android:layout_marginTop="561dp"
             android:layout_marginEnd="100dp"
-            android:layout_marginBottom="346dp"
+            android:layout_marginBottom="163dp"
             android:background="@drawable/button_corner"
             android:text="QUARANTINE CENTER"
             android:textColor="@color/white"

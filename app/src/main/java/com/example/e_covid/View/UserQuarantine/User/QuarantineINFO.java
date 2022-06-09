@@ -19,7 +19,7 @@ public class QuarantineINFO extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.quarantine_info);
+        setContentView(R.layout.activity_quarantine_info);
 
 
 

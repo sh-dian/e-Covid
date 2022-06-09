@@ -18,7 +18,7 @@ public class DailyQuestions extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.daily_questions);
+        setContentView(R.layout.activity_daily_questions);
 
         Image1 = findViewById (R.id.backto3);
         Image1.setOnClickListener (new View.OnClickListener() {

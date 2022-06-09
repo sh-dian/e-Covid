@@ -3,14 +3,18 @@ package com.example.e_covid.View.QuarantineCenter;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.e_covid.Adapter.QuarantineCenterAdapter;
 import com.example.e_covid.Controller.QuarantineCenter.QuarantineCenterController;
+import com.example.e_covid.Model.QuarantineCenter.QuarantineCenterModel;
 import com.example.e_covid.R;
+
+import java.util.ArrayList;
 
 public class Admin_QuarantineCenterMenu extends AppCompatActivity {
 
@@ -19,7 +23,11 @@ public class Admin_QuarantineCenterMenu extends AppCompatActivity {
 
     //Button object
     Button a_Add;
-    Button a_View;
+
+    QuarantineCenterModel quarantineCenterModel;
+    ArrayList<String> qcName, qcAddress;
+    QuarantineCenterAdapter quarantineCenterAdapter;
+    RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,41 +35,38 @@ public class Admin_QuarantineCenterMenu extends AppCompatActivity {
         setContentView(R.layout.activity_admin_quarantine_center_menu);
 
         a_Add = findViewById(R.id.a_buttonAdd);
-        a_View = findViewById(R.id.a_buttonView);
-        adminQuarantineCenterController = new QuarantineCenterController(this);
 
         a_Add.setOnClickListener(view -> {
             addPage();
         });
 
-        a_View.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Cursor res = adminQuarantineCenterController.getData();
+        recyclerView = findViewById(R.id.recyclerView);
+        quarantineCenterModel = new QuarantineCenterModel(this);
+        qcName = new ArrayList<>();
+        qcAddress = new ArrayList<>();
 
-                if(res.getCount() == 0){
-                    Toast.makeText(Admin_QuarantineCenterMenu.this,"No Entry Exists", Toast.LENGTH_SHORT).show();
-                    return;
-                }
+        storeDataInArrays();
 
-                StringBuffer buffer = new StringBuffer();
+        quarantineCenterAdapter = new QuarantineCenterAdapter(Admin_QuarantineCenterMenu.this, qcName, qcAddress);
+        recyclerView.setAdapter(quarantineCenterAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(Admin_QuarantineCenterMenu.this));
 
-                while(res.moveToNext()){
-                    buffer.append("Quarantine Center Name: "+res.getString(1)+"\n");
-                }
-
-                AlertDialog.Builder builder = new AlertDialog.Builder(Admin_QuarantineCenterMenu.this);
-                builder.setCancelable(true);
-                builder.setTitle("Quarantine Center Entries");
-                builder.setMessage(buffer.toString());
-                builder.show();
-
-            }
-        });
     }
 
     private void addPage() {
         Intent intent = new Intent(Admin_QuarantineCenterMenu.this, Admin_AddQuarantineCenter.class);
         startActivity(intent);
+    }
+
+    void storeDataInArrays(){
+        Cursor cursor = quarantineCenterModel.readAllData();
+        if(cursor.getCount() == 0){
+            Toast.makeText(this,"No data", Toast.LENGTH_SHORT).show();
+        }else{
+            while(cursor.moveToNext()){
+                qcName.add(cursor.getString(1));
+                qcAddress.add(cursor.getString(2));
+            }
+        }
     }
 }

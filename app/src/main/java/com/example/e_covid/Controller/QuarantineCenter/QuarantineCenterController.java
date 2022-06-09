@@ -18,6 +18,6 @@ public class QuarantineCenterController {
     }
 
     public Cursor getData() {
-        return model.getData();
+        return model.readAllData();
     }
 }

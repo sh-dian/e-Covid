@@ -13,6 +13,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ECovid">
         <activity
+            android:name=".View.CheckIn_CheckOut.QR_Scan"
+            android:exported="false" />
+        <activity
+            android:name=".View.CheckIn_CheckOut.CheckIn_VisitorForm"
+            android:exported="false" />
+        <activity
+            android:name=".View.CheckIn_CheckOut.CheckOut_Info"
+            android:exported="false" />
+        <activity
+            android:name=".View.CheckIn_CheckOut.CheckIn_Info"
+            android:exported="false" />
+        <activity
+            android:name=".View.CheckIn_CheckOut.MovementHistory"
+            android:exported="false" />
+        <activity
+            android:name=".View.CheckIn_CheckOut.MovementMain"
+            android:exported="false" />
+        <activity
             android:name=".View.CheckIn_CheckOut.user.apaapa"
             android:exported="false" />
         <activity
@@ -33,7 +51,6 @@
         <activity
             android:name=".View.Vaccination.RegisterAppointment"
             android:exported="false" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -43,11 +60,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".View.QuarantineCenter.User_ViewQuarantineCenter"
-            android:exported="false" />
-        <!-- Menu Page -->
+            android:exported="false" /> <!-- Menu Page -->
         <activity
             android:name=".View.Login.User_MenuPage"
             android:exported="false" />
@@ -56,12 +71,10 @@
             android:exported="false" />
         <activity
             android:name=".View.Login.Admin_MenuPage"
-            android:exported="false" />
-
-        <!-- View Login package -->
+            android:exported="false" /> <!-- View Login package -->
         <activity
             android:name=".View.Login.AdminLogin"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".View.Login.EditDependent"
             android:exported="false" />
@@ -85,10 +98,7 @@
             android:exported="false" />
         <activity
             android:name=".View.Login.updateUserProfile"
-            android:exported="false" />
-
-
-        <!-- View User Quarantine package -->
+            android:exported="false" /> <!-- View User Quarantine package -->
         <activity
             android:name=".View.UserQuarantine.AdminMOH.Admin_DashboardUserQ"
             android:exported="false" />
@@ -136,9 +146,7 @@
             android:exported="false" />
         <activity
             android:name=".View.UserQuarantine.User.UserRegistration"
-            android:exported="false" />
-
-        <!-- View Quarantine Center package -->
+            android:exported="false" /> <!-- View Quarantine Center package -->
         <activity
             android:name=".View.QuarantineCenter.Admin_QuarantineCenterMenu"
             android:exported="false" />
@@ -151,6 +159,12 @@
         <activity
             android:name=".View.QuarantineCenter.User_SearchQuarantineCenter"
             android:exported="false" /> <!-- View Vaccination package -->
+        <activity
+            android:name=".View.Movement.checkin_visitorForm"
+            android:exported="false" />
+        <activity
+            android:name=".View.Movement.checkoutInfo"
+            android:exported="false" />
     </application>
 
 </manifest>
