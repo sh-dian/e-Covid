@@ -34,4 +34,7 @@
     <string name="update">Update</string>
     <string name="profile_manage_dependent">Manage Dependent</string>
     <string name="vaccine_certificate">VACCINE CERTIFICATE</string>
+    <string name="cal1">View information user quarantine record</string>
+
+
 </resources>
