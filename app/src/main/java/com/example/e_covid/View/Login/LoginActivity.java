@@ -13,6 +13,7 @@ import java.util.Objects;
 public class LoginActivity extends AppCompatActivity {
 
     Button mLogin;
+    Button mRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,15 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         mLogin = findViewById(R.id.Login);
+        mRegister = findViewById(R.id.RegistrationPage);
+         mRegister.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent intent = new Intent(LoginActivity.this, registration.class);
+                 startActivity(intent);
+             }
+         });
+
         mLogin.setOnClickListener(new View.OnClickListener() {
 
             @Override

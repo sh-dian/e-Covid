@@ -8,23 +8,6 @@
     tools:context=".View.Login.LoginActivity">
 
     <Button
-        android:id="@+id/forgot_password"
-        android:layout_width="154dp"
-        android:layout_height="22dp"
-        android:background="@null"
-        android:ems="4"
-        android:inputType="textPersonName"
-        android:text="@string/forgot_password"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.766"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.674"
-        tools:ignore="TextViewEdits" />
-
-    <Button
         android:id="@+id/RegistrationPage"
         android:layout_width="127dp"
         android:layout_height="38dp"
@@ -35,10 +18,9 @@
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.692"
+        app:layout_constraintVertical_bias="0.685"
         tools:ignore="HardcodedText" />
 
     <TextView
@@ -109,10 +91,10 @@
         android:layout_height="41dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.531"
+        app:layout_constraintVertical_bias="0.54"
         app:srcCompat="@drawable/ic_baseline_person_outline_24" />
 
     <ImageView
@@ -120,7 +102,7 @@
         android:layout_height="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.636"
