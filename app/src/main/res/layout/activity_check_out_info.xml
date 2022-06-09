@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="view.checkin_info"
+    tools:context=".View.CheckIn_CheckOut.CheckOut_Info"
     tools:layout_editor_absoluteX="20dp"
     tools:layout_editor_absoluteY="21dp">
 
@@ -79,7 +79,7 @@
     <TextView
         android:id="@+id/textView51"
         android:layout_width="wrap_content"
-        android:layout_height="45dp"
+        android:layout_height="59dp"
         android:text="Thank You!\nYou are successfully Check Out"
         android:textAlignment="center"
         android:textSize="20sp"
