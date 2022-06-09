@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/checkinpremisesLocation"
+        android:id="@+id/premisesLocation"
         android:layout_width="288dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
@@ -25,7 +25,7 @@
         app:layout_constraintVertical_bias="0.299" />
 
     <TextView
-        android:id="@+id/checkinownername"
+        android:id="@+id/ownername"
         android:layout_width="288dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
@@ -41,7 +41,7 @@
         app:layout_constraintVertical_bias="0.38" />
 
     <TextView
-        android:id="@+id/checkinOwnerIcNumber"
+        android:id="@+id/ownerIcNumber"
         android:layout_width="288dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
@@ -57,7 +57,7 @@
         app:layout_constraintVertical_bias="0.467" />
 
     <TextView
-        android:id="@+id/checkinOwnerPhoneNum"
+        android:id="@+id/ownerPhoneNumber"
         android:layout_width="288dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
