@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ECovid">
         <activity
+            android:name=".admin_mvmentMenu"
+            android:exported="false" />
+        <activity
             android:name=".View.CheckIn_CheckOut.Admin.admin_search_premises"
             android:exported="false" />
         <activity
@@ -36,8 +39,6 @@
         <activity
             android:name=".View.CheckIn_CheckOut.User.MovementMain"
             android:exported="false" />
-
-
         <activity
             android:name=".View.Login.User.addDependent"
             android:exported="false" />
@@ -161,7 +162,6 @@
         <activity
             android:name=".View.QuarantineCenter.User.User_SearchQuarantineCenter"
             android:exported="false" />
-
     </application>
 
 </manifest>
