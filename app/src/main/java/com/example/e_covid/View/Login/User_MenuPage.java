@@ -27,7 +27,7 @@ public class User_MenuPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         //author code - hide action bar
-        Objects.requireNonNull(getSupportActionBar()).hide();
+        //Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_user_menu_page);
 
         mUserProfile = findViewById (R.id.userProfile);
@@ -53,9 +53,11 @@ public class User_MenuPage extends AppCompatActivity {
             }
         });
 
-        uVaccination.setOnClickListener (new View.OnClickListener() {
+        uVaccination.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
-                vaccinemain();
+                Intent intent = new Intent(User_MenuPage.this,VaccinationMain.class);
+                startActivity(intent);
             }
         });
 
@@ -73,11 +75,6 @@ public class User_MenuPage extends AppCompatActivity {
 
     private void userProfile() {
         Intent intent = new Intent(User_MenuPage.this, ManageProfile.class);
-        startActivity(intent);
-    }
-
-    private void vaccinemain() {
-        Intent intent = new Intent(User_MenuPage.this, VaccinationMain.class);
         startActivity(intent);
     }
 }

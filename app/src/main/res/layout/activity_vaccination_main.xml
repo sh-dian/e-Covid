@@ -45,7 +45,7 @@
             android:textColor="@color/black" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/vcAppBttn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -63,7 +63,7 @@
             android:textColor="@color/black" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/dependentBttn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
