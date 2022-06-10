@@ -88,21 +88,7 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/button28"
-        android:layout_width="290dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="6dp"
-        android:text="Gerai Pak Abu Kuantan"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.553"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.797"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <Button
-        android:id="@+id/button29"
+        android:id="@+id/uMovementHistory"
         android:layout_width="290dp"
         android:layout_height="48dp"
         android:layout_marginStart="33dp"

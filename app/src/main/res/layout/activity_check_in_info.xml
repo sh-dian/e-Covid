@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="view.checkin_info"
+    tools:context=".View.CheckIn_CheckOut.User.CheckIn_Info"
     tools:layout_editor_absoluteX="20dp"
     tools:layout_editor_absoluteY="21dp">
 
@@ -174,7 +174,7 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/button33"
+        android:id="@+id/uCheckout"
         android:layout_width="363dp"
         android:layout_height="45dp"
         android:background="@drawable/button_corner"
