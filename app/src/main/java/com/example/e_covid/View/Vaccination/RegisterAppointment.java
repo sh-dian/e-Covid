@@ -1,17 +1,13 @@
 package com.example.e_covid.View.Vaccination;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.e_covid.Controller.QuarantineCenter.QuarantineCenterController;
 import com.example.e_covid.Controller.Vaccination.VaccinationController;
 import com.example.e_covid.R;
-import com.example.e_covid.View.QuarantineCenter.Admin.Admin_AddQuarantineCenter;
-import com.example.e_covid.View.QuarantineCenter.Admin.Admin_QuarantineCenterMenu;
 
 import java.util.Objects;
 

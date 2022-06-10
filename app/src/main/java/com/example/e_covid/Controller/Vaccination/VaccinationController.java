@@ -1,7 +1,6 @@
 package com.example.e_covid.Controller.Vaccination;
 
 import android.app.Activity;
-import android.database.Cursor;
 
 import com.example.e_covid.Model.Vaccination.VaccinationModel;
 
@@ -13,6 +12,4 @@ public class VaccinationController{
     public Boolean Add_VC(String vcName, String vcIC, String vcPhoneNum, String vcLocation){
         return model.insertVC_data(vcName, vcIC, vcPhoneNum, vcLocation);
     }
-
-    //public Cursor getData() {return model.readAllData();}
 }

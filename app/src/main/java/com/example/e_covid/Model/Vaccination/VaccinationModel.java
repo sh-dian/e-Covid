@@ -6,8 +6,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.e_covid.R;
-
 public class VaccinationModel extends SQLiteOpenHelper{
     public VaccinationModel(Context context) {super(context, "e-Covid.db", null, 1);}
 
