@@ -50,10 +50,8 @@ public class User_MenuPage extends AppCompatActivity {
         });
 
         uVaccination.setOnClickListener(new View.OnClickListener() {
-            @Override
             public void onClick(View v) {
-                Intent intent = new Intent(User_MenuPage.this,VaccinationMain.class);
-                startActivity(intent);
+                vcMain();
             }
         });
 
@@ -71,6 +69,11 @@ public class User_MenuPage extends AppCompatActivity {
 
     private void userProfile() {
         Intent intent = new Intent(User_MenuPage.this, ManageProfile.class);
+        startActivity(intent);
+    }
+
+    public void vcMain() {
+        Intent intent = new Intent(User_MenuPage.this,VaccinationMain.class);
         startActivity(intent);
     }
 }
