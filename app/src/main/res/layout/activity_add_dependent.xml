@@ -60,7 +60,7 @@
             android:layout_marginBottom="605dp"
             android:background="@null"
             android:ems="10"
-            android:text="All files are mandatory"
+            android:text="All fields are mandatory"
             android:textColor="@color/black"
             android:textSize="20sp"
             tools:ignore="HardcodedText" />
@@ -78,7 +78,7 @@
             android:textColor="#FFFFFF"
             tools:ignore="TouchTargetSizeCheck" />
 
-        <EditText
+        <android.support.design.widget.TextInputEditText
             android:id="@+id/dependent_name"
             android:layout_width="292dp"
             android:layout_height="46dp"
@@ -95,9 +95,9 @@
             android:inputType="number"
             android:textColor="@color/white"
             android:textColorHint="#FFFFFF"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
-        <EditText
+        <android.support.design.widget.TextInputEditText
             android:id="@+id/dependent_icpassport"
             android:layout_width="292dp"
             android:layout_height="48dp"
@@ -114,9 +114,9 @@
             android:inputType="number"
             android:textColor="@color/white"
             android:textColorHint="#FFFFFF"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
-        <EditText
+        <android.support.design.widget.TextInputEditText
             android:id="@+id/relation"
             android:layout_width="292dp"
             android:layout_height="46dp"
@@ -133,9 +133,9 @@
             android:inputType="number"
             android:textColor="@color/white"
             android:textColorHint="#FFFFFF"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
-        <EditText
+        <android.support.design.widget.TextInputEditText
             android:id="@+id/dependent_age"
             android:layout_width="292dp"
             android:layout_height="48dp"
@@ -152,9 +152,9 @@
             android:inputType="number"
             android:textColor="@color/white"
             android:textColorHint="#FFFFFF"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
-        <EditText
+        <android.support.design.widget.TextInputEditText
             android:id="@+id/dependent_gender"
             android:layout_width="292dp"
             android:layout_height="46dp"
@@ -173,7 +173,7 @@
             android:textColorHint="#FFFFFF"
             tools:ignore="TouchTargetSizeCheck" />
 
-        <EditText
+        <android.support.design.widget.TextInputEditText
             android:id="@+id/dependent_address"
             android:layout_width="292dp"
             android:layout_height="46dp"
@@ -190,7 +190,7 @@
             android:inputType="number"
             android:textColor="@color/white"
             android:textColorHint="#FFFFFF"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     </RelativeLayout>
 
