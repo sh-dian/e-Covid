@@ -18,7 +18,7 @@ public class ManageProfile extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Objects.requireNonNull(getSupportActionBar()).hide();
+        //Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_manage_profile);
 
         mUpdateProfile = findViewById(R.id.update_profile);

@@ -37,6 +37,9 @@
             android:name=".View.CheckIn_CheckOut.MovementMain"
             android:exported="false" />
         <activity
+            android:name=".VaccinationMain"
+            android:exported="false" />
+        <activity
             android:name=".View.CheckIn_CheckOut.user.apaapa"
             android:exported="false" />
         <activity
@@ -164,7 +167,7 @@
             android:exported="false" />
         <activity
             android:name=".View.QuarantineCenter.User_SearchQuarantineCenter"
-            android:exported="false" /> <!-- View Vaccination package -->
+            android:exported="false" />
         <activity
             android:name=".View.Movement.checkin_visitorForm"
             android:exported="false" />
