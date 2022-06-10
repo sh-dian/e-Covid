@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.CheckIn_CheckOut.QR_Scan">
+    tools:context=".View.CheckIn_CheckOut.User.QR_Scan">
 
 </android.support.constraint.ConstraintLayout>

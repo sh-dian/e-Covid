@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.UserQuarantine.AdminMOH.MOH_Confrmation_UserQ_Record">
+    tools:context=".View.UserQuarantine.MOH.MOH_Confrmation_UserQ_Record">
 
     <ImageView
         android:id="@+id/imageView30"

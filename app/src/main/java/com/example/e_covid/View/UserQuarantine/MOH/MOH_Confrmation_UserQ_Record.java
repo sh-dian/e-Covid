@@ -1,4 +1,4 @@
-package com.example.e_covid.View.UserQuarantine.AdminMOH;
+package com.example.e_covid.View.UserQuarantine.MOH;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

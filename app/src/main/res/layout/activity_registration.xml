@@ -33,11 +33,11 @@
         app:layout_constraintVertical_bias="0.339" />
 
     <android.support.design.widget.TextInputEditText
-        android:id="@+id/name_visitor"
+        android:id="@+id/name_user"
         android:layout_width="292dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:background="@drawable/radius"
-        android:hint="@string/name"
+        android:hint="Name"
         android:inputType="text"
         android:textColor="@color/white"
         android:textColorHint="#FFFFFF"
@@ -45,14 +45,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.594"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <android.support.design.widget.TextInputEditText
         android:id="@+id/passportNum"
         android:layout_width="292dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:background="@drawable/radius"
-        android:hint="@string/ic_passport_number"
+        android:hint="IC / passport Number"
         android:inputType="number"
         android:textColor="@color/white"
         android:textColorHint="#FFFFFF"
@@ -61,29 +62,31 @@
         app:layout_constraintHorizontal_bias="0.594"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.564" />
+        app:layout_constraintVertical_bias="0.564"
+        tools:ignore="HardcodedText" />
 
     <android.support.design.widget.TextInputEditText
         android:id="@+id/country"
         android:layout_width="292dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:background="@drawable/radius"
-        android:hint="@string/state_country"
-        android:textColorHint="#FFFFFF"
+        android:hint="state / Country"
         android:textColor="@color/white"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.594"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.624" />
+        app:layout_constraintVertical_bias="0.624"
+        tools:ignore="HardcodedText" />
 
     <android.support.design.widget.TextInputEditText
-        android:id="@+id/email_visitor"
+        android:id="@+id/email_phoneNum"
         android:layout_width="292dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:background="@drawable/radius"
-        android:hint="@string/email_or_phone_number"
+        android:hint="Email or Phone Number"
         android:textColor="@color/white"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -91,14 +94,15 @@
         app:layout_constraintHorizontal_bias="0.594"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.688" />
+        app:layout_constraintVertical_bias="0.688"
+        tools:ignore="HardcodedText" />
 
     <android.support.design.widget.TextInputEditText
         android:id="@+id/password"
         android:layout_width="292dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:background="@drawable/radius"
-        android:hint="@string/password"
+        android:hint="Password"
         android:inputType="textPassword"
         android:textColor="@color/white"
         android:textColorHint="#FFFFFF"
@@ -112,9 +116,9 @@
     <android.support.design.widget.TextInputEditText
         android:id="@+id/passwordConfirm"
         android:layout_width="292dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:background="@drawable/radius"
-        android:hint="@string/re_enter_password"
+        android:hint="Re-enter Password"
         android:inputType="textPassword"
         android:textColor="@color/white"
         android:textColorHint="#FFFFFF"
@@ -123,7 +127,8 @@
         app:layout_constraintHorizontal_bias="0.594"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.811" />
+        app:layout_constraintVertical_bias="0.811"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:layout_width="40dp"
@@ -207,7 +212,7 @@
     <Button
         android:id="@+id/Register"
         android:layout_width="wrap_content"
-        android:layout_height="35dp"
+        android:layout_height="48dp"
         android:background="@drawable/radius"
         android:text="@string/register"
         android:textColor="#FFFFFF"
@@ -236,7 +241,7 @@
 
     <EditText
         android:layout_width="203dp"
-        android:layout_height="31dp"
+        android:layout_height="48dp"
         android:background="@null"
         android:ems="10"
         android:text="Choose account option:"
@@ -250,6 +255,7 @@
         android:id="@+id/citizen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:minHeight="48dp"
         android:text="Malaysian Citizen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -262,6 +268,7 @@
         android:id="@+id/visitor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:minHeight="48dp"
         android:text="Malaysian Visitor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

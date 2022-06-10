@@ -1,4 +1,4 @@
-package com.example.e_covid.View.CheckIn_CheckOut;
+package com.example.e_covid.View.CheckIn_CheckOut.Admin;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

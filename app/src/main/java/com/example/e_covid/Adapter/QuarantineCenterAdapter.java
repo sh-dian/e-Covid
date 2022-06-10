@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.e_covid.R;
-import com.example.e_covid.View.QuarantineCenter.Admin_ViewQuarantineCenter;
+import com.example.e_covid.View.QuarantineCenter.Admin.Admin_ViewQuarantineCenter;
 
 import java.util.ArrayList;
 
