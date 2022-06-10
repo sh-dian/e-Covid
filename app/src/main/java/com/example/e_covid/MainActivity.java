@@ -6,8 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
 import com.example.e_covid.View.Login.Admin.AdminLogin;
-import com.example.e_covid.View.Login.LoginActivity;
 import com.example.e_covid.View.Login.MOH.MOHLogin;
+import com.example.e_covid.View.Login.User.LoginActivity;
+
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         //author code - hide action bar
-        //Objects.requireNonNull(getSupportActionBar()).hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_main);
 
         mAdmin = findViewById(R.id.adminPage);

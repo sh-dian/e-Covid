@@ -39,10 +39,10 @@
 
 
         <activity
-            android:name=".View.Login.addDependent"
+            android:name=".View.Login.User.addDependent"
             android:exported="false" />
         <activity
-            android:name=".View.Login.ViewAdminMoh"
+            android:name=".View.Login.MOH.ViewAdminMoh"
             android:exported="false" />
         <activity
             android:name=".View.Vaccination.RegisterVaccinationCertificate"
@@ -69,7 +69,7 @@
             android:name=".View.QuarantineCenter.User.User_ViewQuarantineCenter"
             android:exported="false" /> <!-- Menu Page -->
         <activity
-            android:name=".View.Login.User_MenuPage"
+            android:name=".View.Login.User.User_MenuPage"
             android:exported="false" />
         <activity
             android:name=".View.Login.MOH.MOH_MenuPage"
@@ -81,28 +81,25 @@
             android:name=".View.Login.Admin.AdminLogin"
             android:exported="true" />
         <activity
-            android:name=".View.Login.EditDependent"
+            android:name=".View.Login.User.EditDependent"
             android:exported="false" />
         <activity
-            android:name=".View.Login.LoginActivity"
+            android:name=".View.Login.User.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".View.Login.ManageDependentProfile"
+            android:name=".View.Login.User.ManageDependentProfile"
             android:exported="false" />
         <activity
-            android:name=".View.Login.ManageProfile"
+            android:name=".View.Login.User.ManageProfile"
             android:exported="false" />
         <activity
             android:name=".View.Login.MOH.MOHLogin"
             android:exported="false" />
         <activity
-            android:name=".View.Login.registration"
+            android:name=".View.Login.User.registration"
             android:exported="false" />
         <activity
-            android:name=".View.Login.RegistrationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".View.Login.updateUserProfile"
+            android:name=".View.Login.User.updateUserProfile"
             android:exported="false" /> <!-- View User Quarantine package -->
         <activity
             android:name=".View.UserQuarantine.AdminMOH.Admin_DashboardUserQ"

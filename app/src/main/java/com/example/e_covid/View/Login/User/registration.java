@@ -1,17 +1,14 @@
-package com.example.e_covid.View.Login;
+package com.example.e_covid.View.Login.User;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
-
 
 import com.example.e_covid.Controller.Registration.RegistrationController;
 import com.example.e_covid.R;
-
 
 import java.util.Objects;
 
@@ -25,12 +22,12 @@ public class registration extends AppCompatActivity {
     Button mGotacc;
 
     //TextInputLayout
-    TextInputLayout re_Name;
-    TextInputLayout reIcpassport;
-    TextInputLayout reStateCountry;
-    TextInputLayout rePhoneNumEmail;
-    TextInputLayout rePassword;
-    TextInputLayout rePasswordRe;
+    EditText re_Name;
+    EditText reIcpassport;
+    EditText reStateCountry;
+    EditText rePhoneNumEmail;
+    EditText rePassword;
+    EditText rePasswordRe;
 
     private String RE_name;
     private String  RE_Icpassport;
@@ -43,6 +40,8 @@ public class registration extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Objects.requireNonNull(getSupportActionBar()).hide();
+
         setContentView(R.layout.activity_registration);
 
         mRegister = findViewById(R.id.Register);
@@ -60,12 +59,12 @@ public class registration extends AppCompatActivity {
 
         //add button function for add new info of quarantine center
         mRegister.setOnClickListener(view -> {
-            RE_name= String.valueOf(Objects.requireNonNull(re_Name.getEditText()).getText());
-            RE_Icpassport = String.valueOf(Objects.requireNonNull (reIcpassport.getEditText()).getText());
-            RE_StateCountry = String.valueOf(Objects.requireNonNull(reStateCountry.getEditText()).getText());
-            RE_PhoneNumEmail = String.valueOf(Objects.requireNonNull(rePhoneNumEmail.getEditText()).getText());
-            RE_Password = Integer.parseInt(String.valueOf(Objects.requireNonNull(rePassword.getEditText()).getText()));
-            RE_PasswordRe = Integer.parseInt(String.valueOf(Objects.requireNonNull(rePasswordRe.getEditText()).getText()));
+            RE_name= String.valueOf(Objects.requireNonNull(re_Name.getText()));
+            RE_Icpassport = String.valueOf(Objects.requireNonNull (reIcpassport.getText()));
+            RE_StateCountry = String.valueOf(Objects.requireNonNull(reStateCountry.getText()));
+            RE_PhoneNumEmail = String.valueOf(Objects.requireNonNull(rePhoneNumEmail.getText()));
+            RE_Password = Integer.parseInt(String.valueOf(Objects.requireNonNull(rePassword.getText())));
+            RE_PasswordRe = Integer.parseInt(String.valueOf(Objects.requireNonNull(rePasswordRe.getText())));
 
             Boolean checkInsertion = userregistrationController.Add_RE(RE_name, RE_Icpassport, RE_StateCountry, RE_PhoneNumEmail, RE_Password, RE_PasswordRe);
 

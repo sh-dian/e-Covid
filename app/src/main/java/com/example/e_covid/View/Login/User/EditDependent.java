@@ -1,4 +1,4 @@
-package com.example.e_covid.View.Login;
+package com.example.e_covid.View.Login.User;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +12,8 @@ public class EditDependent extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Objects.requireNonNull(getSupportActionBar()).hide();
+
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_edit_dependent);
     }

@@ -1,9 +1,8 @@
-package com.example.e_covid.View.Login;
+package com.example.e_covid.View.Login.User;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.Button;
 
 import com.example.e_covid.R;
@@ -18,7 +17,7 @@ public class ManageProfile extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //Objects.requireNonNull(getSupportActionBar()).hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_manage_profile);
 
         mUpdateProfile = findViewById(R.id.update_profile);

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.Login.ManageProfile">
+    tools:context=".View.Login.User.ManageProfile">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"

@@ -1,4 +1,4 @@
-package com.example.e_covid.View.Login;
+package com.example.e_covid.View.Login.User;
 
 import android.content.Intent;
 import android.os.Bundle;
