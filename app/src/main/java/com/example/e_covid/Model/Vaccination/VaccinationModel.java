@@ -11,6 +11,7 @@ import com.example.e_covid.R;
 public class VaccinationModel extends SQLiteOpenHelper{
     public VaccinationModel(Context context) {super(context, "e-Covid.db", null, 1);}
 
+    //create table name VaccinationAppointment in e-Covid(database)
     @Override
     public void onCreate(SQLiteDatabase DB) {
         DB.execSQL("CREATE Table VaccinationAppointment(vcID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, vcName TEXT, vcIC TEXT, vcPhoneNum TEXT, vcLocation TeXT)");
@@ -21,13 +22,14 @@ public class VaccinationModel extends SQLiteOpenHelper{
 
     }
 
-    public Boolean insertVC_data(String vcName, String vcID, String vcPhoneNum, String vcLocation){
+    //add function (to table VaccinationAppointment)
+    public Boolean insertVC_data(String vcName, String vcIC, String vcPhoneNum, String vcLocation){
 
         SQLiteDatabase DB = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
         contentValues.put("vcName", vcName);
-        contentValues.put("vcID", vcID);
+        contentValues.put("vcIC", vcIC);
         contentValues.put("vcPhoneNum", vcPhoneNum);
         contentValues.put("vcLocation", vcLocation);
 
