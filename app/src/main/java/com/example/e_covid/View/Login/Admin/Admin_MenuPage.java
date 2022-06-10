@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.e_covid.R;
+import com.example.e_covid.View.Login.MOH.ViewAdminMoh;
 import com.example.e_covid.View.QuarantineCenter.Admin.Admin_QuarantineCenterMenu;
 
 import java.util.Objects;
@@ -14,6 +15,7 @@ import java.util.Objects;
 public class Admin_MenuPage extends AppCompatActivity {
 
     Button qcMenuPage;
+    Button mUserMenuPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +25,20 @@ public class Admin_MenuPage extends AppCompatActivity {
         setContentView(R.layout.activity_admin_menu_page);
 
         qcMenuPage = findViewById(R.id.aQC_button);
+        mUserMenuPage = findViewById(R.id.aManageUserBtn);
+
         qcMenuPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Admin_MenuPage.this, Admin_QuarantineCenterMenu.class);
+                startActivity(intent);
+            }
+        });
+
+        mUserMenuPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Admin_MenuPage.this, ViewAdminMoh.class);
                 startActivity(intent);
             }
         });

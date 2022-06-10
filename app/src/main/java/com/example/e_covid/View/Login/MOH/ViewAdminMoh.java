@@ -1,4 +1,4 @@
-package com.example.e_covid.View.Login;
+package com.example.e_covid.View.Login.MOH;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

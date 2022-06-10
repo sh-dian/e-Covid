@@ -61,7 +61,6 @@ public class QuarantineCenterAdapter extends RecyclerView.Adapter<QuarantineCent
 
         TextView qcName_txt;
         TextView qcAddress_txt;
-
         LinearLayout mainLayout;
 
         MyViewHolder(@NonNull View itemView) {
