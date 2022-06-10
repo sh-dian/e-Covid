@@ -1,4 +1,4 @@
-package com.example.e_covid.View.Login;
+package com.example.e_covid.View.Login.Admin;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,23 +8,20 @@ import android.widget.Button;
 
 import com.example.e_covid.R;
 
-import java.util.Objects;
+public class AdminLogin extends AppCompatActivity {
 
-public class MOHLogin extends AppCompatActivity {
-
-    Button mLogin;
+    Button mMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Objects.requireNonNull(getSupportActionBar()).hide();
-        setContentView(R.layout.activity_mohlogin);
+        setContentView(R.layout.activity_admin_login);
 
-        mLogin = findViewById(R.id.moh_Login);
-        mLogin.setOnClickListener(new View.OnClickListener() {
+        mMenu = findViewById(R.id.admin_Login);
+        mMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MOHLogin.this, MOH_MenuPage.class);
+                Intent intent = new Intent(AdminLogin.this, Admin_MenuPage.class);
                 startActivity(intent);
             }
         });

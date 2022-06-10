@@ -7,13 +7,9 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.e_covid.R;
-import com.example.e_covid.View.CheckIn_CheckOut.MovementMain;
-import com.example.e_covid.View.QuarantineCenter.User_SearchQuarantineCenter;
-import com.example.e_covid.View.QuarantineCenter.User_ViewQuarantineCenter;
-import com.example.e_covid.View.UserQuarantine.User.UserRegistration;
+import com.example.e_covid.View.CheckIn_CheckOut.User.MovementMain;
+import com.example.e_covid.View.QuarantineCenter.User.User_SearchQuarantineCenter;
 import com.example.e_covid.View.Vaccination.VaccinationMain;
-
-import java.util.Objects;
 
 public class User_MenuPage extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.example.e_covid.View.QuarantineCenter;
+package com.example.e_covid.View.QuarantineCenter.Admin;
 
 import android.content.Intent;
 import android.os.Bundle;

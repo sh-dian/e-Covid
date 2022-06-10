@@ -5,11 +5,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
-import com.example.e_covid.View.Login.AdminLogin;
+import com.example.e_covid.View.Login.Admin.AdminLogin;
 import com.example.e_covid.View.Login.LoginActivity;
-import com.example.e_covid.View.Login.MOHLogin;
-
-import java.util.Objects;
+import com.example.e_covid.View.Login.MOH.MOHLogin;
 
 public class MainActivity extends AppCompatActivity {
 

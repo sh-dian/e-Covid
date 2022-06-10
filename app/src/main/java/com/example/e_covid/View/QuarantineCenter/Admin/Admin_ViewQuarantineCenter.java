@@ -1,8 +1,7 @@
-package com.example.e_covid.View.QuarantineCenter;
+package com.example.e_covid.View.QuarantineCenter.Admin;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.EditText;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 import android.widget.Toast;
 
