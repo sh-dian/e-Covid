@@ -13,7 +13,7 @@ public class CheckIn_CheckOutModel extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase DB) {
-        DB.execSQL("CREATE Table CheckIn_CheckOut(cioID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, cioName TEXT, cioLocation TEXT, cioPhoneNum TEXT, cioTime TEXT, cioRiskStatus TEXT, cioVaccineStatus TEXT)");
+        DB.execSQL("CREATE Table VisitorForm(cioID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, visfName TEXT, visfPassportNum TEXT, visfOriginCountry TEXT, visfReason TEXT, visfDuration TEXT)");
     }
 
     @Override
@@ -22,18 +22,16 @@ public class CheckIn_CheckOutModel extends SQLiteOpenHelper {
     }
 
     //insert function
-    public Boolean insertCIO_data(String cioName, String cioLocation, String cioPhoneNum, String cioTime, String cioRiskStatus, String cioVaccineStatus){
+    public Boolean insertVisf_data(String visfName, String visfPassportNum, String visfOriginCountry, String visfReason, String visfDuration){
 
         SQLiteDatabase DB = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put("cioName", cioName);
-        contentValues.put("cioLocation", cioLocation);
-        contentValues.put("cioPhoneNum", cioPhoneNum);
-        contentValues.put("cioTime", cioTime);
-        contentValues.put("cioRiskStatus", cioRiskStatus);
-        contentValues.put("cioVaccineStatus", cioVaccineStatus);
-
+        contentValues.put("visfName", visfName);
+        contentValues.put("visfPassportNum", visfPassportNum);
+        contentValues.put("visfOriginCountry", visfOriginCountry);
+        contentValues.put("visfReason", visfReason);
+        contentValues.put("visfDuration", visfDuration);
 
         long result = DB.insert("CheckIn_CheckOut", null, contentValues);
 

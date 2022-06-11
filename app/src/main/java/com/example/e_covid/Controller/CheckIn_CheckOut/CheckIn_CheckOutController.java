@@ -12,8 +12,8 @@ import com.example.e_covid.Model.CheckIn_CheckOut.CheckIn_CheckOutModel;
             this.model = new CheckIn_CheckOutModel(ui);
         }
 
-        public Boolean Add_CIO(String cioName, String cioLocation, String cioPhoneNum, String cioTime, String cioRiskStatus, String cioVaccineStatus) {
-            return model.insertCIO_data(cioName, cioLocation, cioPhoneNum, cioTime, cioRiskStatus, cioVaccineStatus);
+        public Boolean Add_VISF(String visfName, String visfPassportNum, String visfOriginCountry, String visfReason, String visfDuration) {
+            return model.insertVisf_data(visfName, visfPassportNum, visfOriginCountry, visfReason, visfDuration);
         }
 
         public Cursor getData() {
