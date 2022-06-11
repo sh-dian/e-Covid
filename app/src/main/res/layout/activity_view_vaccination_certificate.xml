@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".UI_Layer.View.Vaccination.ViewVaccinationCertificate">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="20dp"
+        android:text="VACCINATION CERTIFICATE"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="@color/sky_blue"
+        app:cardCornerRadius="30px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView40"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/healthlogo" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName14"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView40" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName17"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Batch Number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName14" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName19"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Serial Number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName17" />
+
+            <EditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:text="Vaccinated date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName19" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>
