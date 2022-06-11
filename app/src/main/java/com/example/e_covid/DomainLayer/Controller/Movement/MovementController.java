@@ -12,8 +12,8 @@ import com.example.e_covid.DataLayer.Model.Movement.MovementModel;
             this.model = new MovementModel(ui);
         }
 
-        public Boolean Add_VISF(String visfName, String visfPassportNum, String visfOriginCountry, String visfReason, String visfDuration) {
-            return model.insertVisf_data(visfName, visfPassportNum, visfOriginCountry, visfReason, visfDuration);
+        public Boolean Add_CIO(String cioLocation, String cioDate, String cioTime) {
+            return model.insertCIO_data(cioLocation, cioDate, cioTime);
         }
 
         public Cursor getData() {

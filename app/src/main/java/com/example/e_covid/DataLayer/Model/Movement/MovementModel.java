@@ -12,7 +12,7 @@ public class MovementModel extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase DB) {
-        DB.execSQL("CREATE Table VisitorForm(cioID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, visfName TEXT, visfPassportNum TEXT, visfOriginCountry TEXT, visfReason TEXT, visfDuration TEXT)");
+        DB.execSQL("CREATE Table VisitorForm(cioID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, cioName TEXT, cioLocation TEXT, cioPhoneNumber TEXT, cioDate TEXT, cioRiskStatus TEXT, cioVaccineStatus TEXT)");
     }
 
     @Override
@@ -21,16 +21,14 @@ public class MovementModel extends SQLiteOpenHelper {
     }
 
     //insert function
-    public Boolean insertVisf_data(String visfName, String visfPassportNum, String visfOriginCountry, String visfReason, String visfDuration){
+    public Boolean insertCIO_data(String cioLocation, String cioDate, String cioTime){
 
         SQLiteDatabase DB = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put("visfName", visfName);
-        contentValues.put("visfPassportNum", visfPassportNum);
-        contentValues.put("visfOriginCountry", visfOriginCountry);
-        contentValues.put("visfReason", visfReason);
-        contentValues.put("visfDuration", visfDuration);
+        contentValues.put("cioLocation", cioLocation);
+        contentValues.put("cioDate", cioDate);
+        contentValues.put("cioTime", cioTime);
 
         long result = DB.insert("CheckIn_CheckOut", null, contentValues);
 
