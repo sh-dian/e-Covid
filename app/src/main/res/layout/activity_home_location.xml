@@ -10,9 +10,13 @@
         android:id="@+id/imageView6"
         android:layout_width="420dp"
         android:layout_height="742dp"
-        app:srcCompat="@drawable/minepagewhite"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="-5dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/minepagewhite" />
 
     <ImageView
         android:id="@+id/backtoHdata"
@@ -42,8 +46,9 @@
         android:id="@+id/SubmitHome"
         android:layout_width="118dp"
         android:layout_height="57dp"
-        android:backgroundTint="#1B0253"
+        android:backgroundTint="#1F427A"
         android:text="Submit"
+        android:textColor="#EDE9E9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -94,6 +99,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mapView"
         app:layout_constraintVertical_bias="0.319" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date start: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/SubmitHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.531" />
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/mapView"
