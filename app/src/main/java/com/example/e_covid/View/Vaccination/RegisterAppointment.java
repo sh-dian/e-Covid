@@ -32,10 +32,10 @@ public class RegisterAppointment extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_add_quarantine_center);
 
-        //button add id
+        //link button id
         vc_insert = findViewById(R.id.submitAdd);
 
-        //input
+        //declare specific id of text input for input
         vcName = findViewById(R.id.text_vc_name);
         vcID= findViewById(R.id.text_vc_ID);
         vcPhoneNum = findViewById(R.id.text_vc_phonenum);
@@ -43,7 +43,7 @@ public class RegisterAppointment extends AppCompatActivity {
 
         addappointmentController = new VaccinationController(this);
 
-        //add button function for add new info of quarantine center
+        //add button function for add new vaccination registration
         vc_insert.setOnClickListener(view -> {
             VC_name= String.valueOf(Objects.requireNonNull(vcName.getEditText()).getText());
             VC_id = String.valueOf(Objects.requireNonNull(vcID.getEditText()).getText());
@@ -52,6 +52,7 @@ public class RegisterAppointment extends AppCompatActivity {
 
             Boolean checkInsertion = addappointmentController.Add_VC(VC_name,VC_id,VC_phoneNum,VC_location);
 
+            //check if the data get to the database success or not
             if(checkInsertion){
                 Toast.makeText(RegisterAppointment.this, "Success", Toast.LENGTH_SHORT).show();
             }else {
