@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".UI_Layer.View.Vaccination.ViewAppointment">
+    tools:context=".UI_Layer.View.Vaccination.User.ViewAppointment">
 
     <TextView
         android:id="@+id/textView2"

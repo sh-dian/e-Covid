@@ -1,15 +1,15 @@
-package com.example.e_covid.UI_Layer.View.Vaccination;
+package com.example.e_covid.UI_Layer.View.UserQuarantine.Admin;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.e_covid.R;
 
-public class RegisterVaccinationCertificate extends AppCompatActivity {
+public class Admin_Manage_Records extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register_vaccination_certificate);
+        setContentView(R.layout.admin_manage_records);
     }
 }

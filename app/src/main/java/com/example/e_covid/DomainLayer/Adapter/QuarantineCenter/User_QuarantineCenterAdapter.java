@@ -1,4 +1,4 @@
-package com.example.e_covid.DomainLayer.Adapter;
+package com.example.e_covid.DomainLayer.Adapter.QuarantineCenter;
 
 import android.app.Activity;
 import android.content.Context;

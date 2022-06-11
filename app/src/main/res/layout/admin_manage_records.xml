@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI_Layer.View.UserQuarantine.AdminMOH.Admin_Manage_Records">
+    tools:context=".UI_Layer.View.UserQuarantine.Admin.Admin_Manage_Records">
 
 </android.support.constraint.ConstraintLayout>

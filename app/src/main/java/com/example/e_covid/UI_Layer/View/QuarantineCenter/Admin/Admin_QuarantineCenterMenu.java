@@ -9,7 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.e_covid.DomainLayer.Adapter.Admin_QuarantineCenterAdapter;
+import com.example.e_covid.DomainLayer.Adapter.QuarantineCenter.Admin_QuarantineCenterAdapter;
 import com.example.e_covid.DomainLayer.Controller.QuarantineCenter.QuarantineCenterController;
 import com.example.e_covid.DataLayer.Model.QuarantineCenter.QuarantineCenterModel;
 import com.example.e_covid.R;
