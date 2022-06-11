@@ -13,7 +13,6 @@
         android:layout_height="43dp"
         android:layout_marginTop="136dp"
         android:ems="10"
-        android:hint="Quarantine Center Name"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,12 +26,88 @@
         android:layout_height="36dp"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Quarantine Center Address"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/qcName_input2" />
+
+    <TextView
+        android:id="@+id/qcPhoneNum_input2"
+        android:layout_width="293dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qcAddress_input2" />
+
+    <TextView
+        android:id="@+id/qcFunding_input2"
+        android:layout_width="293dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qcPhoneNum_input2" />
+
+    <TextView
+        android:id="@+id/qcNumOfBeds_input2"
+        android:layout_width="293dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qcFunding_input2" />
+
+    <TextView
+        android:id="@+id/qcCapacity_input2"
+        android:layout_width="293dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qcNumOfBeds_input2" />
+
+    <TextView
+        android:id="@+id/qcVentilationCapacity_input2"
+        android:layout_width="293dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qcCapacity_input2" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qcVentilationCapacity_input2"
+        app:layout_constraintVertical_bias="0.536" />
 
 </android.support.constraint.ConstraintLayout>

@@ -9,7 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.e_covid.Adapter.QuarantineCenterAdapter;
+import com.example.e_covid.Adapter.Admin_QuarantineCenterAdapter;
 import com.example.e_covid.Controller.QuarantineCenter.QuarantineCenterController;
 import com.example.e_covid.Model.QuarantineCenter.QuarantineCenterModel;
 import com.example.e_covid.R;
@@ -26,7 +26,7 @@ public class Admin_QuarantineCenterMenu extends AppCompatActivity {
 
     QuarantineCenterModel quarantineCenterModel;
     ArrayList<String> qcName, qcAddress, qcPhoneNum, qcFunding, qcNumOfBeds, qcCapacity, qcVentilationCapacity;
-    QuarantineCenterAdapter quarantineCenterAdapter;
+    Admin_QuarantineCenterAdapter adminQuarantineCenterAdapter;
     RecyclerView recyclerView;
 
     @Override
@@ -44,11 +44,16 @@ public class Admin_QuarantineCenterMenu extends AppCompatActivity {
         quarantineCenterModel = new QuarantineCenterModel(this);
         qcName = new ArrayList<>();
         qcAddress = new ArrayList<>();
+        qcPhoneNum = new ArrayList<>();
+        qcFunding = new ArrayList<>();
+        qcNumOfBeds = new ArrayList<>();
+        qcCapacity = new ArrayList<>();
+        qcVentilationCapacity = new ArrayList<>();
 
         storeDataInArrays();
 
-        quarantineCenterAdapter = new QuarantineCenterAdapter(Admin_QuarantineCenterMenu.this, qcName, qcAddress, qcPhoneNum, qcFunding, qcNumOfBeds, qcCapacity, qcVentilationCapacity);
-        recyclerView.setAdapter(quarantineCenterAdapter);
+        adminQuarantineCenterAdapter = new Admin_QuarantineCenterAdapter(Admin_QuarantineCenterMenu.this, qcName, qcAddress, qcPhoneNum, qcFunding, qcNumOfBeds, qcCapacity, qcVentilationCapacity);
+        recyclerView.setAdapter(adminQuarantineCenterAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(Admin_QuarantineCenterMenu.this));
 
     }
@@ -66,6 +71,12 @@ public class Admin_QuarantineCenterMenu extends AppCompatActivity {
             while(cursor.moveToNext()){
                 qcName.add(cursor.getString(1));
                 qcAddress.add(cursor.getString(2));
+                qcPhoneNum.add(cursor.getString(3));
+                qcFunding.add(cursor.getString(4));
+                qcNumOfBeds.add(cursor.getString(5));
+                qcCapacity.add(cursor.getString(6));
+                qcVentilationCapacity.add(cursor.getString(7));
+
             }
         }
     }

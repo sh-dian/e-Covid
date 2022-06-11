@@ -16,7 +16,7 @@ import com.example.e_covid.View.QuarantineCenter.Admin.Admin_ViewQuarantineCente
 
 import java.util.ArrayList;
 
-public class QuarantineCenterAdapter extends RecyclerView.Adapter<QuarantineCenterAdapter.MyViewHolder> {
+public class Admin_QuarantineCenterAdapter extends RecyclerView.Adapter<Admin_QuarantineCenterAdapter.MyViewHolder> {
 
     private final Context context;
     private Activity activity;
@@ -29,7 +29,7 @@ public class QuarantineCenterAdapter extends RecyclerView.Adapter<QuarantineCent
     private final ArrayList qcVentilationCapacity;
     private int position;
 
-    public QuarantineCenterAdapter(Context context, ArrayList qcName, ArrayList qcAddress, ArrayList qcPhoneNum, ArrayList qcFunding, ArrayList qcNumOfBeds, ArrayList qcCapacity, ArrayList qcVentilationCapacity){
+    public Admin_QuarantineCenterAdapter(Context context, ArrayList qcName, ArrayList qcAddress, ArrayList qcPhoneNum, ArrayList qcFunding, ArrayList qcNumOfBeds, ArrayList qcCapacity, ArrayList qcVentilationCapacity){
         this.context = context;
         this.qcName = qcName;
         this.qcAddress = qcAddress;
@@ -52,12 +52,23 @@ public class QuarantineCenterAdapter extends RecyclerView.Adapter<QuarantineCent
     public void onBindViewHolder(@NonNull final MyViewHolder holder, int position ) {
         holder.qcName_txt.setText(String.valueOf(qcName.get(position)));
         holder.qcAddress_txt.setText(String.valueOf(qcAddress.get(position)));
+        holder.qcPhoneNum_txt.setText(String.valueOf(qcPhoneNum.get(position)));
+
+        /*holder.qcFunding_txt.setText(String.valueOf(qcFunding.get(position)));
+        holder.qcNumOfBeds_txt.setText(String.valueOf(qcNumOfBeds.get(position)));
+        holder.qcCapacity_txt.setText(String.valueOf(qcCapacity.get(position)));
+        holder.qcVentilationCapacity_txt.setText(String.valueOf(qcVentilationCapacity.get(position)));*/
 
         //Recyclerview onClickListener
         holder.mainLayout.setOnClickListener(view -> {
             Intent intent = new Intent(context, Admin_ViewQuarantineCenter.class);
             intent.putExtra("name", String.valueOf(qcName.get(position)));
             intent.putExtra("address", String.valueOf(qcAddress.get(position)));
+            intent.putExtra("phoneNum", String.valueOf(qcPhoneNum.get(position)));
+            intent.putExtra("funding", String.valueOf(qcFunding.get(position)));
+            intent.putExtra("numOfBeds", String.valueOf(qcNumOfBeds.get(position)));
+            intent.putExtra("capacity", String.valueOf(qcCapacity.get(position)));
+            intent.putExtra("ventilationCapacity", String.valueOf(qcVentilationCapacity.get(position)));
             context.startActivity(intent);
         });
     }
@@ -71,12 +82,20 @@ public class QuarantineCenterAdapter extends RecyclerView.Adapter<QuarantineCent
 
         TextView qcName_txt;
         TextView qcAddress_txt;
+        TextView qcPhoneNum_txt;
+        TextView qcFunding_txt;
+        TextView qcNumOfBeds_txt;
+        TextView qcCapacity_txt;
+        TextView qcVentilationCapacity_txt;
+
         LinearLayout mainLayout;
 
         MyViewHolder(@NonNull View itemView) {
             super(itemView);
             qcName_txt = itemView.findViewById(R.id.qcName_txt);
             qcAddress_txt = itemView.findViewById(R.id.qcAddress_txt);
+            qcPhoneNum_txt = itemView.findViewById(R.id.qcPhoneNum_txt);
+
             mainLayout = itemView.findViewById(R.id.mainLayout);
         }
 
