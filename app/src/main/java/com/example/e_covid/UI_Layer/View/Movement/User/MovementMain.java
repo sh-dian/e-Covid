@@ -30,7 +30,7 @@ public class MovementMain extends AppCompatActivity {
         mCheckIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MovementMain.this, QR_Scan.class);
+                Intent intent = new Intent(MovementMain.this, UserCheckIn.class);
                 startActivity(intent);
             }
         });

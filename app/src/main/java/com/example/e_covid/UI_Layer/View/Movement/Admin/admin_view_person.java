@@ -7,7 +7,7 @@ import android.widget.Toast;
 
 import com.example.e_covid.R;
 
-public class admin_search_person extends AppCompatActivity {
+public class admin_view_person extends AppCompatActivity {
 
     TextView checkinName, checkinICNumber, checkinPhoneNumber;
     String name, ICNumber, PhoneNumber;

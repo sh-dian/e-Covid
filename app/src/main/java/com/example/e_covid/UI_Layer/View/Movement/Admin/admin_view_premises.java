@@ -7,7 +7,7 @@ import android.widget.Toast;
 
 import com.example.e_covid.R;
 
-public class admin_search_premises extends AppCompatActivity {
+public class admin_view_premises extends AppCompatActivity {
 
     TextView premisesLocation, ownername, ownerIcNumber, ownerPhoneNumber;
     String location, name, ICNumber, PhoneNumber;

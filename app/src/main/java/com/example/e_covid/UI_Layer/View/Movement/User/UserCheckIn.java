@@ -14,7 +14,7 @@ import com.example.e_covid.R;
 
 import java.util.Objects;
 
-public class QR_Scan extends AppCompatActivity {
+public class UserCheckIn extends AppCompatActivity {
 
     MovementController addmovementController;
 
@@ -54,9 +54,9 @@ public class QR_Scan extends AppCompatActivity {
             Boolean checkInsertion = addmovementController.Add_CIO(CIO_Location,CIO_Date,CIO_Time);
 
             if(checkInsertion){
-                Toast.makeText(QR_Scan.this, "Success", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UserCheckIn.this, "Success", Toast.LENGTH_SHORT).show();
             }else {
-                Toast.makeText(QR_Scan.this, "Failed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UserCheckIn.this, "Failed", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -67,7 +67,7 @@ public class QR_Scan extends AppCompatActivity {
         mCheckIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(QR_Scan.this, CheckIn_Info.class);
+                Intent intent = new Intent(UserCheckIn.this, CheckIn_Info.class);
                 startActivity(intent);
             }
         });

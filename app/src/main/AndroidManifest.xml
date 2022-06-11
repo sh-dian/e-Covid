@@ -22,16 +22,13 @@
             android:name=".admin_mvmentMenu"
             android:exported="false" />
         <activity
-            android:name=".UI_Layer.View.Movement.Admin.admin_search_premises"
+            android:name=".UI_Layer.View.Movement.Admin.admin_view_premises"
             android:exported="false" />
         <activity
-            android:name=".UI_Layer.View.Movement.Admin.admin_search_person"
+            android:name=".UI_Layer.View.Movement.Admin.admin_view_person"
             android:exported="false" />
         <activity
-            android:name=".UI_Layer.View.Movement.User.QR_Scan"
-            android:exported="false" />
-        <activity
-            android:name=".UI_Layer.View.Movement.User.CheckIn_VisitorForm"
+            android:name=".UI_Layer.View.Movement.User.UserCheckIn"
             android:exported="false" />
         <activity
             android:name=".UI_Layer.View.Movement.User.CheckOut_Info"
