@@ -1,4 +1,4 @@
-package com.example.e_covid.UI_Layer.View.Vaccination;
+package com.example.e_covid.UI_Layer.View.Vaccination.User;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
