@@ -3,13 +3,13 @@ package com.example.e_covid.DomainLayer.Controller.Movement;
 import android.app.Activity;
 import android.database.Cursor;
 
-import com.example.e_covid.DataLayer.Model.Movement.CheckIn_CheckOutModel;
-    public class CheckIn_CheckOutController {
+import com.example.e_covid.DataLayer.Model.Movement.MovementModel;
+    public class MovementController {
 
-        private final CheckIn_CheckOutModel model;
+        private final MovementModel model;
 
-        public CheckIn_CheckOutController(Activity ui) {
-            this.model = new CheckIn_CheckOutModel(ui);
+        public MovementController(Activity ui) {
+            this.model = new MovementModel(ui);
         }
 
         public Boolean Add_VISF(String visfName, String visfPassportNum, String visfOriginCountry, String visfReason, String visfDuration) {

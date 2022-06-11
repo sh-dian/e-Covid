@@ -1,4 +1,4 @@
-package com.example.e_covid.DataLayer.Model.Registration;
+package com.example.e_covid.DataLayer.Model.Login;
 
 import android.content.ContentValues;
 import android.content.Context;
