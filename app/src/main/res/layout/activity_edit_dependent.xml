@@ -5,7 +5,7 @@
     android:id="@+id/Save_changes"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.Login.EditDependent">
+    tools:context=".UI_Layer.View.Login.User.EditDependent">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"

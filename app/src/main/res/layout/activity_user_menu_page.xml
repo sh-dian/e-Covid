@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".View.Login.User_MenuPage">
+    tools:context=".UI_Layer.View.Login.User.User_MenuPage">
 
     <RelativeLayout
         android:layout_width="391dp"
@@ -108,7 +108,7 @@
             tools:ignore="HardcodedText" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/userQuarantine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"

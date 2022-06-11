@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".View.CheckIn_CheckOut.User.MovementMain">
+    tools:context=".UI_Layer.View.Movement.User.MovementMain">
 
     <Button
         android:id="@+id/button5"
@@ -93,6 +93,8 @@
         android:layout_height="48dp"
         android:layout_marginStart="33dp"
         android:text="Gerai Pak Abu Kuantan"
+        android:background="@drawable/button_corner"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.388"

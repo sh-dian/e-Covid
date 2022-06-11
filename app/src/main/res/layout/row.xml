@@ -40,6 +40,15 @@
                 app:layout_constraintStart_toStartOf="@+id/qcName_txt"
                 app:layout_constraintTop_toBottomOf="@+id/qcName_txt" />
 
+            <TextView
+                android:id="@+id/qcPhoneNum_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Author1"
+                app:layout_constraintStart_toStartOf="@+id/qcAddress_txt"
+                app:layout_constraintTop_toBottomOf="@+id/qcAddress_txt" />
+
+
         </android.support.constraint.ConstraintLayout>
 
     </android.support.v7.widget.CardView>

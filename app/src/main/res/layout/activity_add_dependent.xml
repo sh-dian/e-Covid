@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.Login.addDependent">
+    tools:context=".UI_Layer.View.Login.User.addDependent">
 
     <RelativeLayout
         android:id="@+id/relativeLayout3"
@@ -33,14 +33,14 @@
 
         <TextView
             android:id="@+id/textView47"
-            android:layout_width="381dp"
-            android:layout_height="36dp"
+            android:layout_width="379dp"
+            android:layout_height="37dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginTop="105dp"
-            android:layout_marginEnd="7dp"
-            android:layout_marginBottom="590dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginBottom="643dp"
             android:background="@null"
             android:ems="10"
             android:text="Enter your dependents details"
@@ -50,17 +50,17 @@
             tools:ignore="HardcodedText" />
 
         <TextView
-            android:layout_width="381dp"
-            android:layout_height="36dp"
+            android:layout_width="370dp"
+            android:layout_height="40dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="130dp"
-            android:layout_marginEnd="6dp"
-            android:layout_marginBottom="565dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="605dp"
             android:background="@null"
             android:ems="10"
-            android:text="All files are mandatory"
+            android:text="All fields are mandatory"
             android:textColor="@color/black"
             android:textSize="20sp"
             tools:ignore="HardcodedText" />
@@ -71,15 +71,15 @@
             android:layout_height="48dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="132dp"
-            android:layout_marginBottom="96dp"
+            android:layout_marginStart="134dp"
+            android:layout_marginBottom="109dp"
             android:background="@drawable/radius"
             android:text="@string/add_dependents"
             android:textColor="#FFFFFF"
             tools:ignore="TouchTargetSizeCheck" />
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/name_dependent"
+            android:id="@+id/dependent_name"
             android:layout_width="292dp"
             android:layout_height="46dp"
             android:layout_alignParentStart="true"
@@ -87,54 +87,75 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="74dp"
-            android:layout_marginTop="263dp"
-            android:layout_marginEnd="44dp"
-            android:layout_marginBottom="475dp"
+            android:layout_marginTop="214dp"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="525dp"
             android:background="@drawable/radius"
-            android:hint="Full Name"
-            android:inputType="text"
+            android:hint=" Full Name"
+            android:inputType="number"
             android:textColor="@color/white"
             android:textColorHint="#FFFFFF"
-            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/passportNum"
+            android:id="@+id/dependent_icpassport"
             android:layout_width="292dp"
-            android:layout_height="46dp"
+            android:layout_height="48dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="73dp"
-            android:layout_marginTop="330dp"
-            android:layout_marginEnd="45dp"
-            android:layout_marginBottom="407dp"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="277dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="462dp"
             android:background="@drawable/radius"
-            android:hint="NRIC or Passport"
+            android:hint=" NRIC or Passport Number"
             android:inputType="number"
             android:textColor="@color/white"
             android:textColorHint="#FFFFFF"
-            tools:ignore="HardcodedText,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/relation"
             android:layout_width="292dp"
             android:layout_height="46dp"
             android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="73dp"
-            android:layout_marginEnd="45dp"
-            android:layout_marginBottom="285dp"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="346dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="392dp"
             android:background="@drawable/radius"
-            android:hint="Relation"
+            android:hint=" Relation"
             android:inputType="number"
             android:textColor="@color/white"
             android:textColorHint="#FFFFFF"
-            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/age"
+            android:id="@+id/dependent_age"
+            android:layout_width="292dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="414dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginBottom="325dp"
+            android:background="@drawable/radius"
+            android:hint=" Age"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/dependent_gender"
             android:layout_width="292dp"
             android:layout_height="46dp"
             android:layout_alignParentStart="true"
@@ -142,53 +163,35 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="74dp"
-            android:layout_marginTop="392dp"
+            android:layout_marginTop="482dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginBottom="257dp"
+            android:background="@drawable/radius"
+            android:hint=" Gender"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/dependent_address"
+            android:layout_width="292dp"
+            android:layout_height="46dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="549dp"
             android:layout_marginEnd="44dp"
-            android:layout_marginBottom="346dp"
+            android:layout_marginBottom="190dp"
             android:background="@drawable/radius"
-            android:hint="Age"
+            android:hint="Current Address"
             android:inputType="number"
             android:textColor="@color/white"
             android:textColorHint="#FFFFFF"
-            tools:ignore="HardcodedText,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/gender"
-            android:layout_width="292dp"
-            android:layout_height="46dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="72dp"
-            android:layout_marginTop="513dp"
-            android:layout_marginEnd="46dp"
-            android:layout_marginBottom="224dp"
-            android:background="@drawable/radius"
-            android:hint="Gender"
-            android:inputType="number"
-            android:textColor="@color/white"
-            android:textColorHint="#FFFFFF"
-            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
-
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/address"
-            android:layout_width="292dp"
-            android:layout_height="46dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="576dp"
-            android:layout_marginEnd="48dp"
-            android:layout_marginBottom="162dp"
-            android:background="@drawable/radius"
-            android:hint="Current address"
-            android:inputType="number"
-            android:textColor="@color/white"
-            android:textColorHint="#FFFFFF"
-            tools:ignore="HardcodedText,TouchTargetSizeCheck,TouchTargetSizeCheck" />
     </RelativeLayout>
 
     <TextView

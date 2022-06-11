@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.Login.Admin.Admin_MenuPage">
+    tools:context=".UI_Layer.View.Login.Admin.Admin_MenuPage">
 
     <RelativeLayout
         android:layout_width="391dp"

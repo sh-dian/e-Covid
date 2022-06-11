@@ -4,6 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.QuarantineCenter.User.User_ViewQuarantineCenter">
+    tools:context=".UI_Layer.View.QuarantineCenter.User.User_ViewQuarantineCenter">
+    <TextView
+        android:id="@+id/qcName_input3"
+        android:layout_width="301dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="136dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/qcAddress_input3"
+        android:layout_width="293dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qcName_input3" />
+
+    <TextView
+        android:id="@+id/qcPhoneNum_input3"
+        android:layout_width="293dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qcAddress_input3" />
+
+    <TextView
+        android:id="@+id/qcFunding_input3"
+        android:layout_width="293dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qcPhoneNum_input3" />
+
+    <TextView
+        android:id="@+id/qcNumOfBeds_input3"
+        android:layout_width="293dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qcFunding_input3" />
+
+    <TextView
+        android:id="@+id/qcCapacity_input3"
+        android:layout_width="293dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qcNumOfBeds_input3" />
+
+    <TextView
+        android:id="@+id/qcVentilationCapacity_input3"
+        android:layout_width="293dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qcCapacity_input3" />
 </android.support.constraint.ConstraintLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".View.CheckIn_CheckOut.User.MovementHistory">
+    tools:context=".UI_Layer.View.Movement.User.MovementHistory">
 
     <Button
         android:id="@+id/button25"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.728" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/ubackbutton5"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:background="@null"

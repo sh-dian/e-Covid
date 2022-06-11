@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".View.CheckIn_CheckOut.User.CheckIn_VisitorForm">
+    tools:context=".UI_Layer.View.Movement.User.CheckIn_VisitorForm">
 
 
     <ImageView
-        android:id="@+id/imageView28"
+        android:id="@+id/ubuttonback2"
         android:layout_width="28dp"
         android:layout_height="28dp"
         android:layout_marginStart="16dp"
