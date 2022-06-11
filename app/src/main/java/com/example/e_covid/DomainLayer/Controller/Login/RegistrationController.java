@@ -1,9 +1,9 @@
-package com.example.e_covid.DomainLayer.Controller.Registration;
+package com.example.e_covid.DomainLayer.Controller.Login;
 
 import android.app.Activity;
 import android.database.Cursor;
 
-import com.example.e_covid.DataLayer.Model.Registration.RegistrationModel;
+import com.example.e_covid.DataLayer.Model.Login.RegistrationModel;
 
 public class RegistrationController {
 

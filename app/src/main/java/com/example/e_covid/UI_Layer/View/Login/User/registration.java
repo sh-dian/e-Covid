@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.e_covid.DomainLayer.Controller.Registration.RegistrationController;
+import com.example.e_covid.DomainLayer.Controller.Login.RegistrationController;
 import com.example.e_covid.R;
 
 import java.util.Objects;
