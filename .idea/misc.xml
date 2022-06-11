@@ -3,57 +3,108 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/User_quarantine_info.xml" value="0.25416666666666665" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/User_quarantine_type.xml" value="0.264" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_admin_add_quarantine_center.xml" value="0.2" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_admin_dashboard_user_q.xml" value="0.264" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_admin_quarantine_center_menu.xml" value="0.25416666666666665" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_admin_view_quarantine_center.xml" value="0.25416666666666665" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_center_quarantine_data.xml" value="0.264" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_center_quarantine_options.xml" value="0.144" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_checkin_history.xml" value="0.11302083333333333" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_daily_questions.xml" value="0.2" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_home_location.xml" value="0.2" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_home_quarantine_data.xml" value="0.176" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_login.xml" value="0.1" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_main.xml" value="0.152" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_moh_confrmation_user_qrecord.xml" value="0.264" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_moh_dashboard_user_q.xml" value="0.264" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_moh_view_record_user_q.xml" value="0.22056159420289856" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_qrscan.xml" value="0.11302083333333333" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_quarantine_details.xml" value="0.176" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_quarantine_info.xml" value="0.2" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_quarantine_type.xml" value="0.264" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_user_menu_page.xml" value="0.264" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_user_registration.xml" value="0.176" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_user_search_quarantine_center.xml" value="0.25416666666666665" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_user_view_quarantine_center.xml" value="0.1721014492753623" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/admin_dashboard_user_q.xml" value="0.11302083333333333" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/admin_manage_records.xml" value="0.264" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/admin_manage_userq_status.xml" value="0.22056159420289856" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/admin_moh_manage_user_qstatus.xml" value="0.176" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/admin_moh_view_record_user_q.xml" value="0.264" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/admin_view_record_user_q.xml" value="0.12360688956433637" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/center_quarantine_data.xml" value="0.2" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/center_quarantine_options.xml" value="0.21422101449275363" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/daily_questions.xml" value="0.16799999999999998" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/home_location.xml" value="0.136" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/home_quarantine_data.xml" value="0.176" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/moh_manage_userq_status.xml" value="0.11676798378926039" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/moh_view_record_user_q.xml" value="0.12360688956433637" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/quarantine_details.xml" value="0.4" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/quarantine_info.xml" value="0.25" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/quarantine_type.xml" value="0.4" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/user_registration.xml" value="0.264" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_add_dependent.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_admin_add_quarantine_center.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_admin_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_admin_menu_page.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_admin_mvment_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_admin_quarantine_center_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_admin_search_person.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_admin_search_premises.xml" value="0.22" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_admin_view_quarantine_center.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_center_quarantine_data.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_check_in_info.xml" value="0.25" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_check_in_visitor_form.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_check_out_info.xml" value="0.25" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_checkin_history.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_checkin_info.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_checkin_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_checkin_visitor_form.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_checkout_info.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_edit_dependent.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_manage_dependent_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_moh_dashboard_user_q.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_movement_history.xml" value="0.25" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_movement_main.xml" value="0.25" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_qr_scan.xml" value="0.25" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_qrscan.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_register_appointment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_registration.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_registration_visitor.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_update_user_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_user_menu_page.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_vaccination_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/e-Covid/app/src/main/res/layout/admin_moh_manage_user_qstatus.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/drawable/button_corner.xml" value="0.187" />
         <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1705" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/drawable/radiusred.xml" value="0.1" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/drawable/rlightblue.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_add_dependent.xml" value="0.18611111111111112" />
         <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_admin_add_quarantine_center.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_admin_login.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_admin_menu_page.xml" value="0.18611111111111112" />
         <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_admin_quarantine_center_menu.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_check_in_info.xml" value="0.1736111111111111" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_check_in_visitor_form.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_check_out_info.xml" value="0.1736111111111111" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_checkin_history.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_checkin_main.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_checkout_info.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_dependent_vaccine_status.xml" value="0.18611111111111112" />
         <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_dump_class.xml" value="0.209375" />
         <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_main.xml" value="0.18611111111111112" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_user_search_quarantine_center.xml" value="0.209375" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_manage_dependent_profile.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_manage_profile.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_moh_menu_page.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_mohlogin.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_movement_history.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_movement_main.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_qr_scan.xml" value="0.1736111111111111" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_qrscan.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_quarantine_details.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_update_user_profile.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_user_menu_page.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_user_search_quarantine_center.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_user_view_quarantine_center.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/row.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/menu/menu.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/drawable/ic_baseline_apartment_24.xml" value="0.123" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/drawable/ic_baseline_call_24.xml" value="0.123" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/drawable/radiusred.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/drawable/rlightblue.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_admin_add_quarantine_center.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_admin_login.xml" value="0.209375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_admin_menu_page.xml" value="0.209375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_admin_quarantine_center_menu.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_admin_view_quarantine_center.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_checkin_history.xml" value="0.209375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_checkin_info.xml" value="0.209375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_checkin_main.xml" value="0.209375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_checkin_visitor_form.xml" value="0.209375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_checkout_info.xml" value="0.209375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_dump_class.xml" value="0.209375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_edit_dependent.xml" value="0.22" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_main.xml" value="0.209375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_manage_dependent_profile.xml" value="0.209375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_manage_profile.xml" value="0.209375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_moh_menu_page.xml" value="0.209375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_mohlogin.xml" value="0.209375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_registration.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_registration_visitor.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_update_user_profile.xml" value="0.209375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_user_menu_page.xml" value="0.209375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_user_search_quarantine_center.xml" value="0.209375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_user_view_quarantine_center.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/center_quarantine_data.xml" value="0.209375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/center_quarantine_options.xml" value="0.209375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/daily_questions.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/home_location.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/home_quarantine_data.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/quarantine_details.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/quarantine_info.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/quarantine_type.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/layout/user_registration.xml" value="0.209375" />
       </map>
     </option>
   </component>

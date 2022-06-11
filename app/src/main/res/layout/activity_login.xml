@@ -107,7 +107,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.636"
-        app:srcCompat="@drawable/ic_baseline_lock_24" />
+        app:srcCompat="@drawable/ic_baseline_lock_24"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -118,7 +119,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.255"
-        app:srcCompat="@drawable/logo"/>
+        app:srcCompat="@drawable/logo"
+        tools:ignore="ContentDescription" />
 
 
 </android.support.constraint.ConstraintLayout>
