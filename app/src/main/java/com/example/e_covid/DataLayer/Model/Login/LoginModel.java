@@ -6,9 +6,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class RegistrationModel extends SQLiteOpenHelper {
+public class LoginModel extends SQLiteOpenHelper {
 
-    public RegistrationModel(Context context) {super(context, "e-Covid.db", null, 1);}
+    public LoginModel(Context context) {super(context, "e-Covid.db", null, 1);}
     @Override
     public void onCreate(SQLiteDatabase DB) {
         DB.execSQL("CREATE Table Registration(reID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, re_Name TEXT, reIcpassport TEXT, reStateCountry TEXT, rePhoneNumEmail TEXT," +
