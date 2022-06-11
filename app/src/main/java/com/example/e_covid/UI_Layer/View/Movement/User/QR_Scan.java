@@ -1,4 +1,4 @@
-package com.example.e_covid.UI_Layer.View.CheckIn_CheckOut.User;
+package com.example.e_covid.UI_Layer.View.Movement.User;
 
 import android.content.Intent;
 import android.os.Bundle;

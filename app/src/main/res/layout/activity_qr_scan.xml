@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".UI_Layer.View.CheckIn_CheckOut.User.QR_Scan">
+    tools:context=".UI_Layer.View.Movement.User.QR_Scan">
 
     <Button
         android:id="@+id/uScanCheckIn"

@@ -16,28 +16,28 @@
             android:name=".admin_mvmentMenu"
             android:exported="false" />
         <activity
-            android:name=".UI_Layer.View.CheckIn_CheckOut.Admin.admin_search_premises"
+            android:name=".UI_Layer.View.Movement.Admin.admin_search_premises"
             android:exported="false" />
         <activity
-            android:name=".UI_Layer.View.CheckIn_CheckOut.Admin.admin_search_person"
+            android:name=".UI_Layer.View.Movement.Admin.admin_search_person"
             android:exported="false" />
         <activity
-            android:name=".UI_Layer.View.CheckIn_CheckOut.User.QR_Scan"
+            android:name=".UI_Layer.View.Movement.User.QR_Scan"
             android:exported="false" />
         <activity
-            android:name=".UI_Layer.View.CheckIn_CheckOut.User.CheckIn_VisitorForm"
+            android:name=".UI_Layer.View.Movement.User.CheckIn_VisitorForm"
             android:exported="false" />
         <activity
-            android:name=".UI_Layer.View.CheckIn_CheckOut.User.CheckOut_Info"
+            android:name=".UI_Layer.View.Movement.User.CheckOut_Info"
             android:exported="false" />
         <activity
-            android:name=".UI_Layer.View.CheckIn_CheckOut.User.CheckIn_Info"
+            android:name=".UI_Layer.View.Movement.User.CheckIn_Info"
             android:exported="false" />
         <activity
-            android:name=".UI_Layer.View.CheckIn_CheckOut.User.MovementHistory"
+            android:name=".UI_Layer.View.Movement.User.MovementHistory"
             android:exported="false" />
         <activity
-            android:name=".UI_Layer.View.CheckIn_CheckOut.User.MovementMain"
+            android:name=".UI_Layer.View.Movement.User.MovementMain"
             android:exported="false" />
         <activity
             android:name=".UI_Layer.View.Login.User.addDependent"

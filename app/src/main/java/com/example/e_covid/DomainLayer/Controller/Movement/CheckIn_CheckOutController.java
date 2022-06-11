@@ -1,9 +1,9 @@
-package com.example.e_covid.DomainLayer.Controller.CheckIn_CheckOut;
+package com.example.e_covid.DomainLayer.Controller.Movement;
 
 import android.app.Activity;
 import android.database.Cursor;
 
-import com.example.e_covid.DataLayer.Model.CheckIn_CheckOut.CheckIn_CheckOutModel;
+import com.example.e_covid.DataLayer.Model.Movement.CheckIn_CheckOutModel;
     public class CheckIn_CheckOutController {
 
         private final CheckIn_CheckOutModel model;

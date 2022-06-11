@@ -1,4 +1,4 @@
-package com.example.e_covid.UI_Layer.View.CheckIn_CheckOut.Admin;
+package com.example.e_covid.UI_Layer.View.Movement.Admin;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

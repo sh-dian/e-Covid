@@ -1,4 +1,4 @@
-package com.example.e_covid.DataLayer.Model.CheckIn_CheckOut;
+package com.example.e_covid.DataLayer.Model.Movement;
 
 import android.content.ContentValues;
 import android.content.Context;
