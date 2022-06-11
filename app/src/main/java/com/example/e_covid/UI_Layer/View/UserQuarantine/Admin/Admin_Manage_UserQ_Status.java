@@ -8,7 +8,7 @@ import android.widget.ImageView;
 
 import com.example.e_covid.R;
 
-public class AdminMOH_Manage_UserQ_Status extends AppCompatActivity {
+public class Admin_Manage_UserQ_Status extends AppCompatActivity {
 
     public ImageView Image1;
     public ImageView Image2;
@@ -26,7 +26,7 @@ public class AdminMOH_Manage_UserQ_Status extends AppCompatActivity {
         Image1.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminMOH_Manage_UserQ_Status.this, Admin_DashboardUserQ.class);
+                Intent intent = new Intent(Admin_Manage_UserQ_Status.this, Admin_DashboardUserQ.class);
                 startActivity(intent);
             }
         });
@@ -34,7 +34,7 @@ public class AdminMOH_Manage_UserQ_Status extends AppCompatActivity {
         Image2.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminMOH_Manage_UserQ_Status.this, Admin_DashboardUserQ.class);
+                Intent intent = new Intent(Admin_Manage_UserQ_Status.this, Admin_DashboardUserQ.class);
                 startActivity(intent);
             }
         });

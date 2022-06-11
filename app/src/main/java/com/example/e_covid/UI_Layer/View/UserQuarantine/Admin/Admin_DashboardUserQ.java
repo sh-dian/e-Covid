@@ -24,7 +24,7 @@ public class Admin_DashboardUserQ extends AppCompatActivity {
         Image1.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Admin_DashboardUserQ.this, AdminMOH_View_Record_UserQ.class);
+                Intent intent = new Intent(Admin_DashboardUserQ.this, Admin_View_Record_UserQ.class);
                 startActivity(intent);
             }
         });
@@ -34,7 +34,7 @@ public class Admin_DashboardUserQ extends AppCompatActivity {
         Image2.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Admin_DashboardUserQ.this, AdminMOH_Manage_UserQ_Status.class);
+                Intent intent = new Intent(Admin_DashboardUserQ.this, Admin_Manage_UserQ_Status.class);
                 startActivity(intent);
             }
         });

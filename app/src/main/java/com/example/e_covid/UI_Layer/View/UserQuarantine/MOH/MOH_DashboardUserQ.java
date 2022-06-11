@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.example.e_covid.R;
-import com.example.e_covid.UI_Layer.View.UserQuarantine.Admin.AdminMOH_Manage_UserQ_Status;
-import com.example.e_covid.UI_Layer.View.UserQuarantine.Admin.AdminMOH_View_Record_UserQ;
+import com.example.e_covid.UI_Layer.View.UserQuarantine.Admin.Admin_Manage_UserQ_Status;
+import com.example.e_covid.UI_Layer.View.UserQuarantine.Admin.Admin_View_Record_UserQ;
 
 public class MOH_DashboardUserQ extends AppCompatActivity {
 
@@ -31,7 +31,7 @@ public class MOH_DashboardUserQ extends AppCompatActivity {
         Image1.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MOH_DashboardUserQ.this, AdminMOH_View_Record_UserQ.class);
+                Intent intent = new Intent(MOH_DashboardUserQ.this, Admin_View_Record_UserQ.class);
                 startActivity(intent);
             }
         });
@@ -41,7 +41,7 @@ public class MOH_DashboardUserQ extends AppCompatActivity {
         Image2.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MOH_DashboardUserQ.this, AdminMOH_Manage_UserQ_Status.class);
+                Intent intent = new Intent(MOH_DashboardUserQ.this, Admin_Manage_UserQ_Status.class);
                 startActivity(intent);
             }
         });
