@@ -16,7 +16,7 @@ public class AdminMOH_Manage_UserQ_Status extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.admin_moh_manage_user_qstatus);
+        setContentView(R.layout.admin_manage_userq_status);
 
 
 

@@ -17,7 +17,7 @@ public class AdminMOH_View_Record_UserQ extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.admin_moh_view_record_user_q);
+        setContentView(R.layout.admin_view_record_user_q);
 
 
 
