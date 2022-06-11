@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".View.CheckIn_CheckOut.User.CheckOut_Info"
+    tools:context=".UI_Layer.View.Movement.User.CheckOut_Info"
     tools:layout_editor_absoluteX="20dp"
     tools:layout_editor_absoluteY="21dp">
 
