@@ -25,7 +25,7 @@ public class Admin_QuarantineCenterMenu extends AppCompatActivity {
     Button a_Add;
 
     QuarantineCenterModel quarantineCenterModel;
-    ArrayList<String> qcName, qcAddress;
+    ArrayList<String> qcName, qcAddress, qcPhoneNum, qcFunding, qcNumOfBeds, qcCapacity, qcVentilationCapacity;
     QuarantineCenterAdapter quarantineCenterAdapter;
     RecyclerView recyclerView;
 
@@ -47,7 +47,7 @@ public class Admin_QuarantineCenterMenu extends AppCompatActivity {
 
         storeDataInArrays();
 
-        quarantineCenterAdapter = new QuarantineCenterAdapter(Admin_QuarantineCenterMenu.this, qcName, qcAddress);
+        quarantineCenterAdapter = new QuarantineCenterAdapter(Admin_QuarantineCenterMenu.this, qcName, qcAddress, qcPhoneNum, qcFunding, qcNumOfBeds, qcCapacity, qcVentilationCapacity);
         recyclerView.setAdapter(quarantineCenterAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(Admin_QuarantineCenterMenu.this));
 

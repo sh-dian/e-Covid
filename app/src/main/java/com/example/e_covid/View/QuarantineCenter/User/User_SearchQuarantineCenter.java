@@ -20,7 +20,7 @@ public class User_SearchQuarantineCenter extends AppCompatActivity {
     QuarantineCenterController adminQuarantineCenterController;
 
     QuarantineCenterModel quarantineCenterModel;
-    ArrayList<String> qcName, qcAddress;
+    ArrayList<String> qcName, qcAddress, qcPhoneNum, qcFunding, qcNumOfBeds, qcCapacity, qcVentilationCapacity;
     QuarantineCenterAdapter quarantineCenterAdapter;
     RecyclerView recyclerView;
 
@@ -36,7 +36,7 @@ public class User_SearchQuarantineCenter extends AppCompatActivity {
 
         storeDataInArrays();
 
-        quarantineCenterAdapter = new QuarantineCenterAdapter(User_SearchQuarantineCenter.this, qcName, qcAddress);
+        quarantineCenterAdapter = new QuarantineCenterAdapter(User_SearchQuarantineCenter.this, qcName, qcAddress, qcPhoneNum, qcFunding, qcNumOfBeds, qcCapacity, qcVentilationCapacity);
         recyclerView.setAdapter(quarantineCenterAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(User_SearchQuarantineCenter.this));
     }

@@ -13,6 +13,7 @@ import java.util.Objects;
 public class MovementMain extends AppCompatActivity {
 
     Button mCheckIn;
+    Button mHistory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +25,20 @@ public class MovementMain extends AppCompatActivity {
         setContentView(R.layout.activity_movement_main);
 
         mCheckIn = findViewById(R.id.uCheckInBtn);
+        mHistory = findViewById(R.id.uMovementHistory);
+
         mCheckIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MovementMain.this, QR_Scan.class);
+                startActivity(intent);
+            }
+        });
+
+        mHistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MovementMain.this, MovementHistory.class);
                 startActivity(intent);
             }
         });

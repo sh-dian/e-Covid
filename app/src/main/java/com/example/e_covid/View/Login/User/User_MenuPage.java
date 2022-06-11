@@ -9,6 +9,7 @@ import android.widget.Button;
 import com.example.e_covid.R;
 import com.example.e_covid.View.CheckIn_CheckOut.User.MovementMain;
 import com.example.e_covid.View.QuarantineCenter.User.User_SearchQuarantineCenter;
+import com.example.e_covid.View.UserQuarantine.User.CenterQuarantineOptions;
 import com.example.e_covid.View.Vaccination.VaccinationMain;
 
 import java.util.Objects;
@@ -18,7 +19,8 @@ public class User_MenuPage extends AppCompatActivity {
     Button mUserProfile;
     Button mQuarantineCenter;
     Button mMovement;
-    Button uVaccination;
+    Button mVaccination;
+    Button mUserQuarantine;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +33,8 @@ public class User_MenuPage extends AppCompatActivity {
         mUserProfile = findViewById (R.id.userProfile);
         mQuarantineCenter = findViewById (R.id.qcBtn);
         mMovement = findViewById (R.id.CCbtn);
-        uVaccination = findViewById(R.id.vcbutton);
+        mVaccination = findViewById(R.id.vcbutton);
+        mUserQuarantine = findViewById(R.id.userQuarantine);
 
         mUserProfile.setOnClickListener (new View.OnClickListener() {
             public void onClick(View v) {
@@ -51,9 +54,15 @@ public class User_MenuPage extends AppCompatActivity {
             }
         });
 
-        uVaccination.setOnClickListener(new View.OnClickListener() {
+        mVaccination.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 vcMain();
+            }
+        });
+
+        mUserQuarantine.setOnClickListener (new View.OnClickListener() {
+            public void onClick(View v) {
+                userQuarantine();
             }
         });
 
@@ -69,13 +78,18 @@ public class User_MenuPage extends AppCompatActivity {
         startActivity(intent);
     }
 
+    private void userQuarantine() {
+        Intent intent = new Intent(User_MenuPage.this, CenterQuarantineOptions.class);
+        startActivity(intent);
+    }
+
     private void userProfile() {
         Intent intent = new Intent(User_MenuPage.this, ManageProfile.class);
         startActivity(intent);
     }
 
     public void vcMain() {
-        Intent intent = new Intent(User_MenuPage.this,VaccinationMain.class);
+        Intent intent = new Intent(User_MenuPage.this, VaccinationMain.class);
         startActivity(intent);
     }
 }

@@ -22,12 +22,22 @@ public class QuarantineCenterAdapter extends RecyclerView.Adapter<QuarantineCent
     private Activity activity;
     private final ArrayList qcName;
     private final ArrayList qcAddress;
+    private final ArrayList qcPhoneNum;
+    private final ArrayList qcFunding;
+    private final ArrayList qcNumOfBeds;
+    private final ArrayList qcCapacity;
+    private final ArrayList qcVentilationCapacity;
     private int position;
 
-    public QuarantineCenterAdapter(Context context, ArrayList qcName , ArrayList qcAddress){
+    public QuarantineCenterAdapter(Context context, ArrayList qcName, ArrayList qcAddress, ArrayList qcPhoneNum, ArrayList qcFunding, ArrayList qcNumOfBeds, ArrayList qcCapacity, ArrayList qcVentilationCapacity){
         this.context = context;
         this.qcName = qcName;
         this.qcAddress = qcAddress;
+        this.qcPhoneNum = qcPhoneNum;
+        this.qcFunding = qcFunding;
+        this.qcNumOfBeds = qcNumOfBeds;
+        this.qcCapacity = qcCapacity;
+        this.qcVentilationCapacity = qcVentilationCapacity;
     }
 
     @NonNull

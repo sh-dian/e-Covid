@@ -8,7 +8,7 @@
     tools:context=".View.CheckIn_CheckOut.User.QR_Scan">
 
     <Button
-        android:id="@+id/uScanCheckin"
+        android:id="@+id/uScanCheckIn"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginBottom="17dp"
