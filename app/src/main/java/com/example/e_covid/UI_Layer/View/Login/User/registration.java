@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.e_covid.DomainLayer.Controller.Login.RegistrationController;
+import com.example.e_covid.DomainLayer.Controller.Login.LoginController;
 import com.example.e_covid.R;
 
 import java.util.Objects;
@@ -15,7 +15,7 @@ import java.util.Objects;
 public class registration extends AppCompatActivity {
 
     //controller object
-    RegistrationController userregistrationController ;
+    LoginController userregistrationController ;
 
     //button object
     Button mRegister;
@@ -54,7 +54,7 @@ public class registration extends AppCompatActivity {
         rePassword = findViewById(R.id.password);
         rePasswordRe = findViewById(R.id.passwordConfirm);
 
-        userregistrationController = new RegistrationController(this);
+        userregistrationController = new LoginController(this);
 
 
         //add button function for add new info of quarantine center
