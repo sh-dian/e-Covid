@@ -46,16 +46,18 @@ public class HomeQuarantineData extends AppCompatActivity {
         button.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                UserQuarantineModel quM = new UserQuarantineModel(HomeQuarantineData.this);
+               /* UserQuarantineModel quM = new UserQuarantineModel(HomeQuarantineData.this);
+
                 quM.addHome(TestResult.getText().toString().trim(),
                         Integer.valueOf(DateofTest.getText().toString().trim()),
                         CurrentlyState.getText().toString().trim(),
                         Boolean.valueOf(Disable.getText().toString().trim()) ,
-                        Boolean.valueOf(ChestDiseases.getText().toString().trim()));
-             
+                        Boolean.valueOf(ChestDiseases.getText().toString().trim()));*/
+                         Intent intent = new Intent(HomeQuarantineData.this, HomeLocation.class);
+                         startActivity(intent);
 
-                Intent intent = new Intent(HomeQuarantineData.this, HomeLocation.class);
-                startActivity(intent);
+
+
             }
         });
 
