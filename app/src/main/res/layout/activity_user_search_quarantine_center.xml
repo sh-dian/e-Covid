@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     app:cardElevation="8dp"
     android:layout_margin="8dp"
-    tools:context=".View.QuarantineCenter.User.User_SearchQuarantineCenter">
+    tools:context=".UI_Layer.View.QuarantineCenter.User.User_SearchQuarantineCenter">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"

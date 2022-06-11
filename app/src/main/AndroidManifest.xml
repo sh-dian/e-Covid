@@ -16,49 +16,49 @@
             android:name=".admin_mvmentMenu"
             android:exported="false" />
         <activity
-            android:name=".View.CheckIn_CheckOut.Admin.admin_search_premises"
+            android:name=".UI_Layer.View.CheckIn_CheckOut.Admin.admin_search_premises"
             android:exported="false" />
         <activity
-            android:name=".View.CheckIn_CheckOut.Admin.admin_search_person"
+            android:name=".UI_Layer.View.CheckIn_CheckOut.Admin.admin_search_person"
             android:exported="false" />
         <activity
-            android:name=".View.CheckIn_CheckOut.User.QR_Scan"
+            android:name=".UI_Layer.View.CheckIn_CheckOut.User.QR_Scan"
             android:exported="false" />
         <activity
-            android:name=".View.CheckIn_CheckOut.User.CheckIn_VisitorForm"
+            android:name=".UI_Layer.View.CheckIn_CheckOut.User.CheckIn_VisitorForm"
             android:exported="false" />
         <activity
-            android:name=".View.CheckIn_CheckOut.User.CheckOut_Info"
+            android:name=".UI_Layer.View.CheckIn_CheckOut.User.CheckOut_Info"
             android:exported="false" />
         <activity
-            android:name=".View.CheckIn_CheckOut.User.CheckIn_Info"
+            android:name=".UI_Layer.View.CheckIn_CheckOut.User.CheckIn_Info"
             android:exported="false" />
         <activity
-            android:name=".View.CheckIn_CheckOut.User.MovementHistory"
+            android:name=".UI_Layer.View.CheckIn_CheckOut.User.MovementHistory"
             android:exported="false" />
         <activity
-            android:name=".View.CheckIn_CheckOut.User.MovementMain"
+            android:name=".UI_Layer.View.CheckIn_CheckOut.User.MovementMain"
             android:exported="false" />
         <activity
-            android:name=".View.Login.User.addDependent"
+            android:name=".UI_Layer.View.Login.User.addDependent"
             android:exported="false" />
         <activity
-            android:name=".View.Login.MOH.ViewAdminMoh"
+            android:name=".UI_Layer.View.Login.MOH.ViewAdminMoh"
             android:exported="false" />
         <activity
-            android:name=".View.Vaccination.RegisterVaccinationCertificate"
+            android:name=".UI_Layer.View.Vaccination.RegisterVaccinationCertificate"
             android:exported="false" />
         <activity
-            android:name=".View.Vaccination.DependentVaccineDetails"
+            android:name=".UI_Layer.View.Vaccination.DependentVaccineDetails"
             android:exported="false" />
         <activity
-            android:name=".View.Vaccination.DependentVaccineStatus"
+            android:name=".UI_Layer.View.Vaccination.DependentVaccineStatus"
             android:exported="false" />
         <activity
-            android:name=".View.Vaccination.RegisterAppointment"
+            android:name=".UI_Layer.View.Vaccination.RegisterAppointment"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".UI_Layer.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -67,100 +67,100 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".View.QuarantineCenter.User.User_ViewQuarantineCenter"
+            android:name=".UI_Layer.View.QuarantineCenter.User.User_ViewQuarantineCenter"
             android:exported="false" /> <!-- Menu Page -->
         <activity
-            android:name=".View.Login.User.User_MenuPage"
+            android:name=".UI_Layer.View.Login.User.User_MenuPage"
             android:exported="false" />
         <activity
-            android:name=".View.Login.MOH.MOH_MenuPage"
+            android:name=".UI_Layer.View.Login.MOH.MOH_MenuPage"
             android:exported="false" />
         <activity
-            android:name=".View.Login.Admin.Admin_MenuPage"
+            android:name=".UI_Layer.View.Login.Admin.Admin_MenuPage"
             android:exported="false" /> <!-- View Login package -->
         <activity
-            android:name=".View.Login.Admin.AdminLogin"
+            android:name=".UI_Layer.View.Login.Admin.AdminLogin"
             android:exported="true" />
         <activity
-            android:name=".View.Login.User.EditDependent"
+            android:name=".UI_Layer.View.Login.User.EditDependent"
             android:exported="false" />
         <activity
-            android:name=".View.Login.User.LoginActivity"
+            android:name=".UI_Layer.View.Login.User.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".View.Login.User.ManageDependentProfile"
+            android:name=".UI_Layer.View.Login.User.ManageDependentProfile"
             android:exported="false" />
         <activity
-            android:name=".View.Login.User.ManageProfile"
+            android:name=".UI_Layer.View.Login.User.ManageProfile"
             android:exported="false" />
         <activity
-            android:name=".View.Login.MOH.MOHLogin"
+            android:name=".UI_Layer.View.Login.MOH.MOHLogin"
             android:exported="false" />
         <activity
-            android:name=".View.Login.User.registration"
+            android:name=".UI_Layer.View.Login.User.registration"
             android:exported="false" />
         <activity
-            android:name=".View.Login.User.updateUserProfile"
+            android:name=".UI_Layer.View.Login.User.updateUserProfile"
             android:exported="false" /> <!-- View User Quarantine package -->
         <activity
-            android:name=".View.UserQuarantine.AdminMOH.Admin_DashboardUserQ"
+            android:name=".UI_Layer.View.UserQuarantine.AdminMOH.Admin_DashboardUserQ"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.AdminMOH.Admin_Edit_UserQ"
+            android:name=".UI_Layer.View.UserQuarantine.AdminMOH.Admin_Edit_UserQ"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.AdminMOH.Admin_Manage_Records"
+            android:name=".UI_Layer.View.UserQuarantine.AdminMOH.Admin_Manage_Records"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.AdminMOH.AdminMOH_Manage_UserQ_Status"
+            android:name=".UI_Layer.View.UserQuarantine.AdminMOH.AdminMOH_Manage_UserQ_Status"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.AdminMOH.AdminMOH_View_Record_UserQ"
+            android:name=".UI_Layer.View.UserQuarantine.AdminMOH.AdminMOH_View_Record_UserQ"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.MOH.MOH_Confrmation_UserQ_Record"
+            android:name=".UI_Layer.View.UserQuarantine.MOH.MOH_Confrmation_UserQ_Record"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.MOH.MOH_DashboardUserQ"
+            android:name=".UI_Layer.View.UserQuarantine.MOH.MOH_DashboardUserQ"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.User.CenterQuarantineData"
+            android:name=".UI_Layer.View.UserQuarantine.User.CenterQuarantineData"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.User.CenterQuarantineOptions"
+            android:name=".UI_Layer.View.UserQuarantine.User.CenterQuarantineOptions"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.User.DailyQuestions"
+            android:name=".UI_Layer.View.UserQuarantine.User.DailyQuestions"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.User.HomeLocation"
+            android:name=".UI_Layer.View.UserQuarantine.User.HomeLocation"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.User.HomeQuarantineData"
+            android:name=".UI_Layer.View.UserQuarantine.User.HomeQuarantineData"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.User.QuarantineDetails"
+            android:name=".UI_Layer.View.UserQuarantine.User.QuarantineDetails"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.User.QuarantineINFO"
+            android:name=".UI_Layer.View.UserQuarantine.User.QuarantineINFO"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.User.QuarantineType"
+            android:name=".UI_Layer.View.UserQuarantine.User.QuarantineType"
             android:exported="false" />
         <activity
-            android:name=".View.UserQuarantine.User.UserRegistration"
+            android:name=".UI_Layer.View.UserQuarantine.User.UserRegistration"
             android:exported="false" /> <!-- View Quarantine Center package -->
         <activity
-            android:name=".View.QuarantineCenter.Admin.Admin_QuarantineCenterMenu"
+            android:name=".UI_Layer.View.QuarantineCenter.Admin.Admin_QuarantineCenterMenu"
             android:exported="false" />
         <activity
-            android:name=".View.QuarantineCenter.Admin.Admin_ViewQuarantineCenter"
+            android:name=".UI_Layer.View.QuarantineCenter.Admin.Admin_ViewQuarantineCenter"
             android:exported="false" />
         <activity
-            android:name=".View.QuarantineCenter.Admin.Admin_AddQuarantineCenter"
+            android:name=".UI_Layer.View.QuarantineCenter.Admin.Admin_AddQuarantineCenter"
             android:exported="false" />
         <activity
-            android:name=".View.QuarantineCenter.User.User_SearchQuarantineCenter"
+            android:name=".UI_Layer.View.QuarantineCenter.User.User_SearchQuarantineCenter"
             android:exported="false" />
     </application>
 
