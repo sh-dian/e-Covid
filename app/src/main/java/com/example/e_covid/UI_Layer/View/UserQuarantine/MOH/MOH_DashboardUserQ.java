@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.example.e_covid.R;
-import com.example.e_covid.UI_Layer.View.UserQuarantine.AdminMOH.AdminMOH_Manage_UserQ_Status;
-import com.example.e_covid.UI_Layer.View.UserQuarantine.AdminMOH.AdminMOH_View_Record_UserQ;
+import com.example.e_covid.UI_Layer.View.UserQuarantine.Admin.AdminMOH_Manage_UserQ_Status;
+import com.example.e_covid.UI_Layer.View.UserQuarantine.Admin.AdminMOH_View_Record_UserQ;
 
 public class MOH_DashboardUserQ extends AppCompatActivity {
 

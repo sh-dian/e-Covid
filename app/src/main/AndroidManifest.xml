@@ -46,16 +46,16 @@
             android:name=".UI_Layer.View.Login.MOH.ViewAdminMoh"
             android:exported="false" />
         <activity
-            android:name=".UI_Layer.View.Vaccination.RegisterVaccinationCertificate"
+            android:name=".UI_Layer.View.Vaccination.User.RegisterVaccinationCertificate"
             android:exported="false" />
         <activity
-            android:name=".UI_Layer.View.Vaccination.DependentVaccineDetails"
+            android:name=".UI_Layer.View.Vaccination.User.DependentVaccineDetails"
             android:exported="false" />
         <activity
-            android:name=".UI_Layer.View.Vaccination.DependentVaccineStatus"
+            android:name=".UI_Layer.View.Vaccination.User.DependentVaccineStatus"
             android:exported="false" />
         <activity
-            android:name=".UI_Layer.View.Vaccination.RegisterAppointment"
+            android:name=".UI_Layer.View.Vaccination.User.RegisterAppointment"
             android:exported="false" />
         <activity
             android:name=".UI_Layer.MainActivity"
@@ -103,19 +103,19 @@
             android:name=".UI_Layer.View.Login.User.updateUserProfile"
             android:exported="false" /> <!-- View User Quarantine package -->
         <activity
-            android:name=".UI_Layer.View.UserQuarantine.AdminMOH.Admin_DashboardUserQ"
+            android:name=".UI_Layer.View.UserQuarantine.Admin.Admin_DashboardUserQ"
             android:exported="false" />
         <activity
-            android:name=".UI_Layer.View.UserQuarantine.AdminMOH.Admin_Edit_UserQ"
+            android:name=".UI_Layer.View.UserQuarantine.Admin.Admin_Edit_UserQ"
             android:exported="false" />
         <activity
-            android:name=".UI_Layer.View.UserQuarantine.AdminMOH.Admin_Manage_Records"
+            android:name=".UI_Layer.View.UserQuarantine.Admin.Admin_Manage_Records"
             android:exported="false" />
         <activity
-            android:name=".UI_Layer.View.UserQuarantine.AdminMOH.AdminMOH_Manage_UserQ_Status"
+            android:name=".UI_Layer.View.UserQuarantine.Admin.AdminMOH_Manage_UserQ_Status"
             android:exported="false" />
         <activity
-            android:name=".UI_Layer.View.UserQuarantine.AdminMOH.AdminMOH_View_Record_UserQ"
+            android:name=".UI_Layer.View.UserQuarantine.Admin.AdminMOH_View_Record_UserQ"
             android:exported="false" />
         <activity
             android:name=".UI_Layer.View.UserQuarantine.MOH.MOH_Confrmation_UserQ_Record"
