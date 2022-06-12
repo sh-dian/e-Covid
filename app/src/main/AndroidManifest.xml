@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ECovid">
         <activity
+            android:name=".Admin_UpdateQuarantineCenter"
+            android:exported="false" />
+        <activity
             android:name=".MOH_View_Record_UserQ"
             android:exported="false" />
         <activity

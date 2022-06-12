@@ -9,13 +9,12 @@ import android.widget.Button;
 import com.example.e_covid.R;
 import com.example.e_covid.UI_Layer.View.Movement.User.MovementMain;
 import com.example.e_covid.UI_Layer.View.QuarantineCenter.User.User_QuarantineCenterMenu;
-import com.example.e_covid.UI_Layer.View.UserQuarantine.User.CenterQuarantineOptions;
 import com.example.e_covid.UI_Layer.View.UserQuarantine.User.UserRegistration;
 import com.example.e_covid.UI_Layer.View.Vaccination.User.VaccinationMain;
 
 import java.util.Objects;
 
-public class User_MenuPage extends AppCompatActivity {
+public class User_Menu_Page extends AppCompatActivity {
 
     Button mUserProfile;
     Button mQuarantineCenter;
@@ -70,27 +69,27 @@ public class User_MenuPage extends AppCompatActivity {
 }
 
     private void movement() {
-        Intent intent = new Intent(User_MenuPage.this, MovementMain.class);
+        Intent intent = new Intent(User_Menu_Page.this, MovementMain.class);
         startActivity(intent);
     }
 
     private void quarantineCenter() {
-        Intent intent = new Intent(User_MenuPage.this, User_QuarantineCenterMenu.class);
+        Intent intent = new Intent(User_Menu_Page.this, User_QuarantineCenterMenu.class);
         startActivity(intent);
     }
 
     private void userQuarantine() {
-        Intent intent = new Intent(User_MenuPage.this, UserRegistration.class);
+        Intent intent = new Intent(User_Menu_Page.this, UserRegistration.class);
         startActivity(intent);
     }
 
     private void userProfile() {
-        Intent intent = new Intent(User_MenuPage.this, ManageProfile.class);
+        Intent intent = new Intent(User_Menu_Page.this, User_Manage_Profile.class);
         startActivity(intent);
     }
 
     public void vcMain() {
-        Intent intent = new Intent(User_MenuPage.this, VaccinationMain.class);
+        Intent intent = new Intent(User_Menu_Page.this, VaccinationMain.class);
         startActivity(intent);
     }
 }
