@@ -10,6 +10,7 @@ import com.example.e_covid.R;
 import com.example.e_covid.UI_Layer.View.Movement.User.MovementMain;
 import com.example.e_covid.UI_Layer.View.QuarantineCenter.User.User_QuarantineCenterMenu;
 import com.example.e_covid.UI_Layer.View.UserQuarantine.User.CenterQuarantineOptions;
+import com.example.e_covid.UI_Layer.View.UserQuarantine.User.UserRegistration;
 import com.example.e_covid.UI_Layer.View.Vaccination.User.VaccinationMain;
 
 import java.util.Objects;
@@ -79,7 +80,7 @@ public class User_MenuPage extends AppCompatActivity {
     }
 
     private void userQuarantine() {
-        Intent intent = new Intent(User_MenuPage.this, CenterQuarantineOptions.class);
+        Intent intent = new Intent(User_MenuPage.this, UserRegistration.class);
         startActivity(intent);
     }
 
