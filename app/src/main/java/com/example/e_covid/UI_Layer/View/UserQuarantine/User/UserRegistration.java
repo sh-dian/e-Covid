@@ -8,7 +8,6 @@ import android.widget.Button;
 
 import com.example.e_covid.R;
 
-//import androidx.appcompat.app.AppCompatActivity;
 
 
 public class UserRegistration extends AppCompatActivity {

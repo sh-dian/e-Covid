@@ -48,7 +48,6 @@ public class HomeQuarantineData extends AppCompatActivity {
             public void onClick(View v) {
 
                 UserQuarantineModel quM = new UserQuarantineModel(HomeQuarantineData.this);
-
                 testvalu =  quM.addHome( QType,
                         TestResult.getText().toString().trim(),
                         Integer.valueOf(DateofTest.getText().toString().trim()),
@@ -56,12 +55,10 @@ public class HomeQuarantineData extends AppCompatActivity {
                         Boolean.valueOf(Disable.getText().toString().trim()) ,
                         Boolean.valueOf(ChestDiseases.getText().toString().trim()));
 
-                if(testvalu == true){
+             if(testvalu == true){
                     Intent intent = new Intent(HomeQuarantineData.this, HomeLocation.class);
                     startActivity(intent);
-                }else {
-
-                }
+             }
             }
         });
 
@@ -73,6 +70,9 @@ public class HomeQuarantineData extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
         Image2 = findViewById (R.id.Home1);
         Image2.setOnClickListener (new View.OnClickListener() {
             @Override
