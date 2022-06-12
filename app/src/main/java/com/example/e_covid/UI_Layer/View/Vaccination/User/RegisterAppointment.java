@@ -30,7 +30,7 @@ public class RegisterAppointment extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_add_quarantine_center);
+        setContentView(R.layout.activity_register_appointment);
 
         //link button id
         vc_insert = findViewById(R.id.submitAdd);
