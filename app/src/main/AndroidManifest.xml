@@ -163,7 +163,7 @@
             android:name=".UI_Layer.View.QuarantineCenter.Admin.Admin_AddQuarantineCenter"
             android:exported="false" />
         <activity
-            android:name=".UI_Layer.View.QuarantineCenter.User.User_SearchQuarantineCenter"
+            android:name=".UI_Layer.View.QuarantineCenter.User.User_QuarantineCenterMenu"
             android:exported="false" />
     </application>
 

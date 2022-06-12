@@ -14,7 +14,7 @@ import com.example.e_covid.R;
 
 import java.util.ArrayList;
 
-public class User_SearchQuarantineCenter extends AppCompatActivity {
+public class User_QuarantineCenterMenu extends AppCompatActivity {
 
     //controller object
     QuarantineCenterController adminQuarantineCenterController;
@@ -27,7 +27,7 @@ public class User_SearchQuarantineCenter extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_search_quarantine_center);
+        setContentView(R.layout.activity_user_quarantine_center_menu);
 
         recyclerView = findViewById(R.id.recyclerView);
         quarantineCenterModel = new QuarantineCenterModel(this);
@@ -41,9 +41,9 @@ public class User_SearchQuarantineCenter extends AppCompatActivity {
 
         storeDataInArrays();
 
-        user_quarantineCenterAdapter = new User_QuarantineCenterAdapter(User_SearchQuarantineCenter.this, qcName, qcAddress, qcPhoneNum, qcFunding, qcNumOfBeds, qcCapacity, qcVentilationCapacity);
+        user_quarantineCenterAdapter = new User_QuarantineCenterAdapter(User_QuarantineCenterMenu.this, qcName, qcAddress, qcPhoneNum, qcFunding, qcNumOfBeds, qcCapacity, qcVentilationCapacity);
         recyclerView.setAdapter(user_quarantineCenterAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(User_SearchQuarantineCenter.this));
+        recyclerView.setLayoutManager(new LinearLayoutManager(User_QuarantineCenterMenu.this));
     }
 
     void storeDataInArrays(){

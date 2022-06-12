@@ -8,7 +8,7 @@ import android.widget.Button;
 
 import com.example.e_covid.R;
 import com.example.e_covid.UI_Layer.View.Movement.User.MovementMain;
-import com.example.e_covid.UI_Layer.View.QuarantineCenter.User.User_SearchQuarantineCenter;
+import com.example.e_covid.UI_Layer.View.QuarantineCenter.User.User_QuarantineCenterMenu;
 import com.example.e_covid.UI_Layer.View.UserQuarantine.User.CenterQuarantineOptions;
 import com.example.e_covid.UI_Layer.View.Vaccination.User.VaccinationMain;
 
@@ -74,7 +74,7 @@ public class User_MenuPage extends AppCompatActivity {
     }
 
     private void quarantineCenter() {
-        Intent intent = new Intent(User_MenuPage.this, User_SearchQuarantineCenter.class);
+        Intent intent = new Intent(User_MenuPage.this, User_QuarantineCenterMenu.class);
         startActivity(intent);
     }
 

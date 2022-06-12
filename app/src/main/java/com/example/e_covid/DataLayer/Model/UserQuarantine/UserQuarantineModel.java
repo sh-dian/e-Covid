@@ -2,15 +2,10 @@ package com.example.e_covid.DataLayer.Model.UserQuarantine;
 
 import android.content.ContentValues;
 import android.content.Context;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.support.annotation.Nullable;
 import android.widget.Toast;
-
-import com.example.e_covid.UI_Layer.View.UserQuarantine.User.HomeQuarantineData;
-
-import java.sql.Date;
 
 public class UserQuarantineModel extends SQLiteOpenHelper {
 

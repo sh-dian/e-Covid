@@ -4,37 +4,32 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 
-public class QuarantineCenterModel extends SQLiteOpenHelper {
-    public QuarantineCenterModel(Context context) {
-        super(context, "e-Covid.db", null, 1);
-    }
-    @Override
-    public void onCreate(SQLiteDatabase DB) {
-        DB.execSQL("CREATE Table QuarantineCenter(qcID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, qcName TEXT, qcAddress TEXT, qcFunding TEXT, qcPhoneNum TEXT," +
-                "qcNumOfBeds INTEGER, qcCapacity INTEGER, qcVentilationCapacity INTEGER)");
-    }
+import com.example.e_covid.DataLayer.MainDB;
 
-    @Override
-    public void onUpgrade(SQLiteDatabase DB, int i, int i1) {
-        DB.execSQL("DROP Table if exists QuarantineCenter");
+public class QuarantineCenterModel{
+    private MainDB mainDB;
+    private Context context;
+
+    public QuarantineCenterModel(Context context){
+        mainDB = new MainDB(context);
+        this.context = context;
     }
 
     //insert function
-    public Boolean insertQC_data(String qcName, String qcAddress, String qcFunding, String qcPhoneNum, int qcNumOfBeds, int qcCapacity,
-                                 int qcVentilationCapacity){
+    public Boolean insertQC_data(String QC_Name, String QC_Address, String QC_Funding, String QC_PhoneNum, int QC_NumOfBeds, int QC_Capacity,
+                                 int QC_VentilationCapacity){
 
-        SQLiteDatabase DB = this.getWritableDatabase();
+        SQLiteDatabase DB = mainDB.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put("qcName", qcName);
-        contentValues.put("qcAddress", qcAddress);
-        contentValues.put("qcFunding", qcFunding);
-        contentValues.put("qcPhoneNum", qcPhoneNum);
-        contentValues.put("qcNumOfBeds", qcNumOfBeds);
-        contentValues.put("qcCapacity", qcCapacity);
-        contentValues.put("qcVentilationCapacity", qcVentilationCapacity);
+        contentValues.put("QC_Name", QC_Name);
+        contentValues.put("QC_Address", QC_Address);
+        contentValues.put("QC_Funding", QC_Funding);
+        contentValues.put("QC_PhoneNum", QC_PhoneNum);
+        contentValues.put("QC_NumOfBeds", QC_NumOfBeds);
+        contentValues.put("QC_Capacity", QC_Capacity);
+        contentValues.put("QC_VentilationCapacity", QC_VentilationCapacity);
 
         long result = DB.insert("QuarantineCenter", null, contentValues);
 
@@ -43,7 +38,7 @@ public class QuarantineCenterModel extends SQLiteOpenHelper {
 
     public Cursor readAllData(){
         String query = "SELECT * FROM QuarantineCenter";
-        SQLiteDatabase DB = this.getReadableDatabase();
+        SQLiteDatabase DB = mainDB.getReadableDatabase();
 
         Cursor cursor = null;
         if(DB != null){
