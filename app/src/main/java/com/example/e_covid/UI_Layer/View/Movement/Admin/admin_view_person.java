@@ -15,7 +15,7 @@ public class admin_view_person extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_search_person);
+        setContentView(R.layout.activity_admin_view_person);
 
         checkinName = findViewById(R.id.checkinName);
         checkinICNumber = findViewById(R.id.checkinICnumber);
