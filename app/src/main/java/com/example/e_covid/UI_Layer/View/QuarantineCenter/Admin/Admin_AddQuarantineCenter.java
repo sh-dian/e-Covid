@@ -69,7 +69,7 @@ public class Admin_AddQuarantineCenter extends AppCompatActivity {
             Boolean checkInsertion = adminQuarantineCenterController.Add_QC(QC_name,QC_address,QC_funding,QC_phoneNum,
                     QC_bedNum,QC_capacity,QC_ventilationCapacity);
 
-            if(checkInsertion){
+            if(checkInsertion == true){
                 Toast.makeText(Admin_AddQuarantineCenter.this, "Success", Toast.LENGTH_SHORT).show();
             }else{
                 Toast.makeText(Admin_AddQuarantineCenter.this, "Failed", Toast.LENGTH_SHORT).show();

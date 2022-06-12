@@ -10,21 +10,23 @@ import com.example.e_covid.R;
 
 import java.util.Objects;
 
-public class MOHLogin extends AppCompatActivity {
+public class MOH_Menu_Page extends AppCompatActivity {
 
-    Button mLogin;
+    Button mUserMenuPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //author code - hide action bar
         Objects.requireNonNull(getSupportActionBar()).hide();
-        setContentView(R.layout.activity_mohlogin);
+        setContentView(R.layout.activity_moh_menu_page);
 
-        mLogin = findViewById(R.id.moh_Login);
-        mLogin.setOnClickListener(new View.OnClickListener() {
+        mUserMenuPage = findViewById(R.id.mohManageUserBtn);
+
+        mUserMenuPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MOHLogin.this, MOH_MenuPage.class);
+                Intent intent = new Intent(MOH_Menu_Page.this, View_Admin_Moh.class);
                 startActivity(intent);
             }
         });

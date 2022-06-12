@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".UI_Layer.View.Login.User.User_MenuPage">
+    tools:context=".UI_Layer.View.Login.User.User_Menu_Page">
 
     <RelativeLayout
         android:layout_width="391dp"

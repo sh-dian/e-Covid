@@ -5,9 +5,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
-import com.example.e_covid.UI_Layer.View.Login.Admin.AdminLogin;
-import com.example.e_covid.UI_Layer.View.Login.MOH.MOHLogin;
-import com.example.e_covid.UI_Layer.View.Login.User.LoginActivity;
+import com.example.e_covid.UI_Layer.View.Login.Admin.Admin_Login;
+import com.example.e_covid.UI_Layer.View.Login.MOH.MOH_Login;
+import com.example.e_covid.UI_Layer.View.Login.User.User_Login;
 import com.example.e_covid.R;
 
 import java.util.Objects;
@@ -36,17 +36,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openMOHLogin() {
-        Intent intent = new Intent(MainActivity.this, MOHLogin.class);
+        Intent intent = new Intent(MainActivity.this, MOH_Login.class);
         startActivity(intent);
     }
 
     private void openAdminLogin() {
-        Intent intent = new Intent(MainActivity.this, AdminLogin.class);
+        Intent intent = new Intent(MainActivity.this, Admin_Login.class);
         startActivity(intent);
     }
 
     private void openUserLogin() {
-        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        Intent intent = new Intent(MainActivity.this, User_Login.class);
         startActivity(intent);
     }
 }

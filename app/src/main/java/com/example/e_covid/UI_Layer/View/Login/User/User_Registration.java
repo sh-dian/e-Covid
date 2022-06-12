@@ -12,7 +12,7 @@ import com.example.e_covid.R;
 
 import java.util.Objects;
 
-public class registration extends AppCompatActivity {
+public class User_Registration extends AppCompatActivity {
 
     //controller object
     LoginController userregistrationController ;
@@ -69,17 +69,17 @@ public class registration extends AppCompatActivity {
             Boolean checkInsertion = userregistrationController.Add_RE(RE_name, RE_Icpassport, RE_StateCountry, RE_PhoneNumEmail, RE_Password, RE_PasswordRe);
 
             if(checkInsertion){
-                Toast.makeText(registration.this, "Success", Toast.LENGTH_SHORT).show();
+                Toast.makeText(User_Registration.this, "Success", Toast.LENGTH_SHORT).show();
             }else{
-                Toast.makeText(registration.this, "Failed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(User_Registration.this, "Failed", Toast.LENGTH_SHORT).show();
             }
 
-            Intent intent = new Intent(registration.this, LoginActivity.class );
+            Intent intent = new Intent(User_Registration.this, User_Login.class );
             startActivity(intent);
         });
         {
                 mGotacc.setOnClickListener(v -> {
-                    Intent intent = new Intent(registration.this, LoginActivity.class);
+                    Intent intent = new Intent(User_Registration.this, User_Login.class);
                     startActivity(intent);
                 });
         }

@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.example.e_covid.R;
 
-public class ViewAdminMoh extends AppCompatActivity {
+public class View_Admin_Moh extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

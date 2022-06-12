@@ -1,4 +1,4 @@
-package com.example.e_covid.UI_Layer.View.Login.User;
+package com.example.e_covid.UI_Layer.View.Login.MOH;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,22 +10,21 @@ import com.example.e_covid.R;
 
 import java.util.Objects;
 
-public class addDependent extends AppCompatActivity {
+public class MOH_Login extends AppCompatActivity {
 
-    Button mAdd;
+    Button mLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Objects.requireNonNull(getSupportActionBar()).hide();
+        setContentView(R.layout.activity_mohlogin);
 
-        setContentView(R.layout.activity_add_dependent);
-
-        mAdd = findViewById(R.id.Add_dependents);
-        mAdd.setOnClickListener(new View.OnClickListener() {
+        mLogin = findViewById(R.id.moh_Login);
+        mLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(addDependent.this, ManageProfile.class);
+                Intent intent = new Intent(MOH_Login.this, MOH_Menu_Page.class);
                 startActivity(intent);
             }
         });

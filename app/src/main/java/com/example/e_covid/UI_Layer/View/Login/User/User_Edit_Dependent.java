@@ -7,7 +7,7 @@ import com.example.e_covid.R;
 
 import java.util.Objects;
 
-public class EditDependent extends AppCompatActivity {
+public class User_Edit_Dependent extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

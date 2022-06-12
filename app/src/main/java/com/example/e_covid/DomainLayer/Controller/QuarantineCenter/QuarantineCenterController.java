@@ -17,6 +17,14 @@ public class QuarantineCenterController {
         return model.insertQC_data(qcName, qcAddress, qcFunding, qcPhoneNum, qcBedNum, qcCapacity, qcVentilationCapacity);
     }
 
+    public Boolean Delete_QC(String qcName){
+        return model.deleteQC_data(qcName);
+    }
+
+    public Boolean Update_QC(String qcName, String qcAddress, String qcFunding, String qcPhoneNum, int qcBedNum, int qcCapacity, int qcVentilationCapacity){
+        return model.updateQC_data(qcName, qcAddress, qcFunding, qcPhoneNum, qcBedNum, qcCapacity, qcVentilationCapacity);
+    }
+
     public Cursor getData() {
         return model.readAllData();
     }

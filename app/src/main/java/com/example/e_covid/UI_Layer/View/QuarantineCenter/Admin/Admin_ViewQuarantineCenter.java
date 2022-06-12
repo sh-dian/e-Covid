@@ -1,16 +1,25 @@
 package com.example.e_covid.UI_Layer.View.QuarantineCenter.Admin;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.e_covid.DomainLayer.Controller.QuarantineCenter.QuarantineCenterController;
 import com.example.e_covid.R;
 
 public class Admin_ViewQuarantineCenter extends AppCompatActivity {
 
+    QuarantineCenterController adminQuarantineCenterController;
+
     TextView qcNameInput, qcAddressInput, qcPhoneNumInput, qcFundingInput, qcNumOfBedsInput, qcCapacityInput, qcVentilationCapacity;
     String name, address, phoneNum, funding, numOfBeds, capacity, ventilationCapacity;
+    String nameTxt, addressTxt, phoneNumTxt, fundingTxt, numOfBedsTxt, capacityTxt, ventilationCapacityTxt;
+
+    Button mDelete, mUpdate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +34,29 @@ public class Admin_ViewQuarantineCenter extends AppCompatActivity {
         qcCapacityInput = findViewById(R.id.qcCapacity_input2);
         qcVentilationCapacity = findViewById(R.id.qcVentilationCapacity_input2);
 
+        mDelete = findViewById(R.id.delete);
+        mUpdate = findViewById(R.id.update);
+        adminQuarantineCenterController = new QuarantineCenterController(this);
+
         getAndSetIntentData();
 
+        mDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nameTxt = qcNameInput.getText().toString();
+
+                Boolean checkInsertion = adminQuarantineCenterController.Delete_QC(nameTxt);
+
+                if(checkInsertion == true){
+                    Toast.makeText(Admin_ViewQuarantineCenter.this, "Success Delete", Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(Admin_ViewQuarantineCenter.this, "Failed Delete", Toast.LENGTH_SHORT).show();
+                }
+
+                Intent intent = new Intent(Admin_ViewQuarantineCenter.this, Admin_QuarantineCenterMenu.class);
+                startActivity(intent);
+            }
+        });
     }
 
     void getAndSetIntentData(){
