@@ -24,8 +24,8 @@ public class HomeQuarantineData extends AppCompatActivity {
 
     public ImageView Image1;
     public ImageView Image2;
-
-    EditText QType,  TestResult , DateofTest, CurrentlyState  ;
+    public String QType = "Home Quarantine";
+    EditText   TestResult , DateofTest, CurrentlyState  ;
     CheckBox Disable, ChestDiseases;
     boolean testvalu;
     public Button button;
@@ -46,18 +46,22 @@ public class HomeQuarantineData extends AppCompatActivity {
         button.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* UserQuarantineModel quM = new UserQuarantineModel(HomeQuarantineData.this);
 
-                quM.addHome(TestResult.getText().toString().trim(),
+                UserQuarantineModel quM = new UserQuarantineModel(HomeQuarantineData.this);
+
+                testvalu =  quM.addHome( QType,
+                        TestResult.getText().toString().trim(),
                         Integer.valueOf(DateofTest.getText().toString().trim()),
                         CurrentlyState.getText().toString().trim(),
                         Boolean.valueOf(Disable.getText().toString().trim()) ,
-                        Boolean.valueOf(ChestDiseases.getText().toString().trim()));*/
-                         Intent intent = new Intent(HomeQuarantineData.this, HomeLocation.class);
-                         startActivity(intent);
+                        Boolean.valueOf(ChestDiseases.getText().toString().trim()));
 
+                if(testvalu == true){
+                    Intent intent = new Intent(HomeQuarantineData.this, HomeLocation.class);
+                    startActivity(intent);
+                }else {
 
-
+                }
             }
         });
 

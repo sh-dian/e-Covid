@@ -60,12 +60,11 @@ public class UserQuarantineModel extends SQLiteOpenHelper {
 
 
 
-    public void  addHome(String Result, Integer DateTest , String CurState, Boolean Disable , Boolean Chest) {
+    public boolean  addHome(String Type, String Result, Integer DateTest , String CurState, Boolean Disable , Boolean Chest) {
 
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv =  new ContentValues();
-       // boolean testvalu ;
-        //cv.put(COLUMN_Type, Type);
+        cv.put(COLUMN_Type, Type);
         cv.put(COLUMN_Result, Result);
         cv.put(COLUMN_DateTest, DateTest);
         cv.put(COLUMN_CurState, CurState);
@@ -74,12 +73,11 @@ public class UserQuarantineModel extends SQLiteOpenHelper {
         long result = db.insert(TABLE_NAME,null, cv);
         if(result == -1){
             Toast.makeText(context, "Failed", Toast.LENGTH_SHORT).show();
-           // testvalu = false;
-            //return testvalu;
+
+            return false;
         }else{
-            Toast.makeText(context, "AddednSuccessfuly!", Toast.LENGTH_SHORT).show();
-            //testvalu = true;
-            //return testvalu;
+            Toast.makeText(context, "AddedSuccessfully!", Toast.LENGTH_SHORT).show();
+            return true;
         }
 
 
