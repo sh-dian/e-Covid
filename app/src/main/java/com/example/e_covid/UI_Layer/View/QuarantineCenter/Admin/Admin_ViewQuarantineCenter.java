@@ -43,20 +43,23 @@ public class Admin_ViewQuarantineCenter extends AppCompatActivity {
         mDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                nameTxt = qcNameInput.getText().toString();
-
-                Boolean checkInsertion = adminQuarantineCenterController.Delete_QC(nameTxt);
-
-                if(checkInsertion == true){
-                    Toast.makeText(Admin_ViewQuarantineCenter.this, "Success Delete", Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(Admin_ViewQuarantineCenter.this, "Failed Delete", Toast.LENGTH_SHORT).show();
-                }
-
-                Intent intent = new Intent(Admin_ViewQuarantineCenter.this, Admin_QuarantineCenterMenu.class);
-                startActivity(intent);
+                deleteRecord();
             }
         });
+    }
+
+    private void deleteRecord() {
+        nameTxt = qcNameInput.getText().toString();
+        Boolean checkInsertion = adminQuarantineCenterController.Delete_QC(nameTxt);
+
+        if(checkInsertion == true){
+            Toast.makeText(Admin_ViewQuarantineCenter.this, "Success Delete", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(Admin_ViewQuarantineCenter.this, "Failed Delete", Toast.LENGTH_SHORT).show();
+        }
+
+        Intent intent = new Intent(Admin_ViewQuarantineCenter.this, Admin_QuarantineCenterMenu.class);
+        startActivity(intent);
     }
 
     void getAndSetIntentData(){

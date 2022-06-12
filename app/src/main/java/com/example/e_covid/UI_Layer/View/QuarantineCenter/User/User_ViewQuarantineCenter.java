@@ -7,6 +7,8 @@ import android.widget.Toast;
 
 import com.example.e_covid.R;
 
+import java.util.Objects;
+
 public class User_ViewQuarantineCenter extends AppCompatActivity {
     TextView qcNameInput, qcAddressInput, qcPhoneNumInput, qcFundingInput, qcNumOfBedsInput, qcCapacityInput, qcVentilationCapacity;
     String name, address, phoneNum, funding, numOfBeds, capacity, ventilationCapacity;
@@ -14,6 +16,7 @@ public class User_ViewQuarantineCenter extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_user_view_quarantine_center);
 
         qcNameInput = findViewById(R.id.qcName_input3);
