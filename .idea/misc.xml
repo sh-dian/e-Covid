@@ -71,10 +71,13 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/activity_user_view_quarantine_center.xml" value="0.18611111111111112" />
         <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/layout/row.xml" value="0.18611111111111112" />
         <entry key="..\:/Users/User/AndroidStudioProjects/eCovid/app/src/main/res/menu/menu.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/ahmdy/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_admin_add_quarantine_center.xml" value="0.2064814814814815" />
         <entry key="..\:/Users/ahmdy/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_dependent_vaccine_details.xml" value="0.264" />
         <entry key="..\:/Users/ahmdy/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_dependent_vaccine_status.xml" value="0.2064814814814815" />
+        <entry key="..\:/Users/ahmdy/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_register_appointment.xml" value="0.264" />
+        <entry key="..\:/Users/ahmdy/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_register_vaccination_certificate.xml" value="0.264" />
         <entry key="..\:/Users/ahmdy/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_vaccination_main.xml" value="0.2064814814814815" />
-        <entry key="..\:/Users/ahmdy/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_view_appointment.xml" value="0.2064814814814815" />
+        <entry key="..\:/Users/ahmdy/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_view_appointment.xml" value="0.264" />
         <entry key="..\:/Users/ahmdy/AndroidStudioProjects/e-Covid/app/src/main/res/layout/activity_view_vaccination_certificate.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/drawable/ic_baseline_apartment_24.xml" value="0.123" />
         <entry key="..\:/Users/user/AndroidStudioProjects/e-Covid/app/src/main/res/drawable/ic_baseline_call_24.xml" value="0.123" />
