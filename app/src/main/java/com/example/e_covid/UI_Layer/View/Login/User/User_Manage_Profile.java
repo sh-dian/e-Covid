@@ -9,7 +9,7 @@ import com.example.e_covid.R;
 
 import java.util.Objects;
 
-public class ManageProfile extends AppCompatActivity {
+public class User_Manage_Profile extends AppCompatActivity {
 
     Button mUpdateProfile;
     Button mManageDependent;
@@ -29,12 +29,12 @@ public class ManageProfile extends AppCompatActivity {
     }
 
     private void updateProfile() {
-        Intent intent = new Intent(ManageProfile.this, updateUserProfile.class);
+        Intent intent = new Intent(User_Manage_Profile.this, User_Update_Profile.class);
         startActivity(intent);
     }
 
     private void manageDependent() {
-        Intent intent = new Intent(ManageProfile.this, ManageDependentProfile.class);
+        Intent intent = new Intent(User_Manage_Profile.this, User_Manage_Dependent_Profile.class);
         startActivity(intent);
     }
 }

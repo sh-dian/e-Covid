@@ -9,7 +9,7 @@ import com.example.e_covid.R;
 
 import java.util.Objects;
 
-public class LoginActivity extends AppCompatActivity {
+public class User_Login extends AppCompatActivity {
 
     Button mLogin;
     Button mRegister;
@@ -23,12 +23,12 @@ public class LoginActivity extends AppCompatActivity {
         mLogin = findViewById(R.id.Login);
         mRegister = findViewById(R.id.RegistrationPage);
          mRegister.setOnClickListener(v -> {
-             Intent intent = new Intent(LoginActivity.this, registration.class);
+             Intent intent = new Intent(User_Login.this, User_Registration.class);
              startActivity(intent);
          });
 
         mLogin.setOnClickListener(view -> {
-            Intent intent = new Intent(LoginActivity.this, User_MenuPage.class);
+            Intent intent = new Intent(User_Login.this, User_Menu_Page.class);
             startActivity(intent);
         });
     }

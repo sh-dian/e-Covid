@@ -7,12 +7,12 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.e_covid.R;
-import com.example.e_covid.UI_Layer.View.Login.MOH.ViewAdminMoh;
+import com.example.e_covid.UI_Layer.View.Login.MOH.View_Admin_Moh;
 import com.example.e_covid.UI_Layer.View.QuarantineCenter.Admin.Admin_QuarantineCenterMenu;
 
 import java.util.Objects;
 
-public class Admin_MenuPage extends AppCompatActivity {
+public class Admin_Menu_Page extends AppCompatActivity {
 
     Button qcMenuPage;
     Button mUserMenuPage;
@@ -30,7 +30,7 @@ public class Admin_MenuPage extends AppCompatActivity {
         qcMenuPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Admin_MenuPage.this, Admin_QuarantineCenterMenu.class);
+                Intent intent = new Intent(Admin_Menu_Page.this, Admin_QuarantineCenterMenu.class);
                 startActivity(intent);
             }
         });
@@ -38,7 +38,7 @@ public class Admin_MenuPage extends AppCompatActivity {
         mUserMenuPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Admin_MenuPage.this, ViewAdminMoh.class);
+                Intent intent = new Intent(Admin_Menu_Page.this, View_Admin_Moh.class);
                 startActivity(intent);
             }
         });

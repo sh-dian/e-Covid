@@ -9,19 +9,19 @@ import com.example.e_covid.R;
 
 import java.util.Objects;
 
-public class ManageDependentProfile extends AppCompatActivity {
+public class User_Update_Profile extends AppCompatActivity {
 
-    Button mAddDependent;
+    Button mSave;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Objects.requireNonNull(getSupportActionBar()).hide();
-        setContentView(R.layout.activity_manage_dependent_profile);
+        setContentView(R.layout.activity_update_user_profile);
 
-        mAddDependent = findViewById(R.id.Add_dependents);
-        mAddDependent.setOnClickListener(view -> {
-            Intent intent = new Intent(ManageDependentProfile.this, addDependent.class);
+        mSave = findViewById(R.id.SaveUpdate);
+        mSave.setOnClickListener(view -> {
+            Intent intent = new Intent(User_Update_Profile.this, User_Manage_Profile.class);
             startActivity(intent);
         });
     }

@@ -8,7 +8,7 @@ import android.widget.Button;
 
 import com.example.e_covid.R;
 
-public class AdminLogin extends AppCompatActivity {
+public class Admin_Login extends AppCompatActivity {
 
     Button mMenu;
 
@@ -21,7 +21,7 @@ public class AdminLogin extends AppCompatActivity {
         mMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AdminLogin.this, Admin_MenuPage.class);
+                Intent intent = new Intent(Admin_Login.this, Admin_Menu_Page.class);
                 startActivity(intent);
             }
         });
