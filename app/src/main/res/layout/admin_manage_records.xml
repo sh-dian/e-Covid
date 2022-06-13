@@ -7,34 +7,6 @@
     tools:context=".UI_Layer.View.UserQuarantine.Admin.Admin_Manage_Records">
 
     <ImageView
-        android:id="@+id/home5"
-        android:layout_width="164dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="684dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/home6"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="?attr/selectableItemBackground"
-        tools:ignore="NotSibling" />
-
-    <ImageView
-        android:id="@+id/back4"
-        android:layout_width="52dp"
-        android:layout_height="41dp"
-        android:layout_marginBottom="684dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/back6"
-        app:layout_constraintVertical_bias="0.023"
-        app:srcCompat="?attr/selectableItemBackground"
-        tools:ignore="NotSibling" />
-
-    <ImageView
         android:id="@+id/imageView40"
         android:layout_width="424dp"
         android:layout_height="741dp"
@@ -44,6 +16,45 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/minepagewhite" />
 
+    <ImageView
+        android:id="@+id/HomePage"
+        android:layout_width="164dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HomePage"
+        app:srcCompat="?attr/selectableItemBackground"
+        tools:ignore="NotSibling" />
+
+    <ImageView
+        android:id="@+id/BackArrow"
+        android:layout_width="52dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="684dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/BackArrow"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="?attr/selectableItemBackground"
+        tools:ignore="NotSibling" />
+
+
+    <TextView
+        android:id="@+id/textView131"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Admin"
+        android:textColor="#EFE9E9"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView120"
@@ -67,7 +78,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home5">
+        app:layout_constraintTop_toBottomOf="@+id/HomePage">
 
         <TableRow
             android:layout_width="match_parent"

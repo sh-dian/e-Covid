@@ -17,18 +17,19 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/minepagewhite" />
 
-    <ImageView
-        android:id="@+id/imageView28"
-        android:layout_width="53dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="108dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+    <TextView
+        android:id="@+id/textView65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="MOH"
+        android:textColor="#EFE9E9"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintHorizontal_bias="0.928"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.142"
-        app:srcCompat="@drawable/ic_baseline_format_list_bulleted_24" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView29"

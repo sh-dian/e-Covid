@@ -11,17 +11,17 @@ public class UserQuarantineModel extends SQLiteOpenHelper {
 
 
     private Context context;
-    private static final String DATABADE_NAME = "Qregistration.db";
+    private static final String DATABADE_NAME = "UserQuarantine.db";
     private static final int DATABADE_VERGION = 1;
 
-    private static final String TABLE_NAME = "UserQuarantineRegistration";
-    private static final String COLUMN_ID =  "_id";
-    private static final String COLUMN_Type = "QuarantineType";
-    private static final String COLUMN_Result = "TestResult";
-    private static final String COLUMN_DateTest = "DateTest";
-    private static final String COLUMN_CurState = "CurState";
-    private static final String COLUMN_Disable = "Disable";
-    private static final String COLUMN_Chest = "ChestDiseases";
+    private static final String TABLE_NAME = "Registration Quarantine ";
+    private static final String UQR_ID  =  "_id";
+    private static final String UQR_QuarantineType  = "QuarantineType";
+    private static final String UQR_TestResult = "TestResult";
+    private static final String UQR_DateTest = "DateTest";
+    private static final String UQR_CurrentlyState = "CurState";
+    private static final String UQR_Disable  = "Disable";
+    private static final String UQR_ChestDiseases  = "ChestDiseases";
 
 
 
@@ -35,16 +35,15 @@ public class UserQuarantineModel extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
 
         String query = "CREATE TABLE " + TABLE_NAME +
-                        " (" + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                            COLUMN_Type + " TEXT, " +
-                            COLUMN_Result + " TEXT, " +
-                            COLUMN_DateTest + " INTEGER, " +
-                            COLUMN_CurState + " TEXT, " +
-                            COLUMN_Disable + " BOOLONE, " +
-                            COLUMN_Chest + " BOOLONE);";
+                        " (" + UQR_ID  + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                            UQR_QuarantineType  + " TEXT, " +
+                            UQR_TestResult + " TEXT, " +
+                            UQR_DateTest + " INTEGER, " +
+                            UQR_CurrentlyState + " TEXT, " +
+                            UQR_Disable  + " BOOLONE, " +
+                            UQR_ChestDiseases  + " BOOLONE);";
         db.execSQL(query);
     }
-
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
@@ -52,19 +51,16 @@ public class UserQuarantineModel extends SQLiteOpenHelper {
 
     }
 
-
-
-
     public boolean  addHome(String Type, String Result, Integer DateTest , String CurState, Boolean Disable , Boolean Chest) {
 
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv =  new ContentValues();
-        cv.put(COLUMN_Type, Type);
-        cv.put(COLUMN_Result, Result);
-        cv.put(COLUMN_DateTest, DateTest);
-        cv.put(COLUMN_CurState, CurState);
-        cv.put(COLUMN_Disable, Disable);
-        cv.put(COLUMN_Chest, Chest);
+        cv.put(UQR_QuarantineType , Type);
+        cv.put(UQR_TestResult, Result);
+        cv.put(UQR_DateTest, DateTest);
+        cv.put(UQR_CurrentlyState, CurState);
+        cv.put(UQR_Disable , Disable);
+        cv.put(UQR_ChestDiseases , Chest);
         long result = db.insert(TABLE_NAME,null, cv);
         if(result == -1){
             Toast.makeText(context, "Failed", Toast.LENGTH_SHORT).show();

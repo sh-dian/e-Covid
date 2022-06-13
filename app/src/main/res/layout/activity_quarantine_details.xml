@@ -8,11 +8,13 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/minepage"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:layout_width="417dp"
+        android:layout_height="737dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/minepage" />
 
     <ImageView
         android:id="@+id/Home1"
@@ -58,6 +60,7 @@
         android:layout_width="254dp"
         android:layout_height="72dp"
         android:backgroundTint="#1F427A"
+        android:background="@drawable/button_corner"
         android:text="View Quarantine Details"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -72,6 +75,7 @@
         android:layout_width="256dp"
         android:layout_height="68dp"
         android:backgroundTint="#1F427A"
+        android:background="@drawable/button_corner"
         android:text="Daily Information Update"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"

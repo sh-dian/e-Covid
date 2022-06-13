@@ -17,18 +17,6 @@
         app:srcCompat="@drawable/minepagewhite" />
 
     <ImageView
-        android:id="@+id/imageView23"
-        android:layout_width="53dp"
-        android:layout_height="55dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView21"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.142"
-        app:srcCompat="@drawable/ic_baseline_format_list_bulleted_24" />
-
-    <ImageView
         android:id="@+id/imageView24"
         android:layout_width="218dp"
         android:layout_height="152dp"
@@ -72,5 +60,19 @@
         app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/menage_record_icon" />
+
+    <TextView
+        android:id="@+id/textView64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Admin"
+        android:textColor="#EFE9E9"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

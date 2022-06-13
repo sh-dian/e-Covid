@@ -17,14 +17,15 @@ import com.example.e_covid.R;
 public class CenterQuarantineData extends AppCompatActivity {
 
 
-    public ImageView Image1;
-    public ImageView Image2;
+    public ImageView BackArrow;
+    public ImageView MeanPage;
+    public Button Submit;
 
     public String QType = "Center Quarantine";
     EditText TestResult , DateofTest, CurrentlyState  ;
     CheckBox Disable, ChestDiseases;
     boolean testvalu;
-    public Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,8 +41,8 @@ public class CenterQuarantineData extends AppCompatActivity {
 
 
 
-        button = (Button) findViewById (R.id.save2);
-        button.setOnClickListener (new View.OnClickListener() {
+        Submit = (Button) findViewById (R.id.save2);
+        Submit.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -60,16 +61,16 @@ public class CenterQuarantineData extends AppCompatActivity {
             }
         });
 
-        Image1 = findViewById (R.id.backto2);
-        Image1.setOnClickListener (new View.OnClickListener() {
+        BackArrow = findViewById (R.id.backto2);
+        BackArrow.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CenterQuarantineData.this, QuarantineType.class);
                 startActivity(intent);
             }
         });
-        Image2 = findViewById (R.id.Home1);
-        Image2.setOnClickListener (new View.OnClickListener() {
+        MeanPage = findViewById (R.id.Home1);
+        MeanPage.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CenterQuarantineData.this, UserRegistration.class);

@@ -19,8 +19,6 @@ public class HomeLocation extends AppCompatActivity {
     public ImageView MeanPage;
     public Button Submit;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,14 +29,8 @@ public class HomeLocation extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 alert();
-                //Intent intent = new Intent(HomeLocation.this,UserRegistration.class);
-                //startActivity(intent);
             }
         });
-
-
-
-
         BackArrow = findViewById (R.id.backtoHdata);
         BackArrow.setOnClickListener (new View.OnClickListener() {
             @Override
@@ -56,7 +48,6 @@ public class HomeLocation extends AppCompatActivity {
             }
         });
     }
-
     private void alert(){
         AlertDialog dlg= new AlertDialog.Builder( HomeLocation.this)
                 .setTitle("Status of Submission")
@@ -64,14 +55,11 @@ public class HomeLocation extends AppCompatActivity {
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int i) {
-
                         Intent intent = new Intent(HomeLocation.this,UserRegistration.class);
                         startActivity(intent);
                     }
                 })
                 .create();
         dlg.show();
-
-
     }
 }

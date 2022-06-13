@@ -8,8 +8,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="414dp"
+        android:layout_height="747dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/minepage" />
@@ -22,29 +25,33 @@
         android:text="Quarantine"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.342"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <Button
+
         android:id="@+id/Registration"
-        android:layout_width="233dp"
-        android:layout_height="73dp"
-        android:backgroundTint="#1F427A"
+        android:layout_width="235dp"
+        android:layout_height="68dp"
+        android:background="@drawable/button_corner"
         android:text="Registration for Quarantine"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintBottom_toTopOf="@+id/View"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Home"
-        app:layout_constraintVertical_bias="0.552" />
+        app:layout_constraintVertical_bias="0.958" />
+
 
     <Button
         android:id="@+id/View"
-        android:layout_width="235dp"
-        android:layout_height="67dp"
+        android:layout_width="237dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button_corner"
         android:backgroundTint="#1F427A"
         android:text="View my Quarantine"
         android:textColor="#FBFBFB"
@@ -52,7 +59,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.71" />
+        app:layout_constraintVertical_bias="0.734" />
 
     <Button
         android:id="@+id/Back"
