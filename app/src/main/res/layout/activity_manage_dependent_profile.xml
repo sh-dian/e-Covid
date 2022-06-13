@@ -30,6 +30,36 @@
             android:background="@null"
             android:contentDescription="@string/back_Button"
             android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="209dp"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="242dp"
+            android:layout_marginEnd="166dp"
+            android:layout_marginBottom="511dp"
+            android:text="Parent/Parent in Law"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView65"
+            android:layout_width="209dp"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginEnd="165dp"
+            android:layout_marginBottom="433dp"
+            android:text="Parent/Parent in Law"
+            android:textSize="20sp" />
     </RelativeLayout>
 
     <TextView
@@ -98,7 +128,8 @@
         android:layout_height="51dp"
         android:background="@null"
         android:ems="10"
-        android:text=""
+        android:text="Abdul Rahman bin Rahmat"
+        android:textStyle="bold"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -128,8 +159,9 @@
         android:layout_height="51dp"
         android:background="@null"
         android:ems="10"
-        android:text=""
+        android:text="Sufin binti Yusuf"
         android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.148"
