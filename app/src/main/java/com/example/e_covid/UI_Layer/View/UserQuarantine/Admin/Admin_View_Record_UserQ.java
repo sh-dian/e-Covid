@@ -10,8 +10,8 @@ import com.example.e_covid.R;
 
 public class Admin_View_Record_UserQ extends AppCompatActivity {
 
-    public ImageView Image1;
-    public ImageView Image2;
+    public ImageView BackArrow;
+    public ImageView MeanPage;
 
 
     @Override
@@ -21,29 +21,18 @@ public class Admin_View_Record_UserQ extends AppCompatActivity {
 
 
 
-
-
-
-        Image1 = findViewById (R.id.home2);
-        Image1.setOnClickListener (new View.OnClickListener() {
+        BackArrow = findViewById (R.id.Back11);
+        BackArrow.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Admin_View_Record_UserQ.this, Admin_DashboardUserQ.class);
-                startActivity(intent);
-            }
-        });
-        Image2 = findViewById (R.id.back);
-        Image2.setOnClickListener (new View.OnClickListener() {
+                startActivity(intent);}});
+        MeanPage = findViewById (R.id.Home11);
+        MeanPage.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Admin_View_Record_UserQ.this, Admin_DashboardUserQ.class);
-                startActivity(intent);
-            }
-        });
-
-
-
-
+                startActivity(intent);}});
 
     }
 }

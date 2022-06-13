@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/minepagewhite" />
 
     <ImageView
-        android:id="@+id/home3"
+        android:id="@+id/Home22"
         android:layout_width="164dp"
         android:layout_height="40dp"
         android:layout_marginBottom="684dp"
@@ -30,7 +30,7 @@
         app:srcCompat="?attr/selectableItemBackground" />
 
     <ImageView
-        android:id="@+id/back2"
+        android:id="@+id/Back23"
         android:layout_width="52dp"
         android:layout_height="41dp"
         android:layout_marginBottom="684dp"

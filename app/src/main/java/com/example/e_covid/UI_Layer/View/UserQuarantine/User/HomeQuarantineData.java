@@ -12,7 +12,6 @@ import android.widget.ImageView;
 
 //import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.e_covid.DataLayer.Model.UserQuarantine.UserQuarantineModel;
 import com.example.e_covid.R;
 
 import java.util.Objects;
@@ -58,13 +57,13 @@ public class HomeQuarantineData extends AppCompatActivity {
 
 
 
-        BackArrow = findViewById (R.id.backto2);
+        BackArrow = findViewById (R.id.Back02);
         BackArrow.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeQuarantineData.this, QuarantineType.class);
                 startActivity(intent);}});
-        MeanPage = findViewById (R.id.Home1);
+        MeanPage = findViewById (R.id.Home00);
         MeanPage.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {

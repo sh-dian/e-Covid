@@ -62,23 +62,23 @@
             tools:ignore="HardcodedText,DuplicateSpeakableTextCheck" />
 
         <ImageView
-            android:id="@+id/home4"
+            android:id="@+id/Home11"
             android:layout_width="164dp"
             android:layout_height="40dp"
-            android:layout_marginBottom="1832dp"
+            android:layout_marginBottom="1812dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.429"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/imageView2"
             app:layout_constraintVertical_bias="0.023"
             app:srcCompat="?attr/selectableItemBackground" />
 
         <ImageView
-            android:id="@+id/back3"
+            android:id="@+id/Back12"
             android:layout_width="52dp"
             android:layout_height="41dp"
-            android:layout_marginBottom="1828dp"
+            android:layout_marginBottom="1792dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.013"
@@ -271,7 +271,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/home4"
+            app:layout_constraintTop_toBottomOf="@+id/Home11"
             app:layout_constraintVertical_bias="0.763" />
 
     </android.support.constraint.ConstraintLayout>

@@ -15,13 +15,15 @@
         <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_moh_confrmation_user_qrecord.xml" value="0.25416666666666665" />
         <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_moh_dashboard_user_q.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_moh_manage_user_qstatus.xml" value="0.25" />
+        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_moh_view_record_user_q.xml" value="0.25" />
         <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_quarantine_details.xml" value="0.2" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_quarantine_info.xml" value="0.1" />
+        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_quarantine_info.xml" value="0.152" />
         <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_quarantine_type.xml" value="0.23641304347826086" />
         <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_registration.xml" value="0.25416666666666665" />
         <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_user_menu_page.xml" value="0.25416666666666665" />
         <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_user_quarantine_center_menu.xml" value="0.25" />
-        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_user_registration.xml" value="0.264" />
+        <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_user_registration.xml" value="0.2" />
         <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/activity_user_view_quarantine_center.xml" value="0.25" />
         <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/admin_manage_records.xml" value="0.2" />
         <entry key="..\:/Android studio/e-Covid/app/src/main/res/layout/admin_manage_userq_status.xml" value="0.25416666666666665" />

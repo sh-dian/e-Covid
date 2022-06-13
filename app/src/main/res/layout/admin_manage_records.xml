@@ -17,18 +17,18 @@
         app:srcCompat="@drawable/minepagewhite" />
 
     <ImageView
-        android:id="@+id/HomePage"
+        android:id="@+id/Home11"
         android:layout_width="164dp"
         android:layout_height="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/HomePage"
+        app:layout_constraintTop_toTopOf="@+id/Home11"
         app:srcCompat="?attr/selectableItemBackground"
         tools:ignore="NotSibling" />
 
     <ImageView
-        android:id="@+id/BackArrow"
+        android:id="@+id/Back13"
         android:layout_width="52dp"
         android:layout_height="41dp"
         android:layout_marginBottom="684dp"
@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/BackArrow"
+        app:layout_constraintTop_toTopOf="@+id/Back13"
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="?attr/selectableItemBackground"
         tools:ignore="NotSibling" />
@@ -78,7 +78,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/HomePage">
+        app:layout_constraintTop_toBottomOf="@+id/Home11">
 
         <TableRow
             android:layout_width="match_parent"

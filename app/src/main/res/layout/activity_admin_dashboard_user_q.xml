@@ -16,6 +16,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/minepagewhite" />
 
+    <ImageView
+        android:id="@+id/Home10"
+        android:layout_width="164dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="?attr/selectableItemBackground" />
+
+    <ImageView
+        android:id="@+id/Back10"
+        android:layout_width="52dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="?attr/selectableItemBackground" />
+
     <Button
         android:id="@+id/ViewInfoAdmin"
         android:layout_width="227dp"

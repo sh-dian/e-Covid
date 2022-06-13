@@ -7,33 +7,30 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.example.e_covid.R;
+import com.example.e_covid.UI_Layer.View.UserQuarantine.Admin.Admin_DashboardUserQ;
 
 public class MOH_Confirmation_UserQ_Record extends AppCompatActivity {
 
-    public ImageView Image5 ;
-    public ImageView Image6 ;
+    public ImageView BackArrow;
+    public ImageView MeanPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_moh_confrmation_user_qrecord);
 
-        Image5 = findViewById (R.id.home3);
-        Image5.setOnClickListener (new View.OnClickListener() {
+        BackArrow = findViewById (R.id.Back23);
+        BackArrow.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MOH_Confirmation_UserQ_Record.this, MOH_DashboardUserQ.class);
-                startActivity(intent);
-            }
-        });
-        Image6 = findViewById (R.id.back2);
-        Image6.setOnClickListener (new View.OnClickListener() {
+                Intent intent = new Intent(MOH_Confirmation_UserQ_Record.this, Admin_DashboardUserQ.class);
+                startActivity(intent);}});
+        MeanPage = findViewById (R.id.Home22);
+        MeanPage.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MOH_Confirmation_UserQ_Record.this, MOH_DashboardUserQ.class);
-                startActivity(intent);
-            }
-        });
+                Intent intent = new Intent(MOH_Confirmation_UserQ_Record.this, Admin_DashboardUserQ.class);
+                startActivity(intent);}});
 
     }
 }

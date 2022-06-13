@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/minepagewhite" />
 
     <ImageView
-        android:id="@+id/backtoHdata"
+        android:id="@+id/Back00"
         android:layout_width="52dp"
         android:layout_height="41dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,7 +31,7 @@
         app:srcCompat="?attr/selectableItemBackground" />
 
     <ImageView
-        android:id="@+id/Home1"
+        android:id="@+id/Home00"
         android:layout_width="164dp"
         android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -65,10 +65,9 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintVertical_bias="0.163" />
 
     <TextView
         android:id="@+id/textView10"

@@ -5,7 +5,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.BoringLayout;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,7 +12,6 @@ import android.widget.ImageView;
 
 //import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.e_covid.DataLayer.Model.UserQuarantine.UserQuarantineModel;
 import com.example.e_covid.R;
 
 import java.util.Objects;
@@ -49,13 +47,13 @@ public class HomeLocation extends AppCompatActivity {
         });
 
 
-        BackArrow = findViewById (R.id.backtoHdata);
+        BackArrow = findViewById (R.id.Back00);
         BackArrow.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeLocation.this,HomeQuarantineData.class);
                 startActivity(intent);}});
-        MeanPage = findViewById (R.id.Home1);
+        MeanPage = findViewById (R.id.Home00);
         MeanPage.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {

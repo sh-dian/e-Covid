@@ -9,12 +9,13 @@ import android.widget.ImageView;
 //import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.e_covid.R;
+import com.example.e_covid.UI_Layer.View.Login.User.User_Menu_Page;
 
 public class QuarantineINFO extends AppCompatActivity {
 
 
-    public ImageView Image1;
-    public ImageView Image2;
+    public ImageView BackArrow;
+    public ImageView MeanPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,21 +24,18 @@ public class QuarantineINFO extends AppCompatActivity {
 
 
 
-        Image1 = findViewById (R.id.backto3);
-        Image1.setOnClickListener (new View.OnClickListener() {
+
+        BackArrow = findViewById (R.id.Back06);
+        BackArrow.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(QuarantineINFO.this, QuarantineDetails.class);
-                startActivity(intent);
-            }
-        });
-        Image2 = findViewById (R.id.Home1);
-        Image2.setOnClickListener (new View.OnClickListener() {
+                startActivity(intent);}});
+        MeanPage = findViewById (R.id.Home00);
+        MeanPage.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(QuarantineINFO.this, UserRegistration.class);
-                startActivity(intent);
-            }
-        });
+                startActivity(intent);}});
     }
 }

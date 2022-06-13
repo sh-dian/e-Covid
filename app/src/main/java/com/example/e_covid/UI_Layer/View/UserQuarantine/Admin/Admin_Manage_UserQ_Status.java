@@ -10,8 +10,8 @@ import com.example.e_covid.R;
 
 public class Admin_Manage_UserQ_Status extends AppCompatActivity {
 
-    public ImageView Image1;
-    public ImageView Image2;
+    public ImageView BackArrow;
+    public ImageView MeanPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,23 +20,17 @@ public class Admin_Manage_UserQ_Status extends AppCompatActivity {
 
 
 
-
-
-        Image1 = findViewById (R.id.home4);
-        Image1.setOnClickListener (new View.OnClickListener() {
+        BackArrow = findViewById (R.id.Back12);
+        BackArrow.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Admin_Manage_UserQ_Status.this, Admin_DashboardUserQ.class);
-                startActivity(intent);
-            }
-        });
-        Image2 = findViewById (R.id.back3);
-        Image2.setOnClickListener (new View.OnClickListener() {
+                startActivity(intent);}});
+        MeanPage = findViewById (R.id.Home11);
+        MeanPage.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Admin_Manage_UserQ_Status.this, Admin_DashboardUserQ.class);
-                startActivity(intent);
-            }
-        });
+                startActivity(intent);}});
     }
 }

@@ -10,11 +10,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 
-import com.example.e_covid.DomainLayer.Controller.QuarantineCenter.QuarantineCenterController;
-import com.example.e_covid.DomainLayer.Controller.UserQuarantine.UserQuarantineController;
 import com.example.e_covid.R;
-import com.example.e_covid.UI_Layer.View.QuarantineCenter.Admin.Admin_AddQuarantineCenter;
-import com.example.e_covid.UI_Layer.View.QuarantineCenter.Admin.Admin_QuarantineCenterMenu;
 
 import java.util.Objects;
 
@@ -58,13 +54,13 @@ public class CenterQuarantineData extends AppCompatActivity {
         });
 
 
-        BackArrow = findViewById (R.id.backto2);
+        BackArrow = findViewById (R.id.Back02);
         BackArrow.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CenterQuarantineData.this, QuarantineType.class);
                 startActivity(intent);}});
-        MeanPage = findViewById (R.id.Home1);
+        MeanPage = findViewById (R.id.Home00);
         MeanPage.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
