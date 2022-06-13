@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".UI_Layer.View.Login.User.User_Add_Dependent">
+    tools:context=".UI_Layer.View.Login.User.User_add_dependent">
 
     <RelativeLayout
         android:id="@+id/relativeLayout3"

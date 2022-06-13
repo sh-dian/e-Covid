@@ -1,3 +1,4 @@
+
 package com.example.e_covid.UI_Layer.View.Login.User;
 
 import android.content.Intent;
@@ -10,7 +11,7 @@ import com.example.e_covid.R;
 
 import java.util.Objects;
 
-public class User_Add_Dependent extends AppCompatActivity {
+public class User_add_dependent extends AppCompatActivity {
 
     Button mAdd;
 
@@ -25,7 +26,7 @@ public class User_Add_Dependent extends AppCompatActivity {
         mAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(User_Add_Dependent.this, User_Manage_Profile.class);
+                Intent intent = new Intent(User_add_dependent.this, User_Manage_Profile.class);
                 startActivity(intent);
             }
         });

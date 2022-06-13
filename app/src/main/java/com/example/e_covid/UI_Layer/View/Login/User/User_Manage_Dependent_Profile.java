@@ -21,7 +21,7 @@ public class User_Manage_Dependent_Profile extends AppCompatActivity {
 
         mAddDependent = findViewById(R.id.Add_dependents);
         mAddDependent.setOnClickListener(view -> {
-            Intent intent = new Intent(User_Manage_Dependent_Profile.this, User_Add_Dependent.class);
+            Intent intent = new Intent(User_Manage_Dependent_Profile.this, User_add_dependent.class);
             startActivity(intent);
         });
     }
