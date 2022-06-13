@@ -51,7 +51,7 @@ public class MOH_DashboardUserQ extends AppCompatActivity {
         Image3.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MOH_DashboardUserQ.this, MOH_Confrmation_UserQ_Record.class);
+                Intent intent = new Intent(MOH_DashboardUserQ.this, MOH_Confirmation_UserQ_Record.class);
                 startActivity(intent);
             }
         });

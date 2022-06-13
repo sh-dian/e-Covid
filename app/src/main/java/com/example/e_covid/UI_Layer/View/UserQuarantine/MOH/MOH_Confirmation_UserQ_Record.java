@@ -8,7 +8,7 @@ import android.widget.ImageView;
 
 import com.example.e_covid.R;
 
-public class MOH_Confrmation_UserQ_Record extends AppCompatActivity {
+public class MOH_Confirmation_UserQ_Record extends AppCompatActivity {
 
     public ImageView Image5 ;
     public ImageView Image6 ;
@@ -27,7 +27,7 @@ public class MOH_Confrmation_UserQ_Record extends AppCompatActivity {
         Image5.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MOH_Confrmation_UserQ_Record.this, MOH_DashboardUserQ.class);
+                Intent intent = new Intent(MOH_Confirmation_UserQ_Record.this, MOH_DashboardUserQ.class);
                 startActivity(intent);
             }
         });
@@ -35,7 +35,7 @@ public class MOH_Confrmation_UserQ_Record extends AppCompatActivity {
         Image6.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MOH_Confrmation_UserQ_Record.this, MOH_DashboardUserQ.class);
+                Intent intent = new Intent(MOH_Confirmation_UserQ_Record.this, MOH_DashboardUserQ.class);
                 startActivity(intent);
             }
         });
