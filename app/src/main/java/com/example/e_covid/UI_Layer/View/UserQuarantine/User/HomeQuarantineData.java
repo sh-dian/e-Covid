@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 
 //import androidx.appcompat.app.AppCompatActivity;
@@ -16,71 +15,72 @@ import android.widget.Toast;
 import com.example.e_covid.DataLayer.Model.UserQuarantine.UserQuarantineModel;
 import com.example.e_covid.R;
 
-import java.sql.Date;
+import java.util.Objects;
 
 public class HomeQuarantineData extends AppCompatActivity {
 
+    public ImageView BackArrow;
+    public ImageView MeanPage;
+    public Button Submit;
 
+    String Id;
+    String uqrType = "Home Quarantine";
+    EditText uqrTestResult;
+    EditText uqrDateTest;
+    EditText uqrCurrentlyState;
+    CheckBox uqrDisable;
+    CheckBox uqrChestDiseases;
 
-    public ImageView Image1;
-    public ImageView Image2;
-    public String QType = "Home Quarantine";
-    EditText   TestResult , DateofTest, CurrentlyState  ;
-    CheckBox Disable, ChestDiseases;
-    boolean testvalu;
-    public Button button;
+    private String UQR_QuarantineType ;
+    private String UQR_DateTest ;
+    private String UQ_DateTest;
+    private String UQR_CurrentlyState ;
+    private Boolean UQR_Disable ;
+    private Boolean UQR_ChestDiseases ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_quarantine_data);
 
+        Submit =findViewById(R.id.Save1);
 
-        TestResult   = findViewById(R.id.TestResult);
-        DateofTest   = findViewById(R.id.DateofTest);
-        CurrentlyState  = findViewById(R.id.CurrentlyState);
-        Disable = findViewById(R.id.Disable);
-        ChestDiseases = findViewById(R.id.ChestDiseases);
+        uqrTestResult = findViewById(R.id.TestResultC);
+        uqrDateTest = findViewById(R.id.DateofTestC);
+        uqrCurrentlyState = findViewById(R.id.CurrentlyStateC);
+        uqrDisable = findViewById(R.id.DisableC);
+        uqrChestDiseases = findViewById(R.id.ChestDiseasesC);
 
-        button = (Button) findViewById (R.id.Save1);
-        button.setOnClickListener (new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                UserQuarantineModel quM = new UserQuarantineModel(HomeQuarantineData.this);
-                testvalu =  quM.addHome( QType,
-                        TestResult.getText().toString().trim(),
-                        Integer.valueOf(DateofTest.getText().toString().trim()),
-                        CurrentlyState.getText().toString().trim(),
-                        Boolean.valueOf(Disable.getText().toString().trim()) ,
-                        Boolean.valueOf(ChestDiseases.getText().toString().trim()));
-
-             if(testvalu == true){
-                    Intent intent = new Intent(HomeQuarantineData.this, HomeLocation.class);
-                    startActivity(intent);
-             }
-            }
+        Submit.setOnClickListener(view -> {
+            addDataHome();
         });
 
-        Image1 = findViewById (R.id.backto2);
-        Image1.setOnClickListener (new View.OnClickListener() {
+
+
+        BackArrow = findViewById (R.id.backto2);
+        BackArrow.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeQuarantineData.this, QuarantineType.class);
-                startActivity(intent);
-            }
-        });
-
-
-
-        Image2 = findViewById (R.id.Home1);
-        Image2.setOnClickListener (new View.OnClickListener() {
+                startActivity(intent);}});
+        MeanPage = findViewById (R.id.Home1);
+        MeanPage.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeQuarantineData.this, UserRegistration.class);
-                startActivity(intent);
-            }
-        });
+                startActivity(intent);}});
+
+
+    }
+    private void addDataHome() {
+        UQR_QuarantineType =  uqrType;
+        UQR_DateTest = String.valueOf(Objects.requireNonNull(uqrTestResult).getText());
+        UQ_DateTest = String.valueOf(Objects.requireNonNull(uqrDateTest.getText()));
+        UQR_CurrentlyState  = String.valueOf(Objects.requireNonNull(uqrCurrentlyState).getText());
+        UQR_Disable  = Boolean.valueOf(String.valueOf((uqrDisable).getText()));
+        UQR_ChestDiseases  = Boolean.valueOf(String.valueOf((uqrChestDiseases).getText()));
+
     }
 
 }

@@ -16,6 +16,62 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/minepagewhite" />
 
+    <Button
+        android:id="@+id/ViewInfoAdmin"
+        android:layout_width="227dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="476dp"
+        android:backgroundTint="#1F427A"
+        android:text="View Information User Quarantine Record"
+        android:textColor="#F1F1F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/ManageStatusAdmin"
+        android:layout_width="237dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="312dp"
+        android:backgroundTint="#1F427A"
+        android:text="Manage User Quarantine Status"
+        android:textColor="#F1F1F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/ManageRecordAdmin"
+        android:layout_width="197dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="216dp"
+        android:backgroundTint="#1F427A"
+        android:text="Manage Record from User Quarantine"
+        android:textColor="#F1F1F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/EditUser"
+        android:layout_width="160dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#1F427A"
+        android:text="Edit User Quarantine Record"
+        android:textColor="#F1F1F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
     <ImageView
         android:id="@+id/imageView24"
         android:layout_width="218dp"
