@@ -18,11 +18,6 @@ public class MOH_Confirmation_UserQ_Record extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_moh_confrmation_user_qrecord);
 
-
-
-
-
-
         Image5 = findViewById (R.id.home3);
         Image5.setOnClickListener (new View.OnClickListener() {
             @Override
