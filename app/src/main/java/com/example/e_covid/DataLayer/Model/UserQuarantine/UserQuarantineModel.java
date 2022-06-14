@@ -41,7 +41,7 @@ public class UserQuarantineModel  {
 
 
     public Boolean insertCenter(String QuarantineType, String TestResult, String DateTest, String CurState, Boolean Disable,
-                                Boolean ChestDiseases, String Location, Integer PeopleNumber,String DateStart, Boolean Ambulances, String Comment){
+                                Boolean ChestDiseases /*, String Location, Integer PeopleNumber,String DateStart, Boolean Ambulances, String Comment*/){
         SQLiteDatabase DB = mainDB.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
@@ -51,11 +51,13 @@ public class UserQuarantineModel  {
         contentValues.put( "UQR_CurrentlyState", CurState);
         contentValues.put( "UQR_Disable", Disable);
         contentValues.put( "UQR_ChestDiseases", ChestDiseases);
-        contentValues.put( "UQR_Location", Location);
+       /* contentValues.put( "UQR_Location", Location);
         contentValues.put( "UQR_PeopleNU", PeopleNumber);
         contentValues.put( "UQR_DateStart", DateStart);
         contentValues.put( "UQR_Ambulances", Ambulances);
         contentValues.put( "UQR_Comment", Comment);
+        */
+
 
         long result = DB.insert("QuarantineRegistration", null, contentValues);
         return result != 1;

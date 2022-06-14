@@ -1,27 +1,38 @@
 package com.example.e_covid.UI_Layer.View.UserQuarantine.User;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.example.e_covid.R;
-
 import java.util.Objects;
 
 public class HomeQuarantineData extends AppCompatActivity {
 
+    public ImageView BackArrow;
+    public ImageView MeanPage;
+    public Button Submit;
+
+    String uqrQuarantineType = "Home Quarantine";
+    EditText uqrTestResult ;
+    EditText uqrDateTest  ;
+    EditText uqrCurrentlyState ;
+    CheckBox uqrDisable;
+    CheckBox uqrChestDiseases;
+
+    private String UQR_QuarantineType   ;
+    private String UQR_TestResult   ;
+    private String UQR_DateTest  ;
+    private String UQR_CurrentlyState;
+    private Boolean UQR_Disable  ;
+    private Boolean UQR_ChestDiseases  ;
 
 
-    public ImageView Image1;
-    public ImageView Image2;
-    public String QType = "Home Quarantine";
-    EditText   TestResult , DateofTest, CurrentlyState  ;
-    CheckBox Disable, ChestDiseases;
-    boolean testvalu;
-    public Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,52 +40,53 @@ public class HomeQuarantineData extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_home_quarantine_data);
 
-        /*
-        TestResult   = findViewById(R.id.TestResult);
-        DateofTest   = findViewById(R.id.DateofTest);
-        CurrentlyState  = findViewById(R.id.CurrentlyState);
-        Disable = findViewById(R.id.Disable);
-        ChestDiseases = findViewById(R.id.ChestDiseases);
+        Submit =findViewById(R.id.Save1);
 
-        button = (Button) findViewById (R.id.Save1);
-        button.setOnClickListener (new View.OnClickListener() {
+        uqrTestResult   = findViewById(R.id.TestResult);
+        uqrDateTest   = findViewById(R.id.DateofTest);
+        uqrCurrentlyState  = findViewById(R.id.CurrentlyState);
+        uqrDisable = findViewById(R.id.Disable);
+        uqrChestDiseases = findViewById(R.id.ChestDiseases);
+
+        Intent intent = new Intent(HomeQuarantineData.this, HomeLocation.class);
+        startActivity(intent);
+
+        //Submit.setOnClickListener(view -> {
+          //  addHomeData();
+        //});
+
+
+        BackArrow = findViewById (R.id.Back020);
+        BackArrow.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                UserQuarantineModel quM = new UserQuarantineModel(HomeQuarantineData.this);
-                testvalu =  quM.addHome( QType,
-                        TestResult.getText().toString().trim(),
-                        Integer.valueOf(DateofTest.getText().toString().trim()),
-                        CurrentlyState.getText().toString().trim(),
-                        Boolean.valueOf(Disable.getText().toString().trim()) ,
-                        Boolean.valueOf(ChestDiseases.getText().toString().trim()));
-
-             if(testvalu == true){
-                    Intent intent = new Intent(HomeQuarantineData.this, HomeLocation.class);
-                    startActivity(intent);
-             }
-            }
-        });
-
-        Image1 = findViewById (R.id.backto2);
-        Image1.setOnClickListener (new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(HomeQuarantineData.this, QuarantineType.class);
-                startActivity(intent);
-            }
-        });
-
-
-
-        Image2 = findViewById (R.id.Home1);
-        Image2.setOnClickListener (new View.OnClickListener() {
+                Intent intent = new Intent(HomeQuarantineData.this,UserRegistration.class);
+                startActivity(intent);}});
+        MeanPage = findViewById (R.id.Home00);
+        MeanPage.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeQuarantineData.this, UserRegistration.class);
-                startActivity(intent);
-            }
-        });*/
+                startActivity(intent);}});
+    }
+    public void getData(String QuarantineType , String TestResult   , String DateTest  ,
+                        String CurrentlyState, Boolean Disable  , Boolean ChestDiseases  ){
+
+        QuarantineType = UQR_QuarantineType;
+        TestResult = UQR_TestResult ;
+        DateTest = UQR_DateTest ;
+        CurrentlyState = UQR_CurrentlyState ;
+        Disable = UQR_Disable ;
+        ChestDiseases  = UQR_ChestDiseases ;
     }
 
+    public void addHomeData(){
+        UQR_QuarantineType = uqrQuarantineType;
+        UQR_TestResult = String.valueOf((uqrDateTest.getText()));
+        UQR_DateTest  = String.valueOf((uqrDateTest).getText());
+        UQR_CurrentlyState  = String.valueOf((uqrCurrentlyState).getText());
+        UQR_Disable  = Boolean.valueOf(String.valueOf((uqrDisable).getText()));
+        UQR_ChestDiseases  = Boolean.valueOf(String.valueOf((uqrChestDiseases).getText()));
+
+  }
 }
