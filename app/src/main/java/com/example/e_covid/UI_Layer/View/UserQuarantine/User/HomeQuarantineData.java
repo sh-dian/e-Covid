@@ -1,22 +1,14 @@
 package com.example.e_covid.UI_Layer.View.UserQuarantine.User;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.Toast;
 
-
-//import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.e_covid.DataLayer.Model.UserQuarantine.UserQuarantineModel;
 import com.example.e_covid.R;
 
-import java.sql.Date;
 import java.util.Objects;
 
 public class HomeQuarantineData extends AppCompatActivity {
@@ -37,7 +29,7 @@ public class HomeQuarantineData extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_home_quarantine_data);
 
-
+        /*
         TestResult   = findViewById(R.id.TestResult);
         DateofTest   = findViewById(R.id.DateofTest);
         CurrentlyState  = findViewById(R.id.CurrentlyState);
@@ -82,7 +74,7 @@ public class HomeQuarantineData extends AppCompatActivity {
                 Intent intent = new Intent(HomeQuarantineData.this, UserRegistration.class);
                 startActivity(intent);
             }
-        });
+        });*/
     }
 
 }
