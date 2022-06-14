@@ -63,6 +63,7 @@ public class Admin_QuarantineCenterMenu extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //storing arrayList
     void storeDataInArrays(){
         Cursor cursor = quarantineCenterModel.readAllData();
         if(cursor.getCount() == 0){

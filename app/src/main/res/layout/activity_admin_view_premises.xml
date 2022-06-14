@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
     tools:context=".UI_Layer.View.Movement.Admin.admin_view_premises">
 
 
@@ -77,14 +76,14 @@
         android:layout_width="368dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
-        android:text="Premises CheckIn and CheckOut Record"
         android:hint="Movement Record"
-        android:textColor="@color/white"
+        android:text="Premises CheckIn and CheckOut Record"
+        android:textColor="@color/black"
         android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.039" />
+        app:layout_constraintVertical_bias="0.167" />
 </android.support.constraint.ConstraintLayout>

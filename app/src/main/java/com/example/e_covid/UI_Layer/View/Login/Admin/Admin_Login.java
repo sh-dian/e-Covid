@@ -8,6 +8,8 @@ import android.widget.Button;
 
 import com.example.e_covid.R;
 
+import java.util.Objects;
+
 public class Admin_Login extends AppCompatActivity {
 
     Button mMenu;
@@ -15,6 +17,8 @@ public class Admin_Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_admin_login);
 
         mMenu = findViewById(R.id.admin_Login);

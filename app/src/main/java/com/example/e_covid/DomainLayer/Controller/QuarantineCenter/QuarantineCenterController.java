@@ -9,22 +9,27 @@ public class QuarantineCenterController {
 
     private final QuarantineCenterModel model;
 
+    //constructor
     public QuarantineCenterController(Activity ui) {
         this.model = new QuarantineCenterModel(ui);
     }
 
-    public Boolean Add_QC(String qcName, String qcAddress, String qcFunding, String qcPhoneNum, int qcBedNum, int qcCapacity, int qcVentilationCapacity){
-        return model.insertQC_data(qcName, qcAddress, qcFunding, qcPhoneNum, qcBedNum, qcCapacity, qcVentilationCapacity);
+    //add new record
+    public Boolean Add_QC(String qcName, String qcAddress,String qcType, String qcFunding, String qcPhoneNum, int qcBedNum, int qcCapacity, int qcVentilationCapacity){
+        return model.insertQC_data(qcName, qcAddress,qcType, qcFunding, qcPhoneNum, qcBedNum, qcCapacity, qcVentilationCapacity);
     }
 
+    //delete record
     public Boolean Delete_QC(String qcName){
         return model.deleteQC_data(qcName);
     }
 
+    //update record
     public Boolean Update_QC(String qcName, String qcAddress, String qcFunding, String qcPhoneNum, int qcBedNum, int qcCapacity, int qcVentilationCapacity){
-        return model.updateQC_data(qcName, qcAddress, qcFunding, qcPhoneNum, qcBedNum, qcCapacity, qcVentilationCapacity);
+        return model.updateQC_data(qcName, qcAddress,qcFunding, qcPhoneNum, qcBedNum, qcCapacity, qcVentilationCapacity);
     }
 
+    //view record
     public Cursor getData() {
         return model.readAllData();
     }

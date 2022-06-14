@@ -14,6 +14,8 @@ import android.widget.ImageView;
 import com.example.e_covid.DataLayer.Model.UserQuarantine.UserQuarantineModel;
 import com.example.e_covid.R;
 
+import java.util.Objects;
+
 public class CenterQuarantineData extends AppCompatActivity {
 
 
@@ -29,6 +31,7 @@ public class CenterQuarantineData extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_center_quarantine_data);
 
 

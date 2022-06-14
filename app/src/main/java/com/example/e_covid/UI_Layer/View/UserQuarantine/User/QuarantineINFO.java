@@ -10,6 +10,8 @@ import android.widget.ImageView;
 
 import com.example.e_covid.R;
 
+import java.util.Objects;
+
 public class QuarantineINFO extends AppCompatActivity {
 
 
@@ -19,6 +21,7 @@ public class QuarantineINFO extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_quarantine_info);
 
 

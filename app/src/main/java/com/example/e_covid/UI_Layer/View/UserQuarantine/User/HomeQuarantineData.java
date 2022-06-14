@@ -17,6 +17,7 @@ import com.example.e_covid.DataLayer.Model.UserQuarantine.UserQuarantineModel;
 import com.example.e_covid.R;
 
 import java.sql.Date;
+import java.util.Objects;
 
 public class HomeQuarantineData extends AppCompatActivity {
 
@@ -33,6 +34,7 @@ public class HomeQuarantineData extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_home_quarantine_data);
 
 

@@ -29,6 +29,7 @@ public class User_QuarantineCenterAdapter extends RecyclerView.Adapter<User_Quar
     private final ArrayList qcVentilationCapacity;
     private int position;
 
+    //constructor
     public User_QuarantineCenterAdapter(Context context, ArrayList qcName, ArrayList qcAddress, ArrayList qcPhoneNum, ArrayList qcFunding, ArrayList qcNumOfBeds, ArrayList qcCapacity, ArrayList qcVentilationCapacity){
         this.context = context;
         this.qcName = qcName;

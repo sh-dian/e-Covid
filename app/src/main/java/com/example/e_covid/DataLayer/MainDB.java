@@ -13,6 +13,7 @@ public class MainDB extends SQLiteOpenHelper {
         super(context, DB_Name, null,version);
     }
 
+    //drop table in database if exists
     @Override
     public void onUpgrade(SQLiteDatabase DB, int oldVerse, int newVerse) {
 
@@ -27,6 +28,7 @@ public class MainDB extends SQLiteOpenHelper {
         DB.execSQL("DROP Table if exists QuarantineCenter");
     }
 
+    //Create Table for database
     @Override
     public void onCreate(SQLiteDatabase DB) {
 
@@ -39,7 +41,7 @@ public class MainDB extends SQLiteOpenHelper {
         DB.execSQL("CREATE Table Dependent(Dependent_ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, Dependent_Name TEXT," +
                 "Dependent_Relation TEXT)");
 
-        DB.execSQL("CREATE Table QuarantineCenter(QC_ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, QC_Name TEXT, QC_PhoneNum TEXT, QC_Capacity INTEGER," +
+        DB.execSQL("CREATE Table QuarantineCenter(QC_ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, QC_Name TEXT, QC_PhoneNum TEXT, QC_Type TEXT, QC_Capacity INTEGER," +
                 "QC_NumOfBeds INTEGER, QC_VentilationCapacity INTEGER, QC_Address TEXT, QC_Funding TEXT)");
 
         DB.execSQL("CREATE Table UserQuarantineRegistration(UQR_ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, UQR_QuarantineType TEXT, UQR_TestResult TEXT," +
@@ -66,5 +68,8 @@ public class MainDB extends SQLiteOpenHelper {
         DB.execSQL("CREATE Table VaccinationRegistration(VRegID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, VReg_Status TEXT, VReg_PlaceAppointment TEXT, VReg_DateAppointment TEXT," +
                 "ECMS_ID INTEGER NOT NULL, VCert_ID INTEGER NOT NULL," +
                 "FOREIGN KEY(ECMS_ID) REFERENCES User(ECMS_ID), FOREIGN KEY(VCert_ID) REFERENCES VaccinationCertificate(VCert_ID))");
+
     }
+
+
 }

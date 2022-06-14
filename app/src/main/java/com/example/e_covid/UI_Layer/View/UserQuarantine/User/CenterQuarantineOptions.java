@@ -10,6 +10,8 @@ import android.widget.ImageView;
 
 import com.example.e_covid.R;
 
+import java.util.Objects;
+
 public class CenterQuarantineOptions extends AppCompatActivity {
 
     public ImageView Image1;
@@ -18,6 +20,7 @@ public class CenterQuarantineOptions extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_center_quarantine_options);
 
         Image1 = findViewById (R.id.backtoCdata);

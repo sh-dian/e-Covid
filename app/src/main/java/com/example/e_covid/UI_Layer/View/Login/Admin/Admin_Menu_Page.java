@@ -8,27 +8,27 @@ import android.widget.Button;
 
 import com.example.e_covid.R;
 import com.example.e_covid.UI_Layer.View.Login.MOH.View_Admin_Moh;
+import com.example.e_covid.UI_Layer.View.Movement.Admin.admin_mvmentMenu;
 import com.example.e_covid.UI_Layer.View.QuarantineCenter.Admin.Admin_QuarantineCenterMenu;
 import com.example.e_covid.UI_Layer.View.UserQuarantine.Admin.Admin_DashboardUserQ;
-
-import java.util.Objects;
 
 public class Admin_Menu_Page extends AppCompatActivity {
 
     Button qcMenuPage;
     Button mUserMenuPage;
     Button aUserQuarantine;
-
+    Button mMovement;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //author code - hide action bar
-        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_admin_menu_page);
 
         qcMenuPage = findViewById(R.id.aQC_button);
         mUserMenuPage = findViewById(R.id.aManageUserBtn);
+        aUserQuarantine = findViewById(R.id.aUserQuarantine_btn);
+        mMovement = findViewById(R.id.aCheckIn_btn);
 
         qcMenuPage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,13 +46,18 @@ public class Admin_Menu_Page extends AppCompatActivity {
             }
         });
 
-
-
-
         aUserQuarantine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Admin_Menu_Page.this, Admin_DashboardUserQ.class);
+                startActivity(intent);
+            }
+        });
+
+        mMovement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Admin_Menu_Page.this, admin_mvmentMenu.class);
                 startActivity(intent);
             }
         });

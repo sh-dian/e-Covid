@@ -48,6 +48,7 @@ public class Admin_ViewQuarantineCenter extends AppCompatActivity {
         });
     }
 
+    //delete record
     private void deleteRecord() {
         nameTxt = qcNameInput.getText().toString();
         Boolean checkInsertion = adminQuarantineCenterController.Delete_QC(nameTxt);

@@ -29,6 +29,7 @@ public class Admin_QuarantineCenterAdapter extends RecyclerView.Adapter<Admin_Qu
     private final ArrayList qcVentilationCapacity;
     private int position;
 
+    //constructor
     public Admin_QuarantineCenterAdapter(Context context, ArrayList qcName, ArrayList qcAddress, ArrayList qcPhoneNum, ArrayList qcFunding, ArrayList qcNumOfBeds, ArrayList qcCapacity, ArrayList qcVentilationCapacity){
         this.context = context;
         this.qcName = qcName;
@@ -48,6 +49,7 @@ public class Admin_QuarantineCenterAdapter extends RecyclerView.Adapter<Admin_Qu
         return new MyViewHolder(view);
     }
 
+    //get intent data
     @Override
     public void onBindViewHolder(@NonNull final MyViewHolder holder, int position ) {
         holder.qcName_txt.setText(String.valueOf(qcName.get(position)));
@@ -73,6 +75,7 @@ public class Admin_QuarantineCenterAdapter extends RecyclerView.Adapter<Admin_Qu
         });
     }
 
+    //view holder
     @Override
     public int getItemCount() {
         return qcName.size();

@@ -11,6 +11,8 @@ import android.widget.ImageView;
 
 import com.example.e_covid.R;
 
+import java.util.Objects;
+
 public class QuarantineDetails extends AppCompatActivity {
 
     public Button button;
@@ -22,6 +24,7 @@ public class QuarantineDetails extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_quarantine_details);
 
 

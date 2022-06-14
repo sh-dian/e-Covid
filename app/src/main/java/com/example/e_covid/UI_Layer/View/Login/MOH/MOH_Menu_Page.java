@@ -7,11 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.e_covid.R;
-import com.example.e_covid.UI_Layer.View.Login.Admin.Admin_Menu_Page;
-import com.example.e_covid.UI_Layer.View.UserQuarantine.Admin.Admin_DashboardUserQ;
 import com.example.e_covid.UI_Layer.View.UserQuarantine.MOH.MOH_DashboardUserQ;
-
-import java.util.Objects;
 
 public class MOH_Menu_Page extends AppCompatActivity {
 
@@ -22,10 +18,10 @@ public class MOH_Menu_Page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //author code - hide action bar
-        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_moh_menu_page);
 
         mUserMenuPage = findViewById(R.id.mohManageUserBtn);
+        aUserQuarantine = findViewById(R.id.mohUserQuarantine_btn);
 
         mUserMenuPage.setOnClickListener(new View.OnClickListener() {
             @Override

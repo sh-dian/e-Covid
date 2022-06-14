@@ -64,6 +64,16 @@
             android:name=".UI_Layer.View.Vaccination.User.RegisterAppointment"
             android:exported="false" />
         <activity
+            android:name=".UI_Layer.View.Vaccination.User.VaccinationMain"
+            android:exported="false" />
+        <activity
+            android:name=".UI_Layer.View.Vaccination.User.ViewAppointment"
+            android:exported="false" />
+        <activity
+            android:name=".UI_Layer.View.Vaccination.User.ViewVaccinationCertificate"
+            android:exported="false" />
+
+        <activity
             android:name=".UI_Layer.MainActivity"
             android:exported="true" >
             <intent-filter>

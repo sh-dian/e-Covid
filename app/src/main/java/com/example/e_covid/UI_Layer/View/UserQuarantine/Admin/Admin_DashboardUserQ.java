@@ -18,6 +18,7 @@ public class Admin_DashboardUserQ extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_admin_dashboard_user_q);
 
         Image1 = findViewById (R.id.imageView24);
@@ -29,7 +30,6 @@ public class Admin_DashboardUserQ extends AppCompatActivity {
             }
         });
 
-
         Image2 = findViewById (R.id.imageView26);
         Image2.setOnClickListener (new View.OnClickListener() {
             @Override
@@ -39,7 +39,6 @@ public class Admin_DashboardUserQ extends AppCompatActivity {
             }
         });
 
-
         Image3 = findViewById (R.id.imageView27);
         Image3.setOnClickListener (new View.OnClickListener() {
             @Override
@@ -48,7 +47,6 @@ public class Admin_DashboardUserQ extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
 
         Image4 = findViewById (R.id.imageView25);

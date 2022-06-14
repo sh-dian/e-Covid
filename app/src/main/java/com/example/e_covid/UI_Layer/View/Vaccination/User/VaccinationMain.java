@@ -8,21 +8,44 @@ import android.widget.Button;
 
 import com.example.e_covid.R;
 
+import java.util.Objects;
+
 public class VaccinationMain extends AppCompatActivity {
 
-    Button vApp;
+    Button mView;
+    Button mCert;
+    Button mDependent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_vaccination_main);
 
-        vApp = (Button) findViewById(R.id.vcAppBttn);
+        mView = findViewById(R.id.vcAppBttn);
+        mCert = findViewById(R.id.vcCertBttn);
+        mDependent = findViewById(R.id.deptBttn);
 
-        vApp.setOnClickListener(new View.OnClickListener() {
+        mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(VaccinationMain.this, ViewAppointment.class);
+                startActivity(intent);
+            }
+        });
+
+        mCert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(VaccinationMain.this, ViewVaccinationCertificate.class);
+                startActivity(intent);
+            }
+        });
+
+        mDependent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(VaccinationMain.this, DependentVaccineDetails.class);
                 startActivity(intent);
             }
         });

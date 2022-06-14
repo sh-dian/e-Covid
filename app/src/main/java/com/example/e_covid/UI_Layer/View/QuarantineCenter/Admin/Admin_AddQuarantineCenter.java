@@ -28,11 +28,13 @@ public class Admin_AddQuarantineCenter extends AppCompatActivity {
     TextInputLayout qcBedNum;
     TextInputLayout qcCapacity;
     TextInputLayout qcVentilationCapacity;
+    TextInputLayout qcType;
 
     private String QC_name;
     private String QC_address;
     private String QC_funding;
     private String QC_phoneNum;
+    private String QC_type;
     private int QC_bedNum;
     private int QC_capacity;
     private int QC_ventilationCapacity;
@@ -53,6 +55,7 @@ public class Admin_AddQuarantineCenter extends AppCompatActivity {
         qcBedNum = findViewById(R.id.text_num_beds);
         qcCapacity = findViewById(R.id.text_qc_capacity);
         qcVentilationCapacity = findViewById(R.id.text_ventilation_capacity);
+        qcType = findViewById(R.id.text_type);
 
         adminQuarantineCenterController = new QuarantineCenterController(this);
 
@@ -71,8 +74,9 @@ public class Admin_AddQuarantineCenter extends AppCompatActivity {
         QC_bedNum = Integer.parseInt(String.valueOf(Objects.requireNonNull(qcBedNum.getEditText()).getText()));
         QC_capacity = Integer.parseInt(String.valueOf(Objects.requireNonNull(qcCapacity.getEditText()).getText()));
         QC_ventilationCapacity = Integer.parseInt(String.valueOf(Objects.requireNonNull(qcVentilationCapacity.getEditText()).getText()));
+        QC_type = String.valueOf(Objects.requireNonNull(qcType.getEditText()).getText());
 
-        Boolean checkInsertion = adminQuarantineCenterController.Add_QC(QC_name,QC_address,QC_funding,QC_phoneNum,
+        Boolean checkInsertion = adminQuarantineCenterController.Add_QC(QC_name,QC_address,QC_type,QC_funding,QC_phoneNum,
                 QC_bedNum,QC_capacity,QC_ventilationCapacity);
 
         if(checkInsertion == true){

@@ -9,6 +9,8 @@ import android.widget.ImageView;
 
 import com.example.e_covid.R;
 
+import java.util.Objects;
+
 //import androidx.appcompat.app.AppCompatActivity;
 
 public class QuarantineType extends AppCompatActivity {
@@ -22,6 +24,7 @@ public class QuarantineType extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_quarantine_type);
 
         button1 = (Button) findViewById (R.id.HomeQ);
