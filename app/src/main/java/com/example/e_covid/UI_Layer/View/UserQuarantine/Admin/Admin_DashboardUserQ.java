@@ -7,8 +7,13 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.example.e_covid.R;
+import com.example.e_covid.UI_Layer.View.Login.Admin.Admin_Menu_Page;
+import com.example.e_covid.UI_Layer.View.UserQuarantine.MOH.MOH_Manage_UserQ_Status;
 
 public class Admin_DashboardUserQ extends AppCompatActivity {
+
+    public ImageView BackArrow;
+    public ImageView MeanPage;
 
     public ImageView Image1;
     public ImageView Image2;
@@ -57,6 +62,20 @@ public class Admin_DashboardUserQ extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        BackArrow = findViewById (R.id.Back10);
+        BackArrow.setOnClickListener (new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Admin_DashboardUserQ.this, Admin_Menu_Page.class);
+                startActivity(intent);}});
+        MeanPage = findViewById (R.id.Home10);
+        MeanPage.setOnClickListener (new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Admin_DashboardUserQ.this, Admin_DashboardUserQ.class);
+                startActivity(intent);}});
 
 
 

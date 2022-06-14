@@ -31,7 +31,7 @@
         app:srcCompat="@android:drawable/bottom_bar" />
 
     <EditText
-        android:id="@+id/TestResult2"
+        android:id="@+id/TestResultC"
         android:layout_width="149dp"
         android:layout_height="49dp"
         android:ems="10"
@@ -44,7 +44,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView17" />
 
     <EditText
-        android:id="@+id/DateofTest2"
+        android:id="@+id/DateofTestC"
         android:layout_width="165dp"
         android:layout_height="56dp"
         android:layout_marginEnd="24dp"
@@ -61,7 +61,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/CurrentlyState2"
+        android:id="@+id/CurrentlyStateC"
         android:layout_width="151dp"
         android:layout_height="57dp"
         android:ems="10"
@@ -75,7 +75,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
-        android:id="@+id/ChestDiseases2"
+        android:id="@+id/ChestDiseasesC"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:text="Yes"
@@ -85,11 +85,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.377"
         app:layout_constraintStart_toEndOf="@+id/textView39"
-        app:layout_constraintTop_toBottomOf="@+id/Disable2"
+        app:layout_constraintTop_toBottomOf="@+id/DisableC"
         app:layout_constraintVertical_bias="0.058" />
 
     <CheckBox
-        android:id="@+id/Disable2"
+        android:id="@+id/DisableC"
         android:layout_width="66dp"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
@@ -99,10 +99,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toEndOf="@+id/textView38"
-        app:layout_constraintTop_toBottomOf="@+id/CurrentlyState2" />
+        app:layout_constraintTop_toBottomOf="@+id/CurrentlyStateC" />
 
     <ImageView
-        android:id="@+id/Home1"
+        android:id="@+id/Home00"
         android:layout_width="164dp"
         android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -114,7 +114,7 @@
         app:srcCompat="?attr/selectableItemBackground" />
 
     <ImageView
-        android:id="@+id/backto2"
+        android:id="@+id/Back02"
         android:layout_width="52dp"
         android:layout_height="41dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -126,7 +126,7 @@
         app:srcCompat="?attr/selectableItemBackground" />
 
     <Button
-        android:id="@+id/save2"
+        android:id="@+id/SubmitC"
         android:layout_width="118dp"
         android:layout_height="57dp"
         android:layout_marginBottom="52dp"

@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/home2"
+        android:id="@+id/Home11"
         android:layout_width="164dp"
         android:layout_height="40dp"
         android:layout_marginBottom="684dp"
@@ -44,7 +44,7 @@
         app:srcCompat="?attr/selectableItemBackground" />
 
     <ImageView
-        android:id="@+id/back"
+        android:id="@+id/Back11"
         android:layout_width="52dp"
         android:layout_height="41dp"
         android:layout_marginBottom="684dp"

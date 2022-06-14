@@ -63,7 +63,7 @@
         app:layout_constraintVertical_bias="0.726" />
 
     <ImageView
-        android:id="@+id/Back1"
+        android:id="@+id/Back01"
         android:layout_width="52dp"
         android:layout_height="41dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,7 +75,7 @@
         app:srcCompat="?attr/selectableItemBackground" />
 
     <ImageView
-        android:id="@+id/Home1"
+        android:id="@+id/Home00"
         android:layout_width="164dp"
         android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="parent"

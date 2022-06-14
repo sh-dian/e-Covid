@@ -23,7 +23,7 @@ public class DailyQuestions extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_daily_questions);
 
-        Image1 = findViewById (R.id.backto3);
+        Image1 = findViewById (R.id.Back06);
         Image1.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,7 +31,7 @@ public class DailyQuestions extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Image2 = findViewById (R.id.Home1);
+        Image2 = findViewById (R.id.Home00);
         Image2.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {

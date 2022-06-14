@@ -15,11 +15,11 @@ import java.util.Objects;
 
 public class QuarantineDetails extends AppCompatActivity {
 
+    public ImageView BackArrow;
+    public ImageView MeanPage;
     public Button button;
     public Button button1;
 
-    public ImageView Image1;
-    public ImageView Image2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,21 +45,18 @@ public class QuarantineDetails extends AppCompatActivity {
             }
         });
 
-        Image1 = findViewById (R.id.backto1);
-        Image1.setOnClickListener (new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(QuarantineDetails.this, QuarantineType.class);
-                startActivity(intent);
-            }
-        });
-        Image2 = findViewById (R.id.Home1);
-        Image2.setOnClickListener (new View.OnClickListener() {
+
+        BackArrow = findViewById (R.id.Background);
+        BackArrow.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(QuarantineDetails.this, UserRegistration.class);
-                startActivity(intent);
-            }
-        });
+                startActivity(intent);}});
+        MeanPage = findViewById (R.id.Home00);
+        MeanPage.setOnClickListener (new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(QuarantineDetails.this, UserRegistration.class);
+                startActivity(intent);}});
     }
 }

@@ -14,8 +14,8 @@ import java.util.Objects;
 
 public class CenterQuarantineOptions extends AppCompatActivity {
 
-    public ImageView Image1;
-    public ImageView Image2;
+    public ImageView BackArrow;
+    public ImageView MeanPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,21 +23,19 @@ public class CenterQuarantineOptions extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_center_quarantine_options);
 
-        Image1 = findViewById (R.id.backtoCdata);
-        Image1.setOnClickListener (new View.OnClickListener() {
+
+
+        BackArrow = findViewById (R.id.Back04);
+        BackArrow.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CenterQuarantineOptions.this, CenterQuarantineData.class);
-                startActivity(intent);
-            }
-        });
-        Image2 = findViewById (R.id.Home1);
-        Image2.setOnClickListener (new View.OnClickListener() {
+                startActivity(intent);}});
+        MeanPage = findViewById (R.id.Home00);
+        MeanPage.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CenterQuarantineOptions.this, UserRegistration.class);
-                startActivity(intent);
-            }
-        });
+                startActivity(intent);}});
     }
 }

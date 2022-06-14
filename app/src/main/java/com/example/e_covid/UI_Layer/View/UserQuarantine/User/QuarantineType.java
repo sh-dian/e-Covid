@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.e_covid.R;
+import com.example.e_covid.UI_Layer.View.Login.User.User_Menu_Page;
 
 import java.util.Objects;
 
@@ -15,11 +16,11 @@ import java.util.Objects;
 
 public class QuarantineType extends AppCompatActivity {
 
+    public ImageView BackArrow;
+    public ImageView MeanPage;
     public Button button1;
     public Button button2;
 
-    public ImageView Image1;
-    public ImageView Image2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,21 +47,18 @@ public class QuarantineType extends AppCompatActivity {
             }
         });
 
-        Image1 = findViewById (R.id.Back1);
-        Image1.setOnClickListener (new View.OnClickListener() {
+
+        BackArrow = findViewById (R.id.Back01);
+        BackArrow.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(QuarantineType.this, UserRegistration.class);
-                startActivity(intent);
-            }
-        });
-        Image2 = findViewById (R.id.Home1);
-        Image2.setOnClickListener (new View.OnClickListener() {
+                startActivity(intent);}});
+        MeanPage = findViewById (R.id.Home00);
+        MeanPage.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(QuarantineType.this, UserRegistration.class);
-                startActivity(intent);
-            }
-        });
+                startActivity(intent);}});
     }
 }
