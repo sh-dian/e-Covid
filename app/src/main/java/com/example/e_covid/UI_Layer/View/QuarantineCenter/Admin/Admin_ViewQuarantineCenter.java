@@ -46,6 +46,14 @@ public class Admin_ViewQuarantineCenter extends AppCompatActivity {
                 deleteRecord();
             }
         });
+
+        mUpdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Admin_ViewQuarantineCenter.this, Admin_UpdateQuarantineCenter.class);
+                startActivity(intent);
+            }
+        });
     }
 
     //delete record

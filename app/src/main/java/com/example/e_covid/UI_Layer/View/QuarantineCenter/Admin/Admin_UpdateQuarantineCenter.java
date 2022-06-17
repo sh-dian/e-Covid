@@ -1,11 +1,15 @@
 package com.example.e_covid.UI_Layer.View.QuarantineCenter.Admin;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 import com.example.e_covid.DomainLayer.Controller.QuarantineCenter.QuarantineCenterController;
 import com.example.e_covid.R;
+
+import java.util.Objects;
 
 public class Admin_UpdateQuarantineCenter extends AppCompatActivity {
 
@@ -35,10 +39,12 @@ public class Admin_UpdateQuarantineCenter extends AppCompatActivity {
         setContentView(R.layout.activity_admin_update_quarantine_center);
 
         adminQuarantineCenterController = new QuarantineCenterController(this);
+
+        UpdateRecord();
     }
 
-    /* Update Function
-    private void addNewRecord() {
+    //Update Function
+    private void UpdateRecord() {
         QC_name= String.valueOf(Objects.requireNonNull(qcName.getEditText()).getText());
         QC_address = String.valueOf(Objects.requireNonNull(qcAddress.getEditText()).getText());
         QC_funding = String.valueOf(Objects.requireNonNull(qcFunding.getEditText()).getText());
@@ -58,5 +64,5 @@ public class Admin_UpdateQuarantineCenter extends AppCompatActivity {
 
         Intent intent = new Intent(Admin_UpdateQuarantineCenter.this, Admin_QuarantineCenterMenu.class);
         startActivity(intent);
-    }*/
+    }
 }
