@@ -12,14 +12,14 @@ import com.example.e_covid.UI_Layer.View.Login.User.User_Menu_Page;
 
 import java.util.Objects;
 
-//import androidx.appcompat.app.AppCompatActivity;
 
 public class QuarantineType extends AppCompatActivity {
 
     public ImageView BackArrow;
     public ImageView MeanPage;
-    public Button button1;
-    public Button button2;
+    public Button Center;
+    public Button HomeData;
+    public Button CenterData;
 
 
     @Override
@@ -28,18 +28,17 @@ public class QuarantineType extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_quarantine_type);
 
-        button1 = (Button) findViewById (R.id.HomeQ);
 
-        button1.setOnClickListener (new View.OnClickListener() {
+        HomeData = (Button) findViewById (R.id.HomeQ0);
+        HomeData.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(QuarantineType.this, HomeQuarantineData.class);
                 startActivity(intent);
-            }
-        });
+            }});
 
-        button2 = (Button) findViewById (R.id.CenterQ);
-        button2.setOnClickListener (new View.OnClickListener() {
+        CenterData = (Button) findViewById (R.id.CenterQ);
+        CenterData.setOnClickListener (new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(QuarantineType.this, CenterQuarantineData.class);
